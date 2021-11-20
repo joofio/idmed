@@ -131,12 +131,12 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 pages:
   index.xml:
     title: Home
-  implementation.md:
-    title: Implementation
-    alternative1.md
-      title: Alternative 1
-    alternative2.md
-      title: Alternative 2
+    implementation.md:
+      title: Implementation
+      alternative1.md
+        title: Alternative 1
+      alternative2.md
+        title: Alternative 2
 #    title: Examples Overview
 #    title: Examples Overview
 #    simpleExamples.xml:
