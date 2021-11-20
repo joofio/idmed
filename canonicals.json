@@ -1,5 +1,19 @@
 [
   {
+    "id": "DefinedMed",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/DefinedMed",
+    "version": "0.1.0-test",
+    "name": "DefinedMed"
+  },
+  {
+    "id": "drugCharacteristic",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/drugCharacteristic",
+    "version": "0.1.0-test",
+    "name": "DrugCharacteristic"
+  },
+  {
     "id": "xxxexample.fhir.uv.myig",
     "type": "ImplementationGuide",
     "url": "xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
