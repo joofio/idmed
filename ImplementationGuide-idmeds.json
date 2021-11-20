@@ -1,40 +1,55 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "xxxexample.fhir.uv.myig",
+  "id": "idmeds",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>xxxYourComputableMyIGNameHere</h2><p>The official URL for this implementation guide is: </p><pre>xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>xxxA brief description of what this IG is about</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IDMeds</h2><p>The official URL for this implementation guide is: </p><pre>http://example.com/fhir/example</pre><div><p>Example IG</p>\n</div></div>"
   },
-  "url": "xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
-  "version": "0.1.0-test",
-  "name": "xxxYourComputableMyIGNameHere",
-  "title": "xxxYour User Friendly Name for MyIG Here",
-  "status": "draft",
-  "experimental": false,
-  "date": "2021-11-20T18:54:24+00:00",
-  "publisher": "xxxYour Work Group",
+  "url": "http://example.com/fhir/example",
+  "version": "1.0.0",
+  "name": "IDMeds",
+  "title": "HL7 FHIR Implementation Guide",
+  "status": "active",
+  "date": "2020-02-26",
+  "publisher": "My Organization",
   "contact": [
     {
+      "name": "My Organization",
       "telecom": [
         {
           "system": "url",
-          "value": "xxxhttp://hl7.org/Special/committees/[something]"
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "my-group@example.com"
+        }
+      ]
+    },
+    {
+      "name": "Bob Smith",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bobsmith@example.com",
+          "use": "work"
         }
       ]
     }
   ],
-  "description": "xxxA brief description of what this IG is about ",
+  "description": "Example IG",
   "jurisdiction": [
     {
       "coding": [
         {
           "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
+          "code": "001",
+          "display": "World"
         }
       ]
     }
   ],
-  "packageId": "xxxexample.fhir.uv.myig",
+  "packageId": "idmeds",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
@@ -49,7 +64,7 @@
           },
           {
             "url": "value",
-            "valueString": "2019+"
+            "valueString": "2021+"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -62,46 +77,7 @@
           },
           {
             "url": "value",
-            "valueString": "CI Build"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "path-binary"
-          },
-          {
-            "url": "value",
-            "valueString": "input\\cql"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "path-liquid"
-          },
-          {
-            "url": "value",
-            "valueString": "templates\\liquid"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "autoload-resources"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
+            "valueString": "STU1"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -192,7 +168,7 @@
           },
           {
             "url": "value",
-            "valueString": "xxxhttp://somewhere.org/fhir/uv/myig/history.html"
+            "valueString": "history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -338,7 +314,9 @@
         ],
         "reference": {
           "reference": "StructureDefinition/DefinedMed"
-        }
+        },
+        "name": "DefinedMed",
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -351,7 +329,8 @@
           "reference": "StructureDefinition/drugCharacteristic"
         },
         "name": "Drug Characteristic",
-        "description": "Drug Characteristic"
+        "description": "Drug Characteristic",
+        "exampleBoolean": false
       }
     ],
     "page": {
@@ -361,30 +340,31 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "MyIG Home Page",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "downloads.html",
-          "title": "Useful Downloads",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "changes.html",
-          "title": "IG Change History",
-          "generation": "html"
+          "title": "Home",
+          "generation": "html",
+          "page": [
+            {
+              "nameUrl": "implementation.html",
+              "title": "Implementation",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "alternative1.html",
+                  "title": "Alternative 1",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "alternative2.html",
+                  "title": "Alternative 2",
+                  "generation": "markdown"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     "parameter": [
-      {
-        "code": "path-resource",
-        "value": "input\\history"
-      },
-      {
-        "code": "path-resource",
-        "value": "input\\scenarios"
-      },
       {
         "code": "path-resource",
         "value": "input/capabilities"
@@ -416,6 +396,10 @@
       {
         "code": "path-resource",
         "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/maps"
       },
       {
         "code": "path-resource",
