@@ -11,7 +11,7 @@
   "title": "xxxYour User Friendly Name for MyIG Here",
   "status": "draft",
   "experimental": false,
-  "date": "2021-11-20T15:05:35+00:00",
+  "date": "2021-11-20T17:43:35+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -326,6 +326,32 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DefinedMed"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/drugCharacteristic"
+        },
+        "name": "Drug Characteristic",
+        "description": "Drug Characteristic"
       }
     ],
     "page": {

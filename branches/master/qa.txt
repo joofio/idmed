@@ -1,21 +1,47 @@
 ﻿xxxYourComputableMyIGNameHere : Validation Results
 =========================================
 
-err = 4, warn = 1, info = 0
+err = 8, warn = 4, info = 0
 IG Publisher Version: 1.1.87
-Generated Sat Nov 20 15:05:45 UTC 2021. FHIR version 4.0.1 for xxxexample.fhir.uv.myig#0.1.0-test (canonical = xxxhttp://somewhere.org/fhir/uv/myig)
- Build Errors : 5 / 0 / 0
- /github/workspace/input/myig : 4 / 1 / 1
+Generated Sat Nov 20 17:43:51 UTC 2021. FHIR version 4.0.1 for xxxexample.fhir.uv.myig#0.1.0-test (canonical = xxxhttp://somewhere.org/fhir/uv/myig)
+ Build Errors : 21 / 1 / 0
+ /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic : 2 / 1 / 1
+ /github/workspace/input/myig : 3 / 1 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 196, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/DefinedMed.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DefinedMed.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed-definitions.html#/html/body/div/div/div/p/a at Line 547, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed-examples.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed-mappings.html#/html/body/div/div/div/p/a at Line 354, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.html#/html/body/div/div/div/p/a at Line 701, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.history.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.json.html#/html/body/div/div/div/p/a at Line 1700, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.ttl.html#/html/body/div/div/div/p/a at Line 1531, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.xml.html#/html/body/div/div/div/p/a at Line 1556, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic-definitions.html#/html/body/div/div/div/p/a at Line 390, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic-mappings.html#/html/body/div/div/div/p/a at Line 294, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.html#/html/body/div/div/div/p/a at Line 600, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.history.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.json.html#/html/body/div/div/div/p/a at Line 1174, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.ttl.html#/html/body/div/div/div/p/a at Line 1017, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.xml.html#/html/body/div/div/div/p/a at Line 1069, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+== fsh-generated/resources/StructureDefinition-DefinedMed.json ==
+ERROR: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/DefinedMed'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed.json - the canonical URL (xxxhttp://somewhere.org/fhir/uv/myig/StructureDefinition/DefinedMed) does not match the URL (http://example.com/fhir/example/StructureDefinition/DefinedMed)
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/DefinedMed'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed: URL Mismatch xxxhttp://somewhere.org/fhir/uv/myig/StructureDefinition/DefinedMed vs http://example.com/fhir/example/StructureDefinition/DefinedMed
+== fsh-generated/resources/StructureDefinition-drugCharacteristic.json ==
+ERROR: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/drugCharacteristic'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic.json - the canonical URL (xxxhttp://somewhere.org/fhir/uv/myig/StructureDefinition/drugCharacteristic) does not match the URL (http://example.com/fhir/example/StructureDefinition/drugCharacteristic)
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/drugCharacteristic'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic: URL Mismatch xxxhttp://somewhere.org/fhir/uv/myig/StructureDefinition/drugCharacteristic vs http://example.com/fhir/example/StructureDefinition/drugCharacteristic
 == input/myig.xml ==
 ERROR: ImplementationGuide.where(url = 'xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig'): Conformance resource /github/workspace/input/myig.xml - the canonical URL (xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/xxxexample.fhir.uv.myig) does not match the URL (xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: xxxexample.fhir.uv.myig/xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig
 WARNING: ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
 ERROR: /github/workspace/input/myig: URL Mismatch xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/xxxexample.fhir.uv.myig vs xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig
