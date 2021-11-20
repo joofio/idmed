@@ -133,9 +133,9 @@ pages:
     title: Home
     implementation.md:
       title: Implementation
-      alternative1.md
+      alternative1.md:
         title: Alternative 1
-      alternative2.md
+      alternative2.md:
         title: Alternative 2
 #    title: Examples Overview
 #    title: Examples Overview
