@@ -7,11 +7,46 @@
     "name": "IDMeds"
   },
   {
+    "id": "CrossBorderMedicationAdministration",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationAdministration",
+    "version": "1.0.0",
+    "name": "CrossBorderMedicationAdministration"
+  },
+  {
+    "id": "CrossBorderMedicationDispense",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationDispense",
+    "version": "1.0.0",
+    "name": "CrossBorderMedicationDispense"
+  },
+  {
+    "id": "CrossBorderMedicationRequest",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationRequest",
+    "version": "1.0.0",
+    "name": "CrossBorderMedicationRequest"
+  },
+  {
+    "id": "CrossBorderMedicationStatement",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationStatement",
+    "version": "1.0.0",
+    "name": "CrossBorderMedicationStatement"
+  },
+  {
     "id": "DefinedMed",
     "type": "StructureDefinition",
     "url": "http://example.com/fhir/example/StructureDefinition/DefinedMed",
     "version": "1.0.0",
     "name": "DefinedMed"
+  },
+  {
+    "id": "RelatedMedication",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/RelatedMedication",
+    "version": "1.0.0",
+    "name": "RelatedMedication"
   },
   {
     "id": "drugCharacteristic",

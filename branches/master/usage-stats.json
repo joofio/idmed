@@ -5,6 +5,64 @@
   "jurisdiction": "001",
   "extensions": [
     {
+      "url": "http://example.com/fhir/example/StructureDefinition/RelatedMedication",
+      "title": "Related Medication",
+      "types": [
+        "string",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "http://example.com/fhir/example/StructureDefinition/drugCharacteristic",
       "title": "Drug Characteristic",
       "types": [
@@ -68,6 +126,30 @@
     }
   ],
   "profiles": {
+    "MedicationAdministration": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationAdministration",
+        "title": "CrossBorderMedicationAdministration"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationDispense",
+        "title": "CrossBorderMedicationDispense"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationRequest",
+        "title": "CrossBorderMedicationRequest"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationStatement",
+        "title": "CrossBorderMedicationStatement"
+      }
+    ],
     "Medication": [
       {
         "url": "http://example.com/fhir/example/StructureDefinition/DefinedMed",
@@ -76,6 +158,12 @@
     ]
   },
   "usage": {
+    "http://example.com/fhir/example/StructureDefinition/RelatedMedication": [
+      "MedicationAdministration",
+      "MedicationDispense",
+      "MedicationRequest",
+      "MedicationStatement"
+    ],
     "http://example.com/fhir/example/StructureDefinition/drugCharacteristic": [
       "Medication"
     ],

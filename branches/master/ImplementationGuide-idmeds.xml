@@ -201,6 +201,46 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/CrossBorderMedicationAdministration"/>
+      </reference>
+      <name value="CrossBorderMedicationAdministration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CrossBorderMedicationDispense"/>
+      </reference>
+      <name value="CrossBorderMedicationDispense"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CrossBorderMedicationRequest"/>
+      </reference>
+      <name value="CrossBorderMedicationRequest"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CrossBorderMedicationStatement"/>
+      </reference>
+      <name value="CrossBorderMedicationStatement"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DefinedMed"/>
       </reference>
       <name value="DefinedMed"/>
@@ -215,6 +255,17 @@
       </reference>
       <name value="Drug Characteristic"/>
       <description value="Drug Characteristic"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RelatedMedication"/>
+      </reference>
+      <name value="Related Medication"/>
+      <description value="Related Medication to be used on clinical medication workflow resources in order to portrait the information for cross-border. This extension is used on MedicationAdministration,MedicationDispense,MedicationRequest and MedicationStatement  resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -244,6 +295,11 @@
           <nameUrl value="use-cases.html"/>
           <title value="Use Cases"/>
           <generation value="markdown"/>
+          <page>
+            <nameUrl value="workflow.html"/>
+            <title value="Workflow"/>
+            <generation value="markdown"/>
+          </page>
         </page>
       </page>
     </page>

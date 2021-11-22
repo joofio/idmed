@@ -313,6 +313,58 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/CrossBorderMedicationAdministration"
+        },
+        "name": "CrossBorderMedicationAdministration",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CrossBorderMedicationDispense"
+        },
+        "name": "CrossBorderMedicationDispense",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CrossBorderMedicationRequest"
+        },
+        "name": "CrossBorderMedicationRequest",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CrossBorderMedicationStatement"
+        },
+        "name": "CrossBorderMedicationStatement",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DefinedMed"
         },
         "name": "DefinedMed",
@@ -330,6 +382,20 @@
         },
         "name": "Drug Characteristic",
         "description": "Drug Characteristic",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/RelatedMedication"
+        },
+        "name": "Related Medication",
+        "description": "Related Medication to be used on clinical medication workflow resources in order to portrait the information for cross-border. This extension is used on MedicationAdministration,MedicationDispense,MedicationRequest and MedicationStatement  resource.",
         "exampleBoolean": false
       }
     ],
@@ -363,7 +429,14 @@
             {
               "nameUrl": "use-cases.html",
               "title": "Use Cases",
-              "generation": "markdown"
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "workflow.html",
+                  "title": "Workflow",
+                  "generation": "markdown"
+                }
+              ]
             }
           ]
         }

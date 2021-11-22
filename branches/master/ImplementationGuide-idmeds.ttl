@@ -295,13 +295,65 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationAdministration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CrossBorderMedicationAdministration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CrossBorderMedicationAdministration" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationDispense>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CrossBorderMedicationDispense" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CrossBorderMedicationDispense" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationRequest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CrossBorderMedicationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CrossBorderMedicationRequest" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationStatement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CrossBorderMedicationStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CrossBorderMedicationStatement" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DefinedMed" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DefinedMed" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -313,6 +365,20 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Drug Characteristic" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Drug Characteristic" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/RelatedMedication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/RelatedMedication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Related Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Related Medication to be used on clinical medication workflow resources in order to portrait the information for cross-border. This extension is used on MedicationAdministration,MedicationDispense,MedicationRequest and MedicationStatement  resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
@@ -344,7 +410,13 @@
            fhir:index 1;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use-cases.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+           fhir:ImplementationGuide.definition.page.page [
+             fhir:index 0;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "workflow.html" ];
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Workflow" ];
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ]
          ]
        ]
      ];

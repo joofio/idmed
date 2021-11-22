@@ -1,17 +1,58 @@
 ﻿IDMeds : Validation Results
 =========================================
 
-err = 3, warn = 4, info = 0
+err = 3, warn = 13, info = 1
 IG Publisher Version: 1.1.88
-Generated Mon Nov 22 10:13:34 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
- Build Errors : 22 / 2 / 0
+Generated Mon Nov 22 16:33:53 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 62 / 6 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CrossBorderMedicationAdministration : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CrossBorderMedicationDispense : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-CrossBorderMedicationRequest : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CrossBorderMedicationStatement : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RelatedMedication : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic : 0 / 1 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CrossBorderMedicationAdministration.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CrossBorderMedicationDispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CrossBorderMedicationRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CrossBorderMedicationStatement.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DefinedMed.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationAdministration-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationAdministration-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationAdministration-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationAdministration.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationAdministration.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationAdministration.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationAdministration.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationAdministration.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationDispense-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationDispense-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationDispense-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationDispense.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationDispense.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationDispense.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationDispense.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationDispense.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationRequest-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationRequest-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationRequest-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationRequest.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationRequest.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationRequest.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationRequest.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationRequest.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationStatement-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationStatement-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationStatement-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationStatement.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationStatement.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationStatement.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationStatement.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationStatement.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -20,6 +61,13 @@ ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.history.h
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-RelatedMedication-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-RelatedMedication-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-RelatedMedication.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-RelatedMedication.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-RelatedMedication.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-RelatedMedication.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-RelatedMedication.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -34,11 +82,23 @@ ERROR: /github/workspace/output/implementation.html#/html/body/div/div/nav/div/d
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/workflow.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-idmeds.json ==
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/idmeds) does not match the URL (http://example.com/fhir/example)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: idmeds/http://example.com/fhir/example
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds: URL Mismatch http://example.com/fhir/example/ImplementationGuide/idmeds vs http://example.com/fhir/example
+== fsh-generated/resources/StructureDefinition-CrossBorderMedicationAdministration.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationAdministration'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-CrossBorderMedicationDispense.json ==
+INFORMATION: StructureDefinition/CrossBorderMedicationDispense: StructureDefinition.snapshot.element[29].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationDispense'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-CrossBorderMedicationRequest.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationRequest'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-CrossBorderMedicationStatement.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationStatement'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-DefinedMed.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/DefinedMed'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-RelatedMedication.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/RelatedMedication'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-drugCharacteristic.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/drugCharacteristic'): The Implementation Guide contains no examples for this extension
