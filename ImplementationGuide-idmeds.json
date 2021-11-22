@@ -359,6 +359,11 @@
                   "generation": "markdown"
                 }
               ]
+            },
+            {
+              "nameUrl": "use-cases.html",
+              "title": "Use Cases",
+              "generation": "markdown"
             }
           ]
         }

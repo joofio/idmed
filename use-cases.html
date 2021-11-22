@@ -1,9 +1,9 @@
-﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>IDMEDS\DefinedMed - Mappings - FHIR v4.0.1</title>
+    <title>IDMEDS\Use Cases - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +47,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.1"}
-    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"1.2"}
+    h3,h4,h5,h6{--heading-prefix:"1.2"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -120,7 +120,7 @@
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
 		<ul class="dropdown-menu">
-			<li><a name="l213">​</a><a href="downloads.html">Downloads</a></li>
+			<li><a name="l212">​</a><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -135,7 +135,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>DefinedMed</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="index.html"><b>Home</b></a></li><li><b>Use Cases</b></li>
           
         </ul>
       </div>    <!-- /container -->
@@ -147,8 +147,16 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 5" class="col-12">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">HL7 FHIR Implementation Guide - Local Development build (v1.0.0). See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Use Cases</h2>
   
 
 
@@ -159,134 +167,78 @@
 
 
 
-
-
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="StructureDefinition-DefinedMed.html">Content</a>
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#use-cases-cross-prescription" id="markdown-toc-use-cases-cross-prescription">Use cases cross prescription</a>    <ul>
+      <li><a href="#example-1-the-brand-does-not-exist" id="markdown-toc-example-1-the-brand-does-not-exist">Example 1 (the brand does not exist)</a></li>
+      <li><a href="#example-2-the-drug-does-not-exist-at-all" id="markdown-toc-example-2-the-drug-does-not-exist-at-all">Example 2 (the drug does not exist at all)</a></li>
+      <li><a href="#example-3-the-drug-form-does-not-exist" id="markdown-toc-example-3-the-drug-form-does-not-exist">Example 3 (the drug form does not exist)</a></li>
+      <li><a href="#example-4-the-drug-strength-does-not-exist" id="markdown-toc-example-4-the-drug-strength-does-not-exist">Example 4 (the drug strength does not exist)</a></li>
+      <li><a href="#example-5-the-level-of-information-does-not-match" id="markdown-toc-example-5-the-level-of-information-does-not-match">Example 5 (the level of information does not match)</a></li>
+    </ul>
   </li>
-
-
-
-  <li>
-    <a href="StructureDefinition-DefinedMed-definitions.html">Detailed Descriptions</a>
-  </li>
-
-
-
-  
-    <li class="active">
-      <a href="#">Mappings</a>
-    </li>
-  
-
-
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-DefinedMed.profile.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="StructureDefinition-DefinedMed.profile.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="StructureDefinition-DefinedMed.profile.ttl.html">TTL</a>
-    </li>
-  
-
-
 </ul>
 
+</div>
+<h1 id="use-cases-cross-prescription">Use cases cross prescription</h1>
+<p>These examples show a prescription that is made for a patient in a EU country and that information is then required in a different EU country, where the specific medicine may or may not exist as is.</p>
 
-<a name="root"> </a>
-<h2 id="root">Resource Profile: DefinedMed - Mappings</h2>
+<h3 id="example-1-the-brand-does-not-exist">Example 1 (the brand does not exist)</h3>
 
-<p>Mappings for the DefinedMed resource profile.</p>
+<ul>
+  <li>In Portugal, after a GP visit, the patient Pia Peters is prescribed paracetamol 500 mg for headache treatment.</li>
+  <li>In the community pharmacy, the pharmacist dispenses Ben-u-ron 500 mg, one of the brands available for paracetamol in the Portuguese market.</li>
+  <li>In the following day, the patient travels to Belgium and needs to go to the ER because of a strong belly ache.</li>
+  <li>The assisting doctor needs the current medication that the patient is taking for a correct assessment and requires the cross-prescription data.</li>
+  <li>Since Ben-u-ron does not exist in Belgium, the data must be compliant with the Belgium standards and data.</li>
+</ul>
 
-    <!-- insert intro if present -->
-  
+<h3 id="example-2-the-drug-does-not-exist-at-all">Example 2 (the drug does not exist at all)</h3>
 
+<ul>
+  <li>In Portugal, after a GP visit, the patient Pia Peters is prescribed Sucralfate for stomach ulcer treatment.</li>
+  <li>In the community pharmacy, the pharmacist dispenses “Sucralfato Generic 1g/5 ml Oral suspension”, one of the brands available for Sucralfate in the Portuguese market.</li>
+  <li>In the following day, the patient travels to Belgium and needs to go to the ER because of a strong headache.</li>
+  <li>The assisting doctor needs the current medication that the patient is taking for a correct assessment and requires the cross-prescription data.</li>
+  <li>Since Sucralfate is not available at all in Belgium, the data supplied must be compliant with the Belgium standards and data.</li>
+</ul>
 
+<h3 id="example-3-the-drug-form-does-not-exist">Example 3 (the drug form does not exist)</h3>
 
-  <a name="script10.6"> </a><h3>Mappings for Mapping to NCPDP SCRIPT 10.6 (http://ncpdp.org/SCRIPT10_6)</h3><table class="grid">
- <tr><td colspan="3"><b>DefinedMed</b></td></tr>
- <tr><td>Medication</td><td>NewRx/MedicationPrescribed-or-RxFill/MedicationDispensed-or-RxHistoryResponse/MedicationDispensed-or-RxHistoryResponse/MedicationPrescribed</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>coding.code = //element(*,MedicationType)/DrugCoded/ProductCodecoding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifiercoding.display = //element(*,MedicationType)/DrugDescription</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;manufacturer</td><td>no mapping</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;form</td><td>coding.code =  //element(*,DrugCodedType)/FormCodecoding.system = //element(*,DrugCodedType)/FormSourceCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;ingredient</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item[x]</td><td>coding.code = //element(*,MedicationType)/DrugCoded/ProductCodecoding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifiercoding.display = //element(*,MedicationType)/DrugDescription</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strength</td><td>//element(*,DrugCodedType)/Strength</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;batch</td><td>no mapping</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotNumber</td><td>no mapping</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expirationDate</td><td>no mapping</td> </tr>
-</table>
-<a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>DefinedMed</b></td></tr>
- <tr><td>Medication</td><td>Entity. Role, or Act, ManufacturedProduct[classCode=ADMM]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>.code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.statusCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;manufacturer</td><td>.player.scopingRole[typeCode=MANU].scoper</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;form</td><td>.formCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;amount</td><td>.quantity</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;ingredient</td><td>.scopesRole[typeCode=INGR]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item[x]</td><td>.player</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;isActive</td><td>NA</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strength</td><td>.quantity</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;batch</td><td>.player[classCode=CONT]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotNumber</td><td>.id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expirationDate</td><td>participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].expirationTime</td> </tr>
-</table>
-<a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>DefinedMed</b></td></tr>
- <tr><td>Medication</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>FiveWs.class</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;manufacturer</td><td>FiveWs.actor</td> </tr>
-</table>
-<a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>DefinedMed</b></td></tr>
- <tr><td>Medication</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>RXO-1.1-Requested Give Code.code / RXE-2.1-Give Code.code / RXD-2.1-Dispense/Give Code.code / RXG-4.1-Give Code.code /RXA-5.1-Administered Code.code / RXC-2.1 Component Code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;manufacturer</td><td>RXD-20-Substance Manufacturer Name / RXG-21-Substance Manufacturer Name / RXA-17-Substance Manufacturer Name</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;form</td><td>RXO-5-Requested Dosage Form / RXE-6-Give Dosage Form / RXD-6-Actual Dosage Form / RXG-8-Give Dosage Form / RXA-8-Administered Dosage Form</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;ingredient</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item[x]</td><td>RXC-2-Component Code  if medication: RXO-1-Requested Give Code / RXE-2-Give Code / RXD-2-Dispense/Give Code / RXG-4-Give Code / RXA-5-Administered Code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strength</td><td>RXC-3-Component Amount &amp; RXC-4-Component Units  if medication: RXO-2-Requested Give Amount - Minimum &amp; RXO-4-Requested Give Units / RXO-3-Requested Give Amount - Maximum &amp; RXO-4-Requested Give Units / RXO-11-Requested Dispense Amount &amp; RXO-12-Requested Dispense Units / RXE-3-Give Amount - Minimum &amp; RXE-5-Give Units / RXE-4-Give Amount - Maximum &amp; RXE-5-Give Units / RXE-10-Dispense Amount &amp; RXE-10-Dispense Units</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;batch</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotNumber</td><td>RXA-15 Substance Lot Number / RXG-19 Substance Lot Number</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expirationDate</td><td>RXA-16 Substance Expiration Date / RXG-20 Substance Expiration Date</td> </tr>
-</table>
+<ul>
+  <li>In Italy, after a GP visit, the patient Pia Peters is prescribed Trazodone 50mg/5ml Oral Solution for depression treatment.</li>
+  <li>In the community pharmacy, the pharmacist dispenses “Trittico 50mg/5ml”, one of the brands available for Trazodone in the Italian market.</li>
+  <li>In the following day, the patient travels to Belgium and needs to go to the ER because of a strong headache.</li>
+  <li>The assisting doctor needs the current medication that the patient is taking for a correct assessment and requires the cross-prescription data.</li>
+  <li>Since the oral solution form of trazodone  is not available in Belgium, the data supplied must be compliant with the Belgium standards and data.</li>
+</ul>
 
+<h3 id="example-4-the-drug-strength-does-not-exist">Example 4 (the drug strength does not exist)</h3>
 
-    <!-- insert notes if present -->
-  
+<ul>
+  <li>In Portugal, after a GP visit, the patient Pia Peters is prescribed Sertraline 200 mg for depression treatment.</li>
+  <li>In the community pharmacy, the pharmacist dispenses “Semonic 200 mg”, one of the brands available for sertraline in the Portuguese market.</li>
+  <li>In the following day, the patient travels to Belgium and needs to go to the ER because of a strong headache.</li>
+  <li>The assisting doctor needs the current medication that the patient is taking for a correct assessment and requires the cross-prescription data.</li>
+  <li>Since Sertraline with 200 mg  is available in Belgium, the data supplied must be compliant with the Belgium standards and data.</li>
+</ul>
+
+<h3 id="example-5-the-level-of-information-does-not-match">Example 5 (the level of information does not match)</h3>
+
+<ul>
+  <li>In Portugal, after a GP visit, the patient Pia Peters is prescribed Sertraline 200 mg for depression treatment.</li>
+  <li>In the community pharmacy, the pharmacist dispenses “Semonic 200 mg”, one of the brands available for sertraline in the Portuguese market.</li>
+  <li>Since the information of the community pharmacy is not added to the patient file, the information recorded was the CNPEM (Sertraline 200 mg pack of 60)</li>
+  <li>In the following day, the patient travels to Belgium and needs to go to the ER because of a strong headache.</li>
+  <li>The assisting doctor needs the current medication that the patient is taking for a correct assessment and requires the cross-prescription data.</li>
+  <li>Since the drug level does not exist in the Belgium context (active principle + strength + pharmaceutical form + pack size), the data must be translated to a Belgium context.</li>
+</ul>
+
 
 
 
 </div>
-
         </div>    <!-- /inner-wrapper -->
       </div>    <!-- /row -->
     </div>    <!-- /container -->
@@ -294,29 +246,6 @@
 
   <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
