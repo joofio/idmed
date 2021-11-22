@@ -139,6 +139,8 @@ pages:
         title: Alternative 2
     use-cases.md:
         title: Use Cases
+        workflow.md:
+        title: Workflow
 #    title: Examples Overview
 #    title: Examples Overview
 #    simpleExamples.xml:
