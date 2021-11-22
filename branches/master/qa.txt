@@ -3,8 +3,8 @@
 
 err = 3, warn = 4, info = 0
 IG Publisher Version: 1.1.88
-Generated Mon Nov 22 09:44:52 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
- Build Errors : 21 / 2 / 0
+Generated Mon Nov 22 10:13:34 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 22 / 2 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic : 0 / 1 / 1
@@ -12,27 +12,28 @@ Generated Mon Nov 22 09:44:52 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (can
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DefinedMed.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/StructureDefinition-DefinedMed-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DefinedMed-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DefinedMed-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DefinedMed.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 131, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/alternative1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/alternative2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/implementation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/alternative1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/alternative2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/implementation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-idmeds.json ==
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/idmeds) does not match the URL (http://example.com/fhir/example)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: idmeds/http://example.com/fhir/example

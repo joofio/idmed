@@ -240,6 +240,11 @@
             <generation value="markdown"/>
           </page>
         </page>
+        <page>
+          <nameUrl value="use-cases.html"/>
+          <title value="Use Cases"/>
+          <generation value="markdown"/>
+        </page>
       </page>
     </page>
     <parameter>

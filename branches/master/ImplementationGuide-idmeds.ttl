@@ -340,6 +340,11 @@
              fhir:ImplementationGuide.definition.page.title [ fhir:value "Alternative 2" ];
              fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
            ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use-cases.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ]
        ]
      ];
