@@ -2,8 +2,8 @@
 =========================================
 
 err = 3, warn = 4, info = 0
-IG Publisher Version: 1.1.87
-Generated Sat Nov 20 20:04:15 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
+IG Publisher Version: 1.1.88
+Generated Mon Nov 22 09:44:52 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
  Build Errors : 21 / 2 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 1 / 1
