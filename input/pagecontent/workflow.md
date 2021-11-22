@@ -1,5 +1,5 @@
 The generic path is:
 
 <div>
-{% include workflow.svg %}
+{% include workflow1.svg %}
 </div>
