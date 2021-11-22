@@ -380,6 +380,23 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Related Medication" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Related Medication to be used on clinical medication workflow resources in order to portrait the information for cross-border. This extension is used on MedicationAdministration,MedicationDispense,MedicationRequest and MedicationStatement  resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/MedicationRequest/example-1-of-medReq>;
+         fhir:Reference.reference [ fhir:value "MedicationRequest/example-1-of-medReq" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationRequest";
+         fhir:link <http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationRequest>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

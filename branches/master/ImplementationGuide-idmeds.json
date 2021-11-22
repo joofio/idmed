@@ -397,6 +397,20 @@
         "name": "Related Medication",
         "description": "Related Medication to be used on clinical medication workflow resources in order to portrait the information for cross-border. This extension is used on MedicationAdministration,MedicationDispense,MedicationRequest and MedicationStatement  resource.",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/example-1-of-medReq"
+        },
+        "name": "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
+        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationRequest"
       }
     ],
     "page": {
