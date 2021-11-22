@@ -3,6 +3,7 @@ At the moment, there are at least two alternatives for implemeting cross-prescri
 The first one is about having a extension on the primary workflow resources: order, dispense, administration and statement, with a second related medication.
 This extension would include a new medication resource that should be used for cross-prescription information.
 
+
 <div>
 {% include alternative1.svg %}
 </div>
