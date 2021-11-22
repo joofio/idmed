@@ -3,10 +3,10 @@
   "name": "IDMeds",
   "package-id": "idmeds",
   "ig-ver": "1.0.0",
-  "date": "Mon, 22 Nov, 2021 16:33:31 +0000",
+  "date": "Mon, 22 Nov, 2021 16:35:05 +0000",
   "errs": 3,
-  "warnings": 13,
-  "hints": 1,
+  "warnings": 12,
+  "hints": 2,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"
 }

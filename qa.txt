@@ -1,14 +1,15 @@
 ﻿IDMeds : Validation Results
 =========================================
 
-err = 3, warn = 13, info = 1
+err = 3, warn = 12, info = 2
 IG Publisher Version: 1.1.88
-Generated Mon Nov 22 16:33:53 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
- Build Errors : 62 / 6 / 0
+Generated Mon Nov 22 16:35:29 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 67 / 6 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-example-1-of-medReq : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-CrossBorderMedicationAdministration : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-CrossBorderMedicationDispense : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-CrossBorderMedicationRequest : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CrossBorderMedicationRequest : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-CrossBorderMedicationStatement : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RelatedMedication : 0 / 1 / 1
@@ -21,6 +22,11 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CrossBorderMedicationRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CrossBorderMedicationStatement.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DefinedMed.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/MedicationRequest-example-1-of-medReq.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-example-1-of-medReq.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-example-1-of-medReq.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-example-1-of-medReq.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-example-1-of-medReq.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationAdministration-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationAdministration-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-CrossBorderMedicationAdministration-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -87,13 +93,14 @@ ERROR: /github/workspace/output/workflow.html#/html/body/div/div/nav/div/div/ul/
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/idmeds) does not match the URL (http://example.com/fhir/example)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: idmeds/http://example.com/fhir/example
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds: URL Mismatch http://example.com/fhir/example/ImplementationGuide/idmeds vs http://example.com/fhir/example
+== fsh-generated/resources/MedicationRequest-example-1-of-medReq.json ==
+INFORMATION: MedicationRequest/example-1-of-medReq: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-CrossBorderMedicationAdministration.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationAdministration'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-CrossBorderMedicationDispense.json ==
 INFORMATION: StructureDefinition/CrossBorderMedicationDispense: StructureDefinition.snapshot.element[29].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationDispense'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-CrossBorderMedicationRequest.json ==
-WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationRequest'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-CrossBorderMedicationStatement.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationStatement'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-DefinedMed.json ==
