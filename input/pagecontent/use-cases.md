@@ -4,7 +4,7 @@ These examples show a prescription that is made for a patient in a EU country an
 ### Example 1 (the brand does not exist)
 
 * In Portugal, after a GP visit, the patient Pia Peters is prescribed paracetamol 500 mg for headache treatment.
-* In the community pharmacy, the pharmacist dispenses Ben-u-ron 500 mg, one of the brands available for paracetamol in the Portuguese market.
+* In the community pharmacy, the pharmacist dispenses Ben-u-ron 500 mg pack of 20, one of the brands available for paracetamol in the Portuguese market.
 * In the following day, the patient travels to Belgium and needs to go to the ER because of a strong belly ache.
 * The assisting doctor needs the current medication that the patient is taking for a correct assessment and requires the cross-prescription data.
 * Since Ben-u-ron does not exist in Belgium, the data must be compliant with the Belgium standards and data.

@@ -34,7 +34,7 @@ Description: "Related Medication to be used on clinical medication workflow reso
 
 
 * extension[relatedMed] ^short = "Related medication"
-* extension[relatedMed].value[x]  only Reference (DefinedMed)
+* extension[relatedMed].value[x]  only Reference(DefinedMed)
 
 
 // This rule set limits the application of an extension to the given path
@@ -47,18 +47,62 @@ Parent: MedicationRequest
 * extension contains
     RelatedMedication named relatedMedication 0..* MS 
 
-Profile: CrossBorderMedicationAdministration
+Profile: ExtendedAdministration
 Parent: MedicationAdministration
 * extension contains
     RelatedMedication named relatedMedication 0..* MS
 
 
-Profile: CrossBorderMedicationDispense
+Profile: ExtendedDispense
 Parent: MedicationDispense
 * extension contains
     RelatedMedication named relatedMedication 0..* MS
 
-Profile: CrossBorderMedicationStatement
+Profile: ExtendedStatement
 Parent: MedicationStatement
 * extension contains
     RelatedMedication named relatedMedication 0..* MS
+
+
+// Define a local code system
+CodeSystem: RelationTypeCS
+Id:         relationtype-cs
+Title: "Relation Type for Related Medication Code System"
+Description: "Indicates the relation of the related medication with the original medication"
+// You can choose any url, or use the default, but in this case we want the URL to be in the HL7 namespace
+* ^url =  http://terminology.hl7.org/CodeSystem/relationtype
+// Spacing layout over three lines per term is optional, for clarity
+// The definition (second text string) is optional
+* #SINGLE  
+    "Direct Translation"
+    "Direct Translation"
+* #MULTIPLE  
+    "One of many possibilities"
+    "One of many possibilities"
+* #DIFFERENT  
+    "Different Drug"
+    "Different Drug"
+* #DIF_Strength  
+    "Different Strength"
+    "Different Strength"
+* #DIF_BRAND 
+    "Different Brand"
+    "Different Brand"
+* #DIF_FORM
+    "Different Pharmaceutical Form"
+    "Different Pharmaceutical Form"
+* #DIF_PACKSIZE
+    "Different Pack Size"
+    "Different Pack Size"
+* #DIF_ROUTE
+    "Different Administration Route"
+    "Different Administration Route"
+
+
+
+
+ValueSet: RelationTypeVS
+Id: relationtype-vs
+Title: "Relation Type for Related Medication Value Set"
+Description: "Indicates the relation of the related medication with the original medication"
+* include codes from system RelationTypeCS
