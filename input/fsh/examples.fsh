@@ -2,7 +2,7 @@ Instance: related-med-1
 InstanceOf: DefinedMed
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
-Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
+Title: "Use case 1 - Related Medication to prescription "
 
 * identifier[0].system = "http://medication-identifiers.com"
 * identifier[0].value = "123"
@@ -12,7 +12,7 @@ Instance: related-med-2
 InstanceOf: DefinedMed
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
-Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
+Title: "Use case 1 - First Related Medication to dispense "
 
 * identifier[0].system = "http://medication-identifiers.com"
 * identifier[0].value = "456"
@@ -22,17 +22,17 @@ Instance: related-med-3
 InstanceOf: DefinedMed
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
-Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
+Title: "Use case 1 - Second Related Medication to dispense "
 
 * identifier[0].system = "http://medication-identifiers.com"
-* identifier[0].value = "456"
+* identifier[0].value = "789"
 
 
 Instance: example-1-of-medReq
 InstanceOf: ExtendedRequest
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
-Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
+Title: "Use case 1 - Prescription of Medication with relatedMedication"
 
 * identifier[0].system = "http://prescription-identifiers.com"
 * identifier[0].value = "69eb6358-6eb6-40e4-972f-33d22c3392c5"
@@ -65,7 +65,7 @@ Instance: example-1-of-meddisp
 InstanceOf: ExtendedDispense
 Usage: #example
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
-Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
+Title: "Use case 1 - Dispense of Medication with relatedMedication"
 
 
 * identifier[0].system = "http://dispense-identifiers.com"
@@ -109,4 +109,4 @@ Title:    "Dispense Example - Prescribed branded medication is changed by anothe
   * extension[relationType].valueCoding = #MULTIPLE
   * extension[relatedMed]
     * valueReference.identifier.system = "http://medication-identifiers.com"
-    * valueReference.identifier.value = "456"
+    * valueReference.identifier.value = "789"
