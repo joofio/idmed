@@ -52,7 +52,7 @@
        fhir:Extension.valueReference [
          fhir:Reference.identifier [
            fhir:Identifier.system [ fhir:value "http://medication-identifiers.com" ];
-           fhir:Identifier.value [ fhir:value "456" ]
+           fhir:Identifier.value [ fhir:value "789" ]
          ]
        ]
      ];

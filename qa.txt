@@ -1,12 +1,12 @@
 ﻿IDMeds : Validation Results
 =========================================
 
-err = 3, warn = 15, info = 4
+err = 3, warn = 18, info = 4
 IG Publisher Version: 1.1.89
-Generated Tue Nov 23 11:13:47 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
+Generated Tue Nov 23 15:36:32 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
  Build Errors : 97 / 6 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-relationtype-cs : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 3 / 1
  /github/workspace/fsh-generated/resources/Medication-related-med-1 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Medication-related-med-2 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Medication-related-med-3 : 0 / 0 / 1
@@ -130,6 +130,9 @@ WARNING: CodeSystem/relationtype-cs: CodeSystem: HL7 Defined CodeSystems SHOULD 
 == fsh-generated/resources/ImplementationGuide-idmeds.json ==
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/idmeds) does not match the URL (http://example.com/fhir/example)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: idmeds/http://example.com/fhir/example
+WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[11].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[12].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[13].name: value should not start or finish with whitespace
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds: URL Mismatch http://example.com/fhir/example/ImplementationGuide/idmeds vs http://example.com/fhir/example
 == fsh-generated/resources/Medication-related-med-1.json ==
 == fsh-generated/resources/Medication-related-med-2.json ==

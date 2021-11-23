@@ -419,7 +419,7 @@
          fhir:link <http://example.com/fhir/example/MedicationRequest/example-1-of-medReq>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/example-1-of-medReq" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Prescription of Medication with relatedMedication" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/ExtendedRequest";
@@ -436,7 +436,7 @@
          fhir:link <http://example.com/fhir/example/MedicationDispense/example-1-of-meddisp>;
          fhir:Reference.reference [ fhir:value "MedicationDispense/example-1-of-meddisp" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Dispense of Medication with relatedMedication" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/ExtendedDispense";
@@ -453,7 +453,7 @@
          fhir:link <http://example.com/fhir/example/Medication/related-med-1>;
          fhir:Reference.reference [ fhir:value "Medication/related-med-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Related Medication to prescription " ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
@@ -470,7 +470,7 @@
          fhir:link <http://example.com/fhir/example/Medication/related-med-2>;
          fhir:Reference.reference [ fhir:value "Medication/related-med-2" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - First Related Medication to dispense " ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
@@ -487,7 +487,7 @@
          fhir:link <http://example.com/fhir/example/Medication/related-med-3>;
          fhir:Reference.reference [ fhir:value "Medication/related-med-3" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Second Related Medication to dispense " ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
