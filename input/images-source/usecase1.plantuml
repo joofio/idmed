@@ -1,5 +1,4 @@
 @startuml
-scale 600 width
 
 state OriginalPrescription {
 state "Active Principle" as long1
