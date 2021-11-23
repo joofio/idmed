@@ -63,7 +63,7 @@ s3: 500 mg
 state "Form" as f3
 f3:  Tablets
 state "Brand" as b3
-b3:  Panadol
+b3:  Tylenol
 
 state "Size" as size3
 size3:  20tabs
