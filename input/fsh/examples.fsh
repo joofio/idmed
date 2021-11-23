@@ -1,6 +1,5 @@
 Instance: example-1-of-medReq
-InstanceOf: CrossBorderMedicationRequest
-Usage: #example
+InstanceOf: ExtendedRequest
 Description: "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."
 Title:    "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"
 
@@ -24,6 +23,7 @@ Title:    "Dispense Example - Prescribed branded medication is changed by anothe
 * encounter.identifier.value = "0cf5dc52-28dc-43ce-96d2-3a757526c739"
 * encounter.identifier.system = "http://encounter-identifiers.com"
 
-//* extension[RelatedMedication].relation = https://cnk.apb.be/codings/cnk_product_codes#2837409  "Amlor harde caps. 98x 5mg"
-//* extension[RelatedMedication].definedMedication.valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
-//* extension[RelatedMedication].definedMedication.valueReference.identifier.system = "http://treatment-identifiers.com"
+* extension[relatedMedication]
+  * extension[relationType].valueCoding = #123
+  * extension[relatedMed]
+    * valueReference.identifier.value = "123"
