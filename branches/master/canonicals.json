@@ -21,13 +21,6 @@
     "name": "CrossBorderMedicationDispense"
   },
   {
-    "id": "CrossBorderMedicationRequest",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationRequest",
-    "version": "1.0.0",
-    "name": "CrossBorderMedicationRequest"
-  },
-  {
     "id": "CrossBorderMedicationStatement",
     "type": "StructureDefinition",
     "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationStatement",
@@ -42,11 +35,11 @@
     "name": "DefinedMed"
   },
   {
-    "id": "RelatedMedication",
+    "id": "ExtendedRequest",
     "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/RelatedMedication",
+    "url": "http://example.com/fhir/example/StructureDefinition/ExtendedRequest",
     "version": "1.0.0",
-    "name": "RelatedMedication"
+    "name": "ExtendedRequest"
   },
   {
     "id": "drugCharacteristic",
@@ -54,5 +47,12 @@
     "url": "http://example.com/fhir/example/StructureDefinition/drugCharacteristic",
     "version": "1.0.0",
     "name": "DrugCharacteristic"
+  },
+  {
+    "id": "relatedMedication",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/relatedMedication",
+    "version": "1.0.0",
+    "name": "RelatedMedication"
   }
 ]

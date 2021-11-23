@@ -221,16 +221,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CrossBorderMedicationRequest"/>
-      </reference>
-      <name value="CrossBorderMedicationRequest"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/CrossBorderMedicationStatement"/>
       </reference>
       <name value="CrossBorderMedicationStatement"/>
@@ -244,6 +234,16 @@
         <reference value="StructureDefinition/DefinedMed"/>
       </reference>
       <name value="DefinedMed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtendedRequest"/>
+      </reference>
+      <name value="ExtendedRequest"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -262,7 +262,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RelatedMedication"/>
+        <reference value="StructureDefinition/relatedMedication"/>
       </reference>
       <name value="Related Medication"/>
       <description value="Related Medication to be used on clinical medication workflow resources in order to portrait the information for cross-border. This extension is used on MedicationAdministration,MedicationDispense,MedicationRequest and MedicationStatement  resource."/>
@@ -277,7 +277,7 @@
       </reference>
       <name value="Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
       <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."/>
-      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationRequest"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/ExtendedRequest"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

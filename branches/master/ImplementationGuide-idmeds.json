@@ -339,19 +339,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/CrossBorderMedicationRequest"
-        },
-        "name": "CrossBorderMedicationRequest",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/CrossBorderMedicationStatement"
         },
         "name": "CrossBorderMedicationStatement",
@@ -368,6 +355,19 @@
           "reference": "StructureDefinition/DefinedMed"
         },
         "name": "DefinedMed",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ExtendedRequest"
+        },
+        "name": "ExtendedRequest",
         "exampleBoolean": false
       },
       {
@@ -392,7 +392,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/RelatedMedication"
+          "reference": "StructureDefinition/relatedMedication"
         },
         "name": "Related Medication",
         "description": "Related Medication to be used on clinical medication workflow resources in order to portrait the information for cross-border. This extension is used on MedicationAdministration,MedicationDispense,MedicationRequest and MedicationStatement  resource.",
@@ -410,7 +410,7 @@
         },
         "name": "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
         "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
-        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationRequest"
+        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/ExtendedRequest"
       }
     ],
     "page": {

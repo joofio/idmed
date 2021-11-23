@@ -5,11 +5,15 @@
   "jurisdiction": "001",
   "extensions": [
     {
-      "url": "http://example.com/fhir/example/StructureDefinition/RelatedMedication",
-      "title": "Related Medication",
+      "url": "http://example.com/fhir/example/StructureDefinition/drugCharacteristic",
+      "title": "Drug Characteristic",
       "types": [
+        "CodeableConcept",
+        "base64Binary",
         "string",
-        "Reference",
+        "Attachment",
+        "CodeableConcept",
+        "Quantity",
         "base64Binary",
         "boolean",
         "canonical",
@@ -63,15 +67,11 @@
       ]
     },
     {
-      "url": "http://example.com/fhir/example/StructureDefinition/drugCharacteristic",
-      "title": "Drug Characteristic",
+      "url": "http://example.com/fhir/example/StructureDefinition/relatedMedication",
+      "title": "Related Medication",
       "types": [
-        "CodeableConcept",
-        "base64Binary",
-        "string",
-        "Attachment",
-        "CodeableConcept",
-        "Quantity",
+        "Coding",
+        "Reference",
         "base64Binary",
         "boolean",
         "canonical",
@@ -138,12 +138,6 @@
         "title": "CrossBorderMedicationDispense"
       }
     ],
-    "MedicationRequest": [
-      {
-        "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationRequest",
-        "title": "CrossBorderMedicationRequest"
-      }
-    ],
     "MedicationStatement": [
       {
         "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationStatement",
@@ -155,17 +149,23 @@
         "url": "http://example.com/fhir/example/StructureDefinition/DefinedMed",
         "title": "DefinedMed"
       }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/ExtendedRequest",
+        "title": "ExtendedRequest"
+      }
     ]
   },
   "usage": {
-    "http://example.com/fhir/example/StructureDefinition/RelatedMedication": [
+    "http://example.com/fhir/example/StructureDefinition/drugCharacteristic": [
+      "Medication"
+    ],
+    "http://example.com/fhir/example/StructureDefinition/relatedMedication": [
       "MedicationAdministration",
       "MedicationDispense",
       "MedicationRequest",
       "MedicationStatement"
-    ],
-    "http://example.com/fhir/example/StructureDefinition/drugCharacteristic": [
-      "Medication"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
