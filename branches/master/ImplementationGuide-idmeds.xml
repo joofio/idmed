@@ -369,9 +369,19 @@
           </page>
         </page>
         <page>
-          <nameUrl value="use-cases.html"/>
-          <title value="Use Cases"/>
+          <nameUrl value="FunctionalDiscussion.html"/>
+          <title value="Functional Discussion"/>
           <generation value="markdown"/>
+          <page>
+            <nameUrl value="use-cases.html"/>
+            <title value="Use Cases"/>
+            <generation value="markdown"/>
+            <page>
+              <nameUrl value="UseCase1.html"/>
+              <title value="Use Case 1"/>
+              <generation value="markdown"/>
+            </page>
+          </page>
           <page>
             <nameUrl value="workflow.html"/>
             <title value="Workflow"/>
