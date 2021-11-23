@@ -7,27 +7,6 @@
     "name": "IDMeds"
   },
   {
-    "id": "CrossBorderMedicationAdministration",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationAdministration",
-    "version": "1.0.0",
-    "name": "CrossBorderMedicationAdministration"
-  },
-  {
-    "id": "CrossBorderMedicationDispense",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationDispense",
-    "version": "1.0.0",
-    "name": "CrossBorderMedicationDispense"
-  },
-  {
-    "id": "CrossBorderMedicationStatement",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationStatement",
-    "version": "1.0.0",
-    "name": "CrossBorderMedicationStatement"
-  },
-  {
     "id": "DefinedMed",
     "type": "StructureDefinition",
     "url": "http://example.com/fhir/example/StructureDefinition/DefinedMed",
@@ -35,11 +14,32 @@
     "name": "DefinedMed"
   },
   {
+    "id": "ExtendedAdministration",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/ExtendedAdministration",
+    "version": "1.0.0",
+    "name": "ExtendedAdministration"
+  },
+  {
+    "id": "ExtendedDispense",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/ExtendedDispense",
+    "version": "1.0.0",
+    "name": "ExtendedDispense"
+  },
+  {
     "id": "ExtendedRequest",
     "type": "StructureDefinition",
     "url": "http://example.com/fhir/example/StructureDefinition/ExtendedRequest",
     "version": "1.0.0",
     "name": "ExtendedRequest"
+  },
+  {
+    "id": "ExtendedStatement",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/ExtendedStatement",
+    "version": "1.0.0",
+    "name": "ExtendedStatement"
   },
   {
     "id": "drugCharacteristic",
@@ -54,5 +54,19 @@
     "url": "http://example.com/fhir/example/StructureDefinition/relatedMedication",
     "version": "1.0.0",
     "name": "RelatedMedication"
+  },
+  {
+    "id": "relationtype-vs",
+    "type": "ValueSet",
+    "url": "http://example.com/fhir/example/ValueSet/relationtype-vs",
+    "version": "1.0.0",
+    "name": "RelationTypeVS"
+  },
+  {
+    "id": "relationtype-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.hl7.org/CodeSystem/relationtype",
+    "version": "1.0.0",
+    "name": "RelationTypeCS"
   }
 ]

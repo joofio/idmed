@@ -1,8 +1,106 @@
 {
   "resourceType" : "Bundle",
-  "id" : "54506a72-f742-48ae-9fe2-645f77204ce9",
+  "id" : "749c44b8-9d68-4859-8f7c-c6bc4748820a",
   "meta" : {
-    "lastUpdated" : "2021-11-23T10:24:37.272+00:00"
+    "lastUpdated" : "2021-11-23T11:13:22.473+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/relationtype-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "relationtype-vs",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-relationtype-cs.html\">Relation Type for Related Medication Code System v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-relationtype-cs.html\"><code>http://terminology.hl7.org/CodeSystem/relationtype</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-relationtype-SINGLE\"> </a><a href=\"CodeSystem-relationtype-cs.html#relationtype-cs-SINGLE\">SINGLE</a></td><td>Direct Translation</td><td>Direct Translation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-relationtype-MULTIPLE\"> </a><a href=\"CodeSystem-relationtype-cs.html#relationtype-cs-MULTIPLE\">MULTIPLE</a></td><td>One of many possibilities</td><td>One of many possibilities</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-relationtype-DIFFERENT\"> </a><a href=\"CodeSystem-relationtype-cs.html#relationtype-cs-DIFFERENT\">DIFFERENT</a></td><td>Different Drug</td><td>Different Drug</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-relationtype-DIF-Strength\"> </a><a href=\"CodeSystem-relationtype-cs.html#relationtype-cs-DIF_Strength\">DIF_Strength</a></td><td>Different Strength</td><td>Different Strength</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-relationtype-DIF-BRAND\"> </a><a href=\"CodeSystem-relationtype-cs.html#relationtype-cs-DIF_BRAND\">DIF_BRAND</a></td><td>Different Brand</td><td>Different Brand</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-relationtype-DIF-FORM\"> </a><a href=\"CodeSystem-relationtype-cs.html#relationtype-cs-DIF_FORM\">DIF_FORM</a></td><td>Different Pharmaceutical Form</td><td>Different Pharmaceutical Form</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-relationtype-DIF-PACKSIZE\"> </a><a href=\"CodeSystem-relationtype-cs.html#relationtype-cs-DIF_PACKSIZE\">DIF_PACKSIZE</a></td><td>Different Pack Size</td><td>Different Pack Size</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-relationtype-DIF-ROUTE\"> </a><a href=\"CodeSystem-relationtype-cs.html#relationtype-cs-DIF_ROUTE\">DIF_ROUTE</a></td><td>Different Administration Route</td><td>Different Administration Route</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/relationtype-vs",
+      "version" : "1.0.0",
+      "name" : "RelationTypeVS",
+      "title" : "Relation Type for Related Medication Value Set",
+      "status" : "active",
+      "date" : "2021-11-23T11:13:22+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Indicates the relation of the related medication with the original medication",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:e229c332-8157-44e9-8ee2-478187c58e89",
+        "timestamp" : "2021-11-23T11:13:39+00:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/relationtype|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/relationtype",
+          "code" : "SINGLE",
+          "display" : "Direct Translation"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/relationtype",
+          "code" : "MULTIPLE",
+          "display" : "One of many possibilities"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/relationtype",
+          "code" : "DIFFERENT",
+          "display" : "Different Drug"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/relationtype",
+          "code" : "DIF_Strength",
+          "display" : "Different Strength"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/relationtype",
+          "code" : "DIF_BRAND",
+          "display" : "Different Brand"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/relationtype",
+          "code" : "DIF_FORM",
+          "display" : "Different Pharmaceutical Form"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/relationtype",
+          "code" : "DIF_PACKSIZE",
+          "display" : "Different Pack Size"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/relationtype",
+          "code" : "DIF_ROUTE",
+          "display" : "Different Administration Route"
+        }]
+      }
+    }
+  }]
 }

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="relationtype-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-relationtype-cs.html"><code>http://terminology.hl7.org/CodeSystem/relationtype</code></a></li></ul></div>
+  </text>
+  <url value="http://example.com/fhir/example/ValueSet/relationtype-vs"/>
+  <version value="1.0.0"/>
+  <name value="RelationTypeVS"/>
+  <title value="Relation Type for Related Medication Value Set"/>
+  <status value="active"/>
+  <date value="2021-11-23T11:13:22+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Indicates the relation of the related medication with the original medication"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/relationtype"/>
+    </include>
+  </compose>
+</ValueSet>

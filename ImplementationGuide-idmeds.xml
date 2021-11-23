@@ -201,36 +201,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CrossBorderMedicationAdministration"/>
-      </reference>
-      <name value="CrossBorderMedicationAdministration"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/CrossBorderMedicationDispense"/>
-      </reference>
-      <name value="CrossBorderMedicationDispense"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/CrossBorderMedicationStatement"/>
-      </reference>
-      <name value="CrossBorderMedicationStatement"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/DefinedMed"/>
       </reference>
       <name value="DefinedMed"/>
@@ -241,9 +211,39 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ExtendedAdministration"/>
+      </reference>
+      <name value="ExtendedAdministration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtendedDispense"/>
+      </reference>
+      <name value="ExtendedDispense"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ExtendedRequest"/>
       </reference>
       <name value="ExtendedRequest"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtendedStatement"/>
+      </reference>
+      <name value="ExtendedStatement"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -270,6 +270,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/relationtype-vs"/>
+      </reference>
+      <name value="Relation Type for Related Medication Value Set"/>
+      <description value="Indicates the relation of the related medication with the original medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/relationtype-cs"/>
+      </reference>
+      <name value="Relation Type for Related Medication Code System"/>
+      <description value="Indicates the relation of the related medication with the original medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
@@ -278,6 +300,50 @@
       <name value="Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
       <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."/>
       <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/ExtendedRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/example-1-of-meddisp"/>
+      </reference>
+      <name value="Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
+      <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/ExtendedDispense"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/related-med-1"/>
+      </reference>
+      <name value="Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
+      <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/related-med-2"/>
+      </reference>
+      <name value="Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
+      <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/related-med-3"/>
+      </reference>
+      <name value="Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
+      <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
