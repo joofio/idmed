@@ -33,7 +33,7 @@
       <valueReference>
         <identifier>
           <system value="http://medication-identifiers.com"/>
-          <value value="456"/>
+          <value value="789"/>
         </identifier>
       </valueReference>
     </extension>

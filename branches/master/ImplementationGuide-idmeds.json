@@ -436,7 +436,7 @@
         "reference": {
           "reference": "MedicationRequest/example-1-of-medReq"
         },
-        "name": "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "name": "Use case 1 - Prescription of Medication with relatedMedication",
         "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/ExtendedRequest"
       },
@@ -450,7 +450,7 @@
         "reference": {
           "reference": "MedicationDispense/example-1-of-meddisp"
         },
-        "name": "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "name": "Use case 1 - Dispense of Medication with relatedMedication",
         "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/ExtendedDispense"
       },
@@ -464,7 +464,7 @@
         "reference": {
           "reference": "Medication/related-med-1"
         },
-        "name": "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "name": "Use case 1 - Related Medication to prescription ",
         "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
       },
@@ -478,7 +478,7 @@
         "reference": {
           "reference": "Medication/related-med-2"
         },
-        "name": "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "name": "Use case 1 - First Related Medication to dispense ",
         "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
       },
@@ -492,7 +492,7 @@
         "reference": {
           "reference": "Medication/related-med-3"
         },
-        "name": "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "name": "Use case 1 - Second Related Medication to dispense ",
         "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
       }
