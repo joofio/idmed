@@ -521,11 +521,22 @@
            ]
          ], [
            fhir:index 1;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use-cases.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "FunctionalDiscussion.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Functional Discussion" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
            fhir:ImplementationGuide.definition.page.page [
              fhir:index 0;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use-cases.html" ];
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+             fhir:ImplementationGuide.definition.page.page [
+               fhir:index 0;
+               fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "UseCase1.html" ];
+               fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Case 1" ];
+               fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+             ]
+           ], [
+             fhir:index 1;
              fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "workflow.html" ];
              fhir:ImplementationGuide.definition.page.title [ fhir:value "Workflow" ];
              fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]

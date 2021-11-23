@@ -525,10 +525,22 @@
               ]
             },
             {
-              "nameUrl": "use-cases.html",
-              "title": "Use Cases",
+              "nameUrl": "FunctionalDiscussion.html",
+              "title": "Functional Discussion",
               "generation": "markdown",
               "page": [
+                {
+                  "nameUrl": "use-cases.html",
+                  "title": "Use Cases",
+                  "generation": "markdown",
+                  "page": [
+                    {
+                      "nameUrl": "UseCase1.html",
+                      "title": "Use Case 1",
+                      "generation": "markdown"
+                    }
+                  ]
+                },
                 {
                   "nameUrl": "workflow.html",
                   "title": "Workflow",
