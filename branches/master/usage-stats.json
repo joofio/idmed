@@ -126,34 +126,34 @@
     }
   ],
   "profiles": {
-    "MedicationAdministration": [
-      {
-        "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationAdministration",
-        "title": "CrossBorderMedicationAdministration"
-      }
-    ],
-    "MedicationDispense": [
-      {
-        "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationDispense",
-        "title": "CrossBorderMedicationDispense"
-      }
-    ],
-    "MedicationStatement": [
-      {
-        "url": "http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationStatement",
-        "title": "CrossBorderMedicationStatement"
-      }
-    ],
     "Medication": [
       {
         "url": "http://example.com/fhir/example/StructureDefinition/DefinedMed",
         "title": "DefinedMed"
       }
     ],
+    "MedicationAdministration": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/ExtendedAdministration",
+        "title": "ExtendedAdministration"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/ExtendedDispense",
+        "title": "ExtendedDispense"
+      }
+    ],
     "MedicationRequest": [
       {
         "url": "http://example.com/fhir/example/StructureDefinition/ExtendedRequest",
         "title": "ExtendedRequest"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/ExtendedStatement",
+        "title": "ExtendedStatement"
       }
     ]
   },

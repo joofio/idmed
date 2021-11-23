@@ -313,45 +313,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/CrossBorderMedicationAdministration"
-        },
-        "name": "CrossBorderMedicationAdministration",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/CrossBorderMedicationDispense"
-        },
-        "name": "CrossBorderMedicationDispense",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/CrossBorderMedicationStatement"
-        },
-        "name": "CrossBorderMedicationStatement",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/DefinedMed"
         },
         "name": "DefinedMed",
@@ -365,9 +326,48 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/ExtendedAdministration"
+        },
+        "name": "ExtendedAdministration",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ExtendedDispense"
+        },
+        "name": "ExtendedDispense",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/ExtendedRequest"
         },
         "name": "ExtendedRequest",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ExtendedStatement"
+        },
+        "name": "ExtendedStatement",
         "exampleBoolean": false
       },
       {
@@ -402,6 +402,34 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/relationtype-vs"
+        },
+        "name": "Relation Type for Related Medication Value Set",
+        "description": "Indicates the relation of the related medication with the original medication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/relationtype-cs"
+        },
+        "name": "Relation Type for Related Medication Code System",
+        "description": "Indicates the relation of the related medication with the original medication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationRequest"
           }
         ],
@@ -411,6 +439,62 @@
         "name": "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
         "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/ExtendedRequest"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/example-1-of-meddisp"
+        },
+        "name": "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
+        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/ExtendedDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Medication"
+          }
+        ],
+        "reference": {
+          "reference": "Medication/related-med-1"
+        },
+        "name": "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
+        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Medication"
+          }
+        ],
+        "reference": {
+          "reference": "Medication/related-med-2"
+        },
+        "name": "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
+        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Medication"
+          }
+        ],
+        "reference": {
+          "reference": "Medication/related-med-3"
+        },
+        "name": "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
+        "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
+        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
       }
     ],
     "page": {

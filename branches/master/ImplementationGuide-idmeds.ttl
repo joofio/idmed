@@ -295,10 +295,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationAdministration>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/CrossBorderMedicationAdministration" ]
+         fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DefinedMed" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CrossBorderMedicationAdministration" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DefinedMed" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -308,10 +308,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationDispense>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/CrossBorderMedicationDispense" ]
+         fhir:link <http://example.com/fhir/example/StructureDefinition/ExtendedAdministration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ExtendedAdministration" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CrossBorderMedicationDispense" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExtendedAdministration" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -321,26 +321,13 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/StructureDefinition/CrossBorderMedicationStatement>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/CrossBorderMedicationStatement" ]
+         fhir:link <http://example.com/fhir/example/StructureDefinition/ExtendedDispense>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ExtendedDispense" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CrossBorderMedicationStatement" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExtendedDispense" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/DefinedMed" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DefinedMed" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -351,6 +338,19 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/ExtendedRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExtendedRequest" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/ExtendedStatement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ExtendedStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExtendedStatement" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
@@ -385,6 +385,34 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/ValueSet/relationtype-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/relationtype-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Relation Type for Related Medication Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the relation of the related medication with the original medication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/CodeSystem/relationtype-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/relationtype-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Relation Type for Related Medication Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the relation of the related medication with the original medication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -396,6 +424,74 @@
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/ExtendedRequest";
          fhir:link <http://example.com/fhir/example/StructureDefinition/ExtendedRequest>
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationDispense" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/MedicationDispense/example-1-of-meddisp>;
+         fhir:Reference.reference [ fhir:value "MedicationDispense/example-1-of-meddisp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.com/fhir/example/StructureDefinition/ExtendedDispense";
+         fhir:link <http://example.com/fhir/example/StructureDefinition/ExtendedDispense>
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Medication/related-med-1>;
+         fhir:Reference.reference [ fhir:value "Medication/related-med-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
+         fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Medication/related-med-2>;
+         fhir:Reference.reference [ fhir:value "Medication/related-med-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
+         fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Medication/related-med-3>;
+         fhir:Reference.reference [ fhir:value "Medication/related-med-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispense Example - Prescribed branded medication is changed by another branded medication from the same VOS-cluster" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
+         fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>
        ]
      ];
      fhir:ImplementationGuide.definition.page [
