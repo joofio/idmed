@@ -137,8 +137,12 @@ pages:
         title: Alternative 1
       alternative2.md:
         title: Alternative 2
-    use-cases.md:
-        title: Use Cases
+    FunctionalDiscussion.md:
+        title: Functional Discussion
+        use-cases.md:
+          title: Use Cases
+          UseCase1.md:
+            title: Use Case 1
         workflow.md:
           title: Workflow
 #    title: Examples Overview
