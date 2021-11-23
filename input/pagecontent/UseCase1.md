@@ -1,4 +1,3 @@
-# Use Case 1 
 ## The brand does not exist
 
 In this case, the specific brand that was prescribed and/or dispensed is not available in the target country.
@@ -12,3 +11,18 @@ For this case, we can have two options:
 
 The alternatives are displayed below:
 
+### 1
+
+
+<div>
+{% include usecase1.svg %}
+</div>
+
+### 2
+
+<div>
+{% include usecase2.svg %}
+</div>
+
+
+The pack size may be also connected, if none similar is available for all available brands, is it important? **Discuss**

@@ -1,0 +1,65 @@
+@startuml
+scale 600 width
+
+state OriginalPrescription {
+state "Active Principle" as long1
+long1: Paracetamol
+state "Strength" as long2
+long2: 500 mg
+state "Form" as long3
+long3:  Tablets
+
+}
+
+state RelatedMedicationPrescription {
+state "Active Principle" as long4
+long4: Paracetamol
+state "Strength" as long5
+long5: 500 mg
+state "Form" as long6
+long6:  Tablets
+
+}
+long1 --> long4 : Direct
+long2 --> long5 : Direct
+long3 --> long6 : Direct
+
+state OriginalDispense {
+state "Active Principle" as a1
+a1: Paracetamol
+state "Strength" as s1
+s1: 500 mg
+state "Form" as f1
+f1:  Tablets
+state "Brand" as b1
+b1:  Ben-u-ron
+
+state "Size" as size1
+size1:  20tabs
+
+
+
+}
+
+state RelatedMedicationDispense {
+state "Active Principle" as a2
+a2: Paracetamol
+state "Strength" as s2
+s2: 500 mg
+state "Form" as f2
+f2:  Tablets
+state "Brand" as b2
+b2:  N/A
+
+state "Size" as size2
+size2:  N/A
+}
+
+
+a1 --> a2 : Direct
+s1 --> s2 : Direct
+f1 --> f2 : Direct
+
+@enduml
+
+
