@@ -1,0 +1,19 @@
+{
+  "resourceType": "Medication",
+  "id": "related-med-disp-1a",
+  "meta": {
+    "profile": [
+      "http://example.com/fhir/example/StructureDefinition/DefinedMed"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"related-med-disp-1a\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DefinedMed.html\">DefinedMed</a></p></div><p><b>identifier</b>: id: 4321</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://medication-identifiers.com",
+      "value": "4321"
+    }
+  ]
+}

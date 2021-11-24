@@ -434,11 +434,39 @@
           }
         ],
         "reference": {
+          "reference": "MedicationRequest/example-1-of-ext-medReq"
+        },
+        "name": "Use case 1 - Extended Prescription of Medication",
+        "description": "Extended medication Request",
+        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/ExtendedRequest"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationDispense"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationDispense/example-1-of-ext-meddisp"
+        },
+        "name": "Use case 1 - Original Dispense of Medication ",
+        "description": "Original Medication dispense document",
+        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/ExtendedDispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
           "reference": "MedicationRequest/example-1-of-medReq"
         },
-        "name": "Use case 1 - Prescription of Medication with relatedMedication",
-        "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
-        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/ExtendedRequest"
+        "name": "Use case 1 - Original Prescription of Medication",
+        "description": "Original medication Request",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -450,9 +478,9 @@
         "reference": {
           "reference": "MedicationDispense/example-1-of-meddisp"
         },
-        "name": "Use case 1 - Dispense of Medication with relatedMedication",
-        "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
-        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/ExtendedDispense"
+        "name": "Use case 1 - Extended Dispense of Medication ",
+        "description": "Medication dispense document with extension for cross-border",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -462,10 +490,35 @@
           }
         ],
         "reference": {
-          "reference": "Medication/related-med-1"
+          "reference": "Medication/original-med-disp-1"
         },
-        "name": "Use case 1 - Related Medication to prescription ",
-        "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
+        "name": "Use case 1 - Original Medication Dispensed",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Medication"
+          }
+        ],
+        "reference": {
+          "reference": "Medication/original-med-presc-1"
+        },
+        "name": "Use case 1 - Original Medication Prescribed",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Medication"
+          }
+        ],
+        "reference": {
+          "reference": "Medication/related-med-disp-1a"
+        },
+        "name": "Use case 1 - First Related Medication to dispense",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
       },
       {
@@ -476,10 +529,9 @@
           }
         ],
         "reference": {
-          "reference": "Medication/related-med-2"
+          "reference": "Medication/related-med-disp-1b"
         },
-        "name": "Use case 1 - First Related Medication to dispense ",
-        "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
+        "name": "Use case 1 - Second Related Medication to dispense",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
       },
       {
@@ -490,10 +542,9 @@
           }
         ],
         "reference": {
-          "reference": "Medication/related-med-3"
+          "reference": "Medication/related-med-presc-1"
         },
-        "name": "Use case 1 - Second Related Medication to dispense ",
-        "description": "This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster.",
+        "name": "Use case 1 - Related Medication to prescription",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
       }
     ],

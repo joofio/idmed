@@ -1,0 +1,78 @@
+{
+  "resourceType": "MedicationDispense",
+  "id": "example-1-of-ext-meddisp",
+  "meta": {
+    "profile": [
+      "http://example.com/fhir/example/StructureDefinition/ExtendedDispense"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-1-of-ext-meddisp\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ExtendedDispense.html\">ExtendedDispense</a></p></div><p><b>identifier</b>: id: f219aa4e-5d10-4f3d-840d-a15e0dff2957</p><p><b>status</b>: completed</p><p><b>medication</b>: <a href=\"Medication-original-med-disp-1.html\">Medication/original-med-disp-1</a></p><p><b>subject</b>: <span></span></p><blockquote><p><b>performer</b></p><p><b>function</b>: dispenser <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#dispenser)</span></p><p><b>actor</b>: <span>: Pharmacist</span></p></blockquote><blockquote><p><b>performer</b></p><p><b>function</b>: dispensingOrg <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#dispensingOrg)</span></p><p><b>actor</b>: <span>: Pharmacy X</span></p></blockquote><p><b>authorizingPrescription</b>: <span></span></p><p><b>quantity</b>: 1 Box<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu/PAC code 30009000 = '30009000')</span></p><p><b>whenHandedOver</b>: 2021-07-19T13:00:00+02:00</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://dispense-identifiers.com",
+      "value": "f219aa4e-5d10-4f3d-840d-a15e0dff2957"
+    }
+  ],
+  "status": "completed",
+  "medicationReference": {
+    "reference": "Medication/original-med-disp-1"
+  },
+  "subject": {
+    "identifier": {
+      "system": "http://naming.sns.gov.pt/fhir/patients",
+      "value": "64110219106"
+    }
+  },
+  "performer": [
+    {
+      "function": {
+        "coding": [
+          {
+            "code": "dispenser"
+          }
+        ]
+      },
+      "actor": {
+        "identifier": {
+          "system": "http://dispenser-identifiers.com",
+          "value": "7c3aa173-3185-4001-a661-df36a7492798"
+        },
+        "display": "Pharmacist"
+      }
+    },
+    {
+      "function": {
+        "coding": [
+          {
+            "code": "dispensingOrg"
+          }
+        ]
+      },
+      "actor": {
+        "identifier": {
+          "system": "http://dispenser-identifiers.com",
+          "value": "5b2e9903-fba7-4ed3-aa76-52d386012ca0"
+        },
+        "display": "Pharmacy X"
+      }
+    }
+  ],
+  "authorizingPrescription": [
+    {
+      "identifier": {
+        "system": "http://prescription-identifiers.com",
+        "value": "69eb6358-6eb6-40e4-972f-33d22c3392c5"
+      }
+    }
+  ],
+  "quantity": {
+    "value": 1,
+    "unit": "Box",
+    "system": "http://standardterms.edqm.eu/PAC",
+    "code": "30009000"
+  },
+  "whenHandedOver": "2021-07-19T13:00:00+02:00"
+}

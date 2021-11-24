@@ -2,11 +2,8 @@
 
 <MedicationRequest xmlns="http://hl7.org/fhir">
   <id value="example-1-of-medReq"/>
-  <meta>
-    <profile value="http://example.com/fhir/example/StructureDefinition/ExtendedRequest"/>
-  </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-1-of-medReq" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ExtendedRequest.html">ExtendedRequest</a></p></div><blockquote><p><b>Related Medication</b></p><p><b>value</b>: SINGLE (Details: [not stated] code SINGLE = 'SINGLE', stated as 'null')</p><p><b>value</b>: <span></span></p></blockquote><p><b>identifier</b>: id: 69eb6358-6eb6-40e4-972f-33d22c3392c5</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: paracetamol 500 mg <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (pa_codes#2837409)</span></p><p><b>subject</b>: <span></span></p><p><b>encounter</b>: <span></span></p><p><b>authoredOn</b>: 2021-07-19T09:00:00+02:00</p><p><b>requester</b>: <span>: GP</span></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-1-of-medReq" </p></div><blockquote><p><b>Related Medication</b></p><p><b>value</b>: SINGLE (Details: [not stated] code SINGLE = 'SINGLE', stated as 'null')</p><p><b>value</b>: <span></span></p></blockquote><p><b>identifier</b>: id: 69eb6358-6eb6-40e4-972f-33d22c3392c5</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href="Medication-original-med-presc-1.html">Medication/original-med-presc-1</a></p><p><b>subject</b>: <span></span></p><p><b>encounter</b>: <span></span></p><p><b>authoredOn</b>: 2021-07-19T09:00:00+02:00</p><p><b>requester</b>: <span>: GP</span></p></div>
   </text>
   <extension url="http://example.com/fhir/example/StructureDefinition/relatedMedication">
     <extension url="relationType">
@@ -29,13 +26,9 @@
   </identifier>
   <status value="active"/>
   <intent value="order"/>
-  <medicationCodeableConcept>
-    <coding>
-      <system value="https://infarmed.gov.pt/codings/pa_codes"/>
-      <code value="2837409"/>
-      <display value="paracetamol 500 mg"/>
-    </coding>
-  </medicationCodeableConcept>
+  <medicationReference>
+    <reference value="Medication/original-med-presc-1"/>
+  </medicationReference>
   <subject>
     <identifier>
       <system value="http://naming.sns.gov.pt/fhir/patients"/>
@@ -56,4 +49,13 @@
     </identifier>
     <display value="GP"/>
   </requester>
+  <dosageInstruction>
+    <route>
+      <coding>
+        <system value="https://infarmed.gov.pt/codings/route_codes"/>
+        <code value="2"/>
+        <display value="Uso Oral"/>
+      </coding>
+    </route>
+  </dosageInstruction>
 </MedicationRequest>

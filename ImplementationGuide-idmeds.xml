@@ -295,11 +295,33 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
+        <reference value="MedicationRequest/example-1-of-ext-medReq"/>
+      </reference>
+      <name value="Use case 1 - Extended Prescription of Medication"/>
+      <description value="Extended medication Request"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/ExtendedRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/example-1-of-ext-meddisp"/>
+      </reference>
+      <name value="Use case 1 - Original Dispense of Medication "/>
+      <description value="Original Medication dispense document"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/ExtendedDispense"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
         <reference value="MedicationRequest/example-1-of-medReq"/>
       </reference>
-      <name value="Use case 1 - Prescription of Medication with relatedMedication"/>
-      <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."/>
-      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/ExtendedRequest"/>
+      <name value="Use case 1 - Original Prescription of Medication"/>
+      <description value="Original medication Request"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -308,19 +330,38 @@
       <reference>
         <reference value="MedicationDispense/example-1-of-meddisp"/>
       </reference>
-      <name value="Use case 1 - Dispense of Medication with relatedMedication"/>
-      <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."/>
-      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/ExtendedDispense"/>
+      <name value="Use case 1 - Extended Dispense of Medication "/>
+      <description value="Medication dispense document with extension for cross-border"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="Medication/related-med-1"/>
+        <reference value="Medication/original-med-disp-1"/>
       </reference>
-      <name value="Use case 1 - Related Medication to prescription "/>
-      <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."/>
+      <name value="Use case 1 - Original Medication Dispensed"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/original-med-presc-1"/>
+      </reference>
+      <name value="Use case 1 - Original Medication Prescribed"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/related-med-disp-1a"/>
+      </reference>
+      <name value="Use case 1 - First Related Medication to dispense"/>
       <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
     </resource>
     <resource>
@@ -328,10 +369,9 @@
         <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="Medication/related-med-2"/>
+        <reference value="Medication/related-med-disp-1b"/>
       </reference>
-      <name value="Use case 1 - First Related Medication to dispense "/>
-      <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."/>
+      <name value="Use case 1 - Second Related Medication to dispense"/>
       <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
     </resource>
     <resource>
@@ -339,10 +379,9 @@
         <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="Medication/related-med-3"/>
+        <reference value="Medication/related-med-presc-1"/>
       </reference>
-      <name value="Use case 1 - Second Related Medication to dispense "/>
-      <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster."/>
+      <name value="Use case 1 - Related Medication to prescription"/>
       <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
     </resource>
     <page>

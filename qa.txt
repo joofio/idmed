@@ -1,16 +1,20 @@
 ﻿IDMeds : Validation Results
 =========================================
 
-err = 3, warn = 18, info = 4
+err = 6, warn = 24, info = 10
 IG Publisher Version: 1.1.89
-Generated Wed Nov 24 11:33:45 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
- Build Errors : 100 / 6 / 0
+Generated Wed Nov 24 12:32:12 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 120 / 11 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-relationtype-cs : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 3 / 1
- /github/workspace/fsh-generated/resources/Medication-related-med-1 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Medication-related-med-2 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Medication-related-med-3 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/MedicationDispense-example-1-of-meddisp : 0 / 4 / 3
+ /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 2 / 1
+ /github/workspace/fsh-generated/resources/Medication-original-med-disp-1 : 1 / 0 / 4
+ /github/workspace/fsh-generated/resources/Medication-original-med-presc-1 : 1 / 0 / 4
+ /github/workspace/fsh-generated/resources/Medication-related-med-disp-1a : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-related-med-disp-1b : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-related-med-presc-1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-1-of-ext-meddisp : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-1-of-meddisp : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/MedicationRequest-example-1-of-ext-medReq : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-example-1-of-medReq : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ExtendedAdministration : 0 / 1 / 1
@@ -28,32 +32,57 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ExtendedDispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ExtendedRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ExtendedStatement.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/original-med-disp-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/original-med-presc-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/related-med-disp-1a.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/related-med-disp-1b.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/related-med-presc-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/CodeSystem-relationtype-cs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-relationtype-cs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-relationtype-cs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-relationtype-cs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-relationtype-cs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/FunctionalDiscussion.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-2.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-2.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-2.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-2.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-3.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-3.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-3.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-3.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-3.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-original-med-disp-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-original-med-disp-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-original-med-disp-1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-original-med-disp-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-original-med-disp-1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-original-med-presc-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-original-med-presc-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-original-med-presc-1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-original-med-presc-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-original-med-presc-1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-disp-1a.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-disp-1a.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-disp-1a.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-disp-1a.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-disp-1a.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-disp-1b.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-disp-1b.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-disp-1b.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-disp-1b.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-disp-1b.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-presc-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-presc-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-presc-1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-presc-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-related-med-presc-1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-example-1-of-ext-meddisp.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-example-1-of-ext-meddisp.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-example-1-of-ext-meddisp.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-example-1-of-ext-meddisp.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-example-1-of-ext-meddisp.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-example-1-of-meddisp.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-example-1-of-meddisp.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-example-1-of-meddisp.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-example-1-of-meddisp.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-example-1-of-meddisp.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-example-1-of-ext-medReq.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-example-1-of-ext-medReq.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-example-1-of-ext-medReq.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-example-1-of-ext-medReq.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-example-1-of-ext-medReq.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-example-1-of-medReq.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-example-1-of-medReq.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-example-1-of-medReq.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -133,23 +162,37 @@ WARNING: CodeSystem/relationtype-cs: CodeSystem: HL7 Defined CodeSystems SHOULD 
 == fsh-generated/resources/ImplementationGuide-idmeds.json ==
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/idmeds) does not match the URL (http://example.com/fhir/example)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: idmeds/http://example.com/fhir/example
-WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[11].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[10].name: value should not start or finish with whitespace
 WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[12].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[13].name: value should not start or finish with whitespace
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds: URL Mismatch http://example.com/fhir/example/ImplementationGuide/idmeds vs http://example.com/fhir/example
-== fsh-generated/resources/Medication-related-med-1.json ==
-== fsh-generated/resources/Medication-related-med-2.json ==
-== fsh-generated/resources/Medication-related-med-3.json ==
+== fsh-generated/resources/Medication-original-med-disp-1.json ==
+INFORMATION: Medication/original-med-disp-1: Medication.code.coding[0]: Code System URI 'https://infarmed.gov.pt/codings/product_code' is unknown so the code cannot be validated
+INFORMATION: Medication/original-med-disp-1: Medication.form.coding[0]: Code System URI 'http://naming.sns.gov.pt/fhir/form' is unknown so the code cannot be validated
+INFORMATION: Medication/original-med-disp-1: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'https://infarmed.gov.pt/codings/ingredient_code' is unknown so the code cannot be validated
+ERROR: Medication/original-med-disp-1: Medication.ingredient[0].strength: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed
+== fsh-generated/resources/Medication-original-med-presc-1.json ==
+INFORMATION: Medication/original-med-presc-1: Medication.code.coding[0]: Code System URI 'https://infarmed.gov.pt/codings/product_code' is unknown so the code cannot be validated
+INFORMATION: Medication/original-med-presc-1: Medication.form.coding[0]: Code System URI 'http://naming.sns.gov.pt/fhir/form' is unknown so the code cannot be validated
+INFORMATION: Medication/original-med-presc-1: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'https://infarmed.gov.pt/codings/ingredient_code' is unknown so the code cannot be validated
+ERROR: Medication/original-med-presc-1: Medication.ingredient[0].strength: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed
+== fsh-generated/resources/Medication-related-med-disp-1a.json ==
+== fsh-generated/resources/Medication-related-med-disp-1b.json ==
+== fsh-generated/resources/Medication-related-med-presc-1.json ==
+== fsh-generated/resources/MedicationDispense-example-1-of-ext-meddisp.json ==
+WARNING: MedicationDispense/example-1-of-ext-meddisp: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/example-1-of-ext-meddisp: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-1-of-ext-meddisp: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationDispense-example-1-of-meddisp.json ==
 WARNING: MedicationDispense/example-1-of-meddisp: MedicationDispense.extension[0].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: MedicationDispense/example-1-of-meddisp: MedicationDispense.extension[1].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-INFORMATION: MedicationDispense/example-1-of-meddisp: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://infarmed.gov.pt/codings/pa_codes' is unknown so the code cannot be validated
 WARNING: MedicationDispense/example-1-of-meddisp: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: MedicationDispense/example-1-of-meddisp: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: MedicationDispense/example-1-of-meddisp: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationRequest-example-1-of-ext-medReq.json ==
+WARNING: MedicationRequest/example-1-of-ext-medReq: MedicationRequest.extension[0].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: MedicationRequest/example-1-of-ext-medReq: MedicationRequest.dosageInstruction[0].route.coding[0]: Unknown Code System 'https://hl7.org/fhir/ValueSet/route-codes'
 == fsh-generated/resources/MedicationRequest-example-1-of-medReq.json ==
 WARNING: MedicationRequest/example-1-of-medReq: MedicationRequest.extension[0].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-INFORMATION: MedicationRequest/example-1-of-medReq: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://infarmed.gov.pt/codings/pa_codes' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/example-1-of-medReq: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'https://infarmed.gov.pt/codings/route_codes' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-DefinedMed.json ==
 == fsh-generated/resources/StructureDefinition-ExtendedAdministration.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/ExtendedAdministration'): The Implementation Guide contains no examples for this profile
