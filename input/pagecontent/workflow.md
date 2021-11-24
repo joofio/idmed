@@ -43,6 +43,3 @@ The generic path for data retrieval with extension on creation is:
 {% include 8.NationalPrescription-attributeMapping-dispense.svg %}
 </div>
 
-<div>
-{% include 99 Dispense.svg %}
-</div>
