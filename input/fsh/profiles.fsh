@@ -10,11 +10,11 @@ Description:    "Drug Characteristic"
 * extension[characteristicValue].value[x] only string or Quantity or CodeableConcept or Attachment or base64Binary
 
 
-
 Profile: DefinedMed
 Parent: Medication
 * extension contains
     DrugCharacteristic named drugCharacteristic 0..* 
+
 
 Extension: RelatedMedication
 Id:        relatedMedication
@@ -32,7 +32,6 @@ Description: "Related Medication to be used on clinical medication workflow reso
 * extension[relationType] ^short = "Relation Type"
 * extension[relationType].value[x] only Coding
 
-
 * extension[relatedMed] ^short = "Related medication"
 * extension[relatedMed].value[x]  only Reference(DefinedMed)
 
@@ -42,10 +41,12 @@ RuleSet: ExtensionContext(path)
 * ^context[+].type = #element
 * ^context[=].expression = "{path}"
 
+
 Profile: ExtendedRequest
 Parent: MedicationRequest
 * extension contains
     RelatedMedication named relatedMedication 0..* MS 
+
 
 Profile: ExtendedAdministration
 Parent: MedicationAdministration
@@ -57,6 +58,7 @@ Profile: ExtendedDispense
 Parent: MedicationDispense
 * extension contains
     RelatedMedication named relatedMedication 0..* MS
+
 
 Profile: ExtendedStatement
 Parent: MedicationStatement
@@ -97,8 +99,6 @@ Description: "Indicates the relation of the related medication with the original
 * #DIF_ROUTE
     "Different Administration Route"
     "Different Administration Route"
-
-
 
 
 ValueSet: RelationTypeVS

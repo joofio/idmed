@@ -41,7 +41,7 @@ EHRA --> NCA.A: Prescription Data
 EHRA --> NCA.A: Dispense Data
 end
 
-group "A5. Request and obtain prescription"
+group Request and obtention of documents
 GPB --> EHRB: Request documents
 & EHRB --> NCA.B: Request documents
 & NCA.B --> NCA.A: Request documents
@@ -50,7 +50,6 @@ NCA.A --> NCA.B : Return prescription
 & EHRB --> GPB : Return prescription
 deactivate NCA.A
 end
-
 
 
 @enduml
