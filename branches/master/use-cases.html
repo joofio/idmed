@@ -171,12 +171,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#use-cases-cross-prescription" id="markdown-toc-use-cases-cross-prescription">Use cases cross prescription</a>    <ul>
-      <li><a href="#example-1-the-brand-does-not-exist" id="markdown-toc-example-1-the-brand-does-not-exist">Example 1 (the brand does not exist)</a></li>
-      <li><a href="#example-2-the-drug-does-not-exist-at-all" id="markdown-toc-example-2-the-drug-does-not-exist-at-all">Example 2 (the drug does not exist at all)</a></li>
-      <li><a href="#example-3-the-drug-form-does-not-exist" id="markdown-toc-example-3-the-drug-form-does-not-exist">Example 3 (the drug form does not exist)</a></li>
-      <li><a href="#example-4-the-drug-strength-does-not-exist" id="markdown-toc-example-4-the-drug-strength-does-not-exist">Example 4 (the drug strength does not exist)</a></li>
-      <li><a href="#example-5-the-level-of-information-does-not-match" id="markdown-toc-example-5-the-level-of-information-does-not-match">Example 5 (the level of information does not match)</a></li>
-      <li><a href="#example-6-the-route-affects-the-pharmaceutical-form" id="markdown-toc-example-6-the-route-affects-the-pharmaceutical-form">Example 6 (the route affects the pharmaceutical form)</a></li>
+      <li><a href="#example-0-generic-case" id="markdown-toc-example-0-generic-case">Example 0: Generic case</a></li>
+      <li><a href="#example-1--prescription-by-inn" id="markdown-toc-example-1--prescription-by-inn">Example 1:  Prescription by INN</a></li>
+      <li><a href="#example-2--the-drug-does-not-exist-at-all" id="markdown-toc-example-2--the-drug-does-not-exist-at-all">Example 2:  The drug does not exist at all</a></li>
+      <li><a href="#example-3--the-level-of-information-does-not-match" id="markdown-toc-example-3--the-level-of-information-does-not-match">Example 3:  The level of information does not match</a></li>
     </ul>
   </li>
 </ul>
@@ -185,7 +183,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h1 id="use-cases-cross-prescription">Use cases cross prescription</h1>
 <p>These examples show a prescription that is made for a patient in a EU country and that information is then required in a different EU country, where the specific medicine may or may not exist as is.</p>
 
-<h3 id="example-1-the-brand-does-not-exist">Example 1 (the brand does not exist)</h3>
+<h3 id="example-0-generic-case">Example 0: Generic case</h3>
+
+<h3 id="example-1--prescription-by-inn">Example 1:  Prescription by INN</h3>
+<h4 id="1a-the-dispensed-brand-does-not-exist">1a) The dispensed brand does not exist</h4>
 
 <ul>
   <li>In Portugal, after a GP visit, the patient Pia Peters is prescribed paracetamol 500 mg for headache treatment.</li>
@@ -195,17 +196,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Since Ben-u-ron does not exist in Belgium, the data must be compliant with the Belgium standards and data.</li>
 </ul>
 
-<h3 id="example-2-the-drug-does-not-exist-at-all">Example 2 (the drug does not exist at all)</h3>
-
-<ul>
-  <li>In Portugal, after a GP visit, the patient Pia Peters is prescribed Sucralfate for stomach ulcer treatment.</li>
-  <li>In the community pharmacy, the pharmacist dispenses “Sucralfato Generic 1g/5 ml Oral suspension”, one of the brands available for Sucralfate in the Portuguese market.</li>
-  <li>In the following day, the patient travels to Belgium and needs to go to the ER because of a strong headache.</li>
-  <li>The assisting doctor needs the current medication that the patient is taking for a correct assessment and requires the cross-prescription data.</li>
-  <li>Since Sucralfate is not available at all in Belgium, the data supplied must be compliant with the Belgium standards and data.</li>
-</ul>
-
-<h3 id="example-3-the-drug-form-does-not-exist">Example 3 (the drug form does not exist)</h3>
+<h4 id="1b-the-drug-form-does-not-exist">1b) The drug form does not exist</h4>
 
 <ul>
   <li>In Italy, after a GP visit, the patient Pia Peters is prescribed Trazodone 50mg/5ml Oral Solution for depression treatment.</li>
@@ -215,7 +206,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Since the oral solution form of trazodone  is not available in Belgium, the data supplied must be compliant with the Belgium standards and data.</li>
 </ul>
 
-<h3 id="example-4-the-drug-strength-does-not-exist">Example 4 (the drug strength does not exist)</h3>
+<h4 id="1b-the-drug-strength-does-not-exist">1b) The drug strength does not exist</h4>
 
 <ul>
   <li>In Portugal, after a GP visit, the patient Pia Peters is prescribed Sertraline 200 mg for depression treatment.</li>
@@ -225,7 +216,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Since Sertraline with 200 mg  is available in Belgium, the data supplied must be compliant with the Belgium standards and data.</li>
 </ul>
 
-<h3 id="example-5-the-level-of-information-does-not-match">Example 5 (the level of information does not match)</h3>
+<h4 id="1c-the-route-affects-the-pharmaceutical-form">1c) The route affects the pharmaceutical form</h4>
+
+<ul>
+  <li>A sublingual route is only available for a certain pharmaceutical form. - expand</li>
+</ul>
+
+<h3 id="example-2--the-drug-does-not-exist-at-all">Example 2:  The drug does not exist at all</h3>
+
+<ul>
+  <li>In Portugal, after a GP visit, the patient Pia Peters is prescribed Sucralfate for stomach ulcer treatment.</li>
+  <li>In the community pharmacy, the pharmacist dispenses “Sucralfato Generic 1g/5 ml Oral suspension”, one of the brands available for Sucralfate in the Portuguese market.</li>
+  <li>In the following day, the patient travels to Belgium and needs to go to the ER because of a strong headache.</li>
+  <li>The assisting doctor needs the current medication that the patient is taking for a correct assessment and requires the cross-prescription data.</li>
+  <li>Since Sucralfate is not available at all in Belgium, the data supplied must be compliant with the Belgium standards and data.</li>
+</ul>
+
+<h3 id="example-3--the-level-of-information-does-not-match">Example 3:  The level of information does not match</h3>
+
+<h4 id="3a-portuguese-cnpem">3a) Portuguese CNPEM</h4>
 
 <ul>
   <li>In Portugal, after a GP visit, the patient Pia Peters is prescribed Sertraline 200 mg for depression treatment.</li>
@@ -236,12 +245,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Since the drug level does not exist in the Belgium context (active principle + strength + pharmaceutical form + pack size), the data must be translated to a Belgium context.</li>
 </ul>
 
-<h3 id="example-6-the-route-affects-the-pharmaceutical-form">Example 6 (the route affects the pharmaceutical form)</h3>
+<h4 id="3b-netherlands-g-standaard">3b) Netherlands G-Standaard</h4>
 
-<ul>
-  <li>A sublingual route is only available for a certain pharmaceutical form. - expand</li>
-  <li></li>
-</ul>
 
 
 
@@ -267,7 +272,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package idmeds#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 24, 2021 10:25+0000">2021-11-24</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package idmeds#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 24, 2021 11:33+0000">2021-11-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
