@@ -1,7 +1,7 @@
 Instance: original-med-presc-1
 InstanceOf: Medication
 Usage: #example
-Description: ""
+Description: "Original Medication prescribed with data from the origin country. With no information regarding cross-border"
 Title: "Use case 1 - Original Medication Prescribed"
 
 * identifier[0].system = "http://medication-identifiers.com"
@@ -22,7 +22,7 @@ Title: "Use case 1 - Original Medication Prescribed"
 Instance: original-med-disp-1
 InstanceOf: Medication
 Usage: #example
-Description: ""
+Description: "Original Medication dispensed with data from the origin country. With no information regarding cross-border"
 Title: "Use case 1 - Original Medication Dispensed"
 
 * identifier[0].system = "http://medication-identifiers.com"
@@ -43,11 +43,22 @@ Title: "Use case 1 - Original Medication Dispensed"
 Instance: related-med-presc-1
 InstanceOf: DefinedMed
 Usage: #example
-Description: ""
+Description: "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected"
 Title: "Use case 1 - Related Medication to prescription"
 
 * identifier[0].system = "http://medication-identifiers.com"
 * identifier[0].value = "789"
+
+* code = https://npech.eu/codings/product_code#Ab350 "Paracetamol 500 mg Tablets"
+
+* status = #active
+
+* form = http://standardterms.edqm.eu/PAC#10219000 "Tablet"
+
+* ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Paracetamol"  
+
+* ingredient.strength.numerator.value = 500  
+* ingredient.strength.numerator.unit = "mg"  
 
 
 Instance: related-med-disp-1a
@@ -59,6 +70,16 @@ Title: "Use case 1 - First Related Medication to dispense"
 * identifier[0].system = "http://medication-identifiers.com"
 * identifier[0].value = "4321"
 
+* code = https://npech.eu/codings/product_code#Ab350 "Paracetamol 500 mg Tablets"
+
+* status = #active
+
+* form = http://standardterms.edqm.eu/PAC#10219000 "Tablet"
+
+* ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Paracetamol"  
+
+* ingredient.strength.numerator.value = 500  
+* ingredient.strength.numerator.unit = "mg"  
 
 Instance: related-med-disp-1b
 InstanceOf: DefinedMed
@@ -69,6 +90,16 @@ Title: "Use case 1 - Second Related Medication to dispense"
 * identifier[0].system = "http://medication-identifiers.com"
 * identifier[0].value = "9876"
 
+* code = https://npech.eu/codings/product_code#Ab350 "Paracetamol 500 mg Tablets"
+
+* status = #active
+
+* form = http://standardterms.edqm.eu/PAC#10219000 "Tablet"
+
+* ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Paracetamol"  
+
+* ingredient.strength.numerator.value = 500  
+* ingredient.strength.numerator.unit = "mg"  
 
 Instance: example-1-of-medReq
 InstanceOf: MedicationRequest
