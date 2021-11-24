@@ -1,0 +1,139 @@
+@startuml
+!include ./style.iuml
+!pragma teoz true
+hide footbox
+skinparam CaptionBorderThickness 13
+skinparam TitleFontSize 21
+skinparam DefaultTextAlignment left
+skinparam PackageTitleAlignment center
+
+title Use Case 4: Netherlands G-Standaard brand name prescription\n Scenario 1 - Product has a common MPID
+
+participant "IDMP-enabled\nProduct Master" as CMPD
+
+box Country A #F0FFFC
+participant "Drug Database\nCountry A" as MPDA 
+actor "Healthcare\nProfessional\nCountry A" as HCPA
+participant "National Infrastructure\nCountry A (EHR)" as EHRA
+participant "NCPeH\nCountry A" as NCA.A
+end box
+
+
+box Country B #FFF3F0
+participant "NCPeH\nCountry B" as NCA.B
+participant "National Infrastructure\nCountry B (EHR)" as EHRB
+actor "Healthcare\nProfessional\nCountry B" as HCPB
+participant "Drug Database\nCountry B" as MPDB
+end box
+
+
+group #EEF Distribute Product Master Data 
+...
+CMPD -> MPDA
+& CMPD -> MPDB: Provide Master data (common Medicinal Products)
+end
+
+...
+
+group A1. Prescribe
+HCPA -> EHRA : Prescription
+activate EHRA
+note right
+Attributes
+# Product Identification
+## Netherlands
+### G-Standaard branded product code
+### G-Standaard branded product name
+# dosage
+## total quantity
+
+endnote
+end
+
+
+group A2. Make document available for XBorder
+EHRA -> NCA.A : Prescription
+deactivate EHRA
+activate NCA.A
+'NCA.A -> NCA.A : Adapt/Transcode
+note right
+Attributes
+# Product Identification
+## G-Standaard brand product
+### code
+### name
+## **EU**
+### **MPID**
+# **Dosage**
+## **Total quantity**
+endnote
+deactivate NCA.A
+
+end
+
+...
+
+group A5. Request and obtain prescription
+HCPB --> EHRB: Request documents
+& EHRB --> NCA.B: Request documents
+& NCA.B --> NCA.A: Request documents
+NCA.A --> NCA.B : Return prescription
+& NCA.B --> EHRB : Return prescription
+& EHRB --> HCPB : Return prescription
+deactivate NCA.A
+end
+
+...
+
+group 6. Select product for dispense
+HCPB -> EHRB : Select products matching the input 
+note right
+Matching Attributes
+# Product Identification
+## **Spain**
+### **MPID**
+# Dosage
+## **Total quantity**
+endnote
+end
+
+
+group 7. Register dispensed product
+EHRB -> NCA.A : Submit dispensed product
+note left
+Attributes
+# Product Identification
+## **Spain**
+### Product code + name
+## **EU**
+### **MPID**
+## **Lot number**
+## **Expiry date**
+# **Dosage**
+## **Amount dispensed**
+endnote
+
+
+end
+
+
+'caption 
+'The following attributes are used:
+'# Product Identification
+'## NL
+'### Generic name
+'### G-Standaard code
+'## BE
+'### CNK code
+'## **EU**
+'### **PhPID** + Pharm Product name
+'# **Dosage**
+'## **Quantity**
+
+'In the cases where the Medicinal Product Identifier is common, this can be used for a more refined product identification. 
+'This requires the exchange of product master data - the synchronization of Medicinal Product information. 
+'This only works for common Medicinal Products, and reveals the need to exchange and support another identifier - the MPID.
+
+'endcaption
+
+@enduml

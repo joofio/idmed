@@ -1,0 +1,124 @@
+@startuml
+!include ./style.iuml
+!pragma teoz true
+hide footbox
+skinparam CaptionBorderThickness 13
+skinparam TitleFontSize 21
+skinparam DefaultTextAlignment left
+skinparam PackageTitleAlignment center
+
+title Use Case 1: INN Presciption 
+
+
+participant "IDMP-enabled\nProduct Master" as CMPD
+
+box Country A #F0FFFC
+participant "Drug Database\nCountry A" as MPDA 
+actor "Healthcare\nProfessional\nCountry A" as HCPA
+participant "National Infrastructure\nCountry A (EHR)" as EHRA
+participant "NCA\nCountry A\n(NCPeH)" as NCA.A
+end box
+
+
+box Country B #FFF3F0
+participant "Drug Database\nCountry B" as MPDB
+participant "NCA\nCountry B\n(NCPeH)" as NCA.B
+participant "National Infrastructure\nCountry B (EHR)" as EHRB
+actor "Healthcare\nProfessional\nCountry B" as HCPB
+end box
+
+
+
+'group Distribute Product Master Data (country A)
+'CMPD -> MPDA: Provide Master data
+'& CMPD -> MPDB: Provide Master data
+'end
+
+
+
+...
+
+group A1. Prescribe
+HCPA -> EHRA : Prescription
+activate EHRA
+note right
+**Attributes**
+# Product Name: 
+## INN Name (Text)
+# Substance
+## Substance name (Text)
+# Strength (Text)
+# Dose form (Text)
+# Dosage (Text)
+endnote
+
+end
+
+
+group A2. Make document available for XBorder
+EHRA -> NCA.A : Prescription
+deactivate EHRA
+activate NCA.A
+'NCA.A -> NCA.A : Adapt/Transcode
+
+
+
+end
+
+
+
+
+...
+
+group A5. Request and obtain prescription
+HCPB -> EHRB: Request documents
+'activate EHRB
+& EHRB -> NCA.B: Request documents
+'deactivate EHRB
+'activate NCA.B
+& NCA.B -> NCA.A: Request documents
+'activate NCA.A
+'deactivate NCA.B
+
+NCA.A -> NCA.B : Return prescription
+'activate HCPB
+& NCA.B -> EHRB : Return prescription
+& EHRB -> HCPB : Return prescription
+deactivate NCA.A
+'activate NCA.B
+'deactivate NCA.B
+
+end
+
+...
+
+group 6. Select product for dispense
+HCPB -> EHRB : Select products matching the input 
+end
+
+
+group 7. Register dispensed product
+EHRB -> NCA.A : Submit dispense
+end
+
+...
+
+
+'caption 
+' This use case requires a descriptive name for the medication. 
+' There are some coding schemes that could be used with INN, 
+' but the name is the expected identifier for the substance. 
+' In this example, the substances mentioned are active substances.
+'
+'The following attributes are expected:
+'* Product (INN) Name (Text)
+'* Substance Classification
+'* Strength (text?)
+'* Dose form (text?)
+'* Dosage (text?)
+
+'The absence of coded information makes automatic transcoding
+'very difficult, requiring human intervention
+'endcaption
+
+@enduml

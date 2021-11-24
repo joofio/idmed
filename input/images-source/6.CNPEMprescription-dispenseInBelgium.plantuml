@@ -1,0 +1,146 @@
+@startuml
+!include ./style.iuml
+!pragma teoz true
+hide footbox
+skinparam DefaultTextAlignment left
+skinparam PackageTitleAlignment center
+
+
+title Use Case 3: Portuguese (Generic) CNPEM-based prescription\n Scenario 2 - Dispense in Belgium
+
+
+participant "IDMP-enabled\nProduct Master" as CMPD
+
+box Country A #F0FFFC
+participant "Drug Database\nCountry A" as MPDA 
+actor "Healthcare\nProfessional\nCountry A" as HCPA
+participant "National Infrastructure\nCountry A (EHR)" as EHRA
+participant "NCA\nCountry A\n(NCPeH)" as NCA.A
+end box
+
+
+box Country B #FFF3F0
+participant "Drug Database\nCountry A" as MPDB
+participant "NCA\nCountry B\n(NCPeH)" as NCA.B
+participant "National Infrastructure\nCountry B (EHR)" as EHRB
+actor "Healthcare\nProfessional\nCountry B" as HCPB
+end box
+
+
+
+group Distribute Product Master Data (country A)
+CMPD -> MPDA: Provide Master data
+& CMPD -> MPDB: Provide Master data
+end
+
+
+
+...
+
+group A1. Prescribe
+HCPA -> EHRA : Prescription
+activate EHRA
+note right
+**Attributes**
+# Product Identification
+## Portugal
+### CNPEM (generic) product code
+### CNPEM (generic) product name
+endnote
+end
+
+
+group A2. Make document available for XBorder
+EHRA -> NCA.A : Prescription
+deactivate EHRA
+activate NCA.A
+'NCA.A -> NCA.A : Adapt/Transcode
+deactivate NCA.A
+
+
+end
+
+
+
+...
+
+group A5. Request and obtain prescription
+HCPB -> EHRB: Request documents
+'activate EHRB
+& EHRB -> NCA.B: Request documents
+'deactivate EHRB
+'activate NCA.B
+& NCA.B -> NCA.A: Request documents
+'activate NCA.A
+'deactivate NCA.B
+
+NCA.A -> NCA.B : Return prescription
+'activate HCPB
+& NCA.B -> EHRB : Return prescription
+& EHRB -> HCPB : Return prescription
+deactivate NCA.A
+'activate NCA.B
+'deactivate NCA.B
+
+end
+
+...
+
+group 6. Select product for dispense
+HCPB -> EHRB : Select products matching the input 
+note right
+Matching Attributes
+# Product Identification
+## Portugal
+### CNPEM (generic) product code
+### CNPEM (generic) product name
+## Belgium
+### (no univocally matching product Code)
+## EU
+### {**substance, strength, dose form**}
+### **package size**
+# dosage
+## **Total quantity**
+
+endnote
+end
+
+
+group 7. Register dispensed product
+EHRB -> NCA.A : Submit dispensed product
+note left
+Attributes
+# Product Identification
+## Belgium
+### CNK Product Code + name
+## EU
+### **MPID**
+## **Lot number**
+## **Expiry date**
+# **Dosage**
+## **Total quantity**
+endnote
+
+'caption 
+'The following attributes are used:
+'# Product Identification
+'## PT
+'### Product code (in PT referential)
+'### Product name 
+'## BE
+'### Product code (in BE referential)
+'### Product name 
+'## EU
+'### {**substance, strength, dose form**}
+'### **package size**
+'# **Dosage**
+'## **Quantity**'
+
+'In cases where the concepts are not corresponding (at least univocally, i.e. 1:1), IDMP can still be used:
+'By expressing the product characteristics (and related information such as dosage) in a common language,
+'the dispensing system can find products that exist locally that match the product prescribed, or, if not, match
+'some of the attributes that correspond to the prescribed product.'
+
+'endcaption
+ 
+@enduml

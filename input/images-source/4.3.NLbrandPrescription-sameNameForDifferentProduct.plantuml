@@ -1,0 +1,140 @@
+@startuml
+!include ./style.iuml
+!pragma teoz true
+hide footbox
+skinparam CaptionBorderThickness 13
+skinparam TitleFontSize 21
+skinparam DefaultTextAlignment left
+skinparam PackageTitleAlignment center
+
+title Use Case 4: Netherlands G-Standaard brand name prescription\n Scenario 3 - Product name coincides with another product
+
+participant "IDMP-enabled\nProduct Master" as CMPD
+
+box Country A #F0FFFC
+participant "Drug Database\nCountry A" as MPDA 
+actor "Healthcare\nProfessional\nCountry A" as HCPA
+participant "National Infrastructure\nCountry A (EHR)" as EHRA
+participant "NCPeH\nCountry A" as NCA.A
+end box
+
+
+box Country B #FFF3F0
+participant "NCPeH\nCountry B" as NCA.B
+participant "National Infrastructure\nCountry B (EHR)" as EHRB
+actor "Healthcare\nProfessional\nCountry B" as HCPB
+participant "Drug Database\nCountry B" as MPDB
+end box
+
+
+
+group Distribute Product Master Data (country A)
+CMPD -> MPDA: Provide Master data
+& CMPD -> MPDB: Provide Master data
+end
+
+
+
+...
+
+group A1. Prescribe
+HCPA -> EHRA : Prescription
+activate EHRA
+note right
+**Attributes**
+# Product Identification
+## Netherlands
+### G-Standaard branded product code
+### G-Standaard branded product name
+endnote
+end
+
+
+group A2. Make document available for XBorder
+EHRA -> NCA.A : Prescription
+deactivate EHRA
+activate NCA.A
+'NCA.A -> NCA.A : Adapt/Transcode
+deactivate NCA.A
+
+
+end
+
+
+
+...
+
+group A5. Request and obtain prescription
+HCPB -> EHRB: Request documents
+'activate EHRB
+& EHRB -> NCA.B: Request documents
+'deactivate EHRB
+'activate NCA.B
+& NCA.B -> NCA.A: Request documents
+'activate NCA.A
+'deactivate NCA.B
+
+NCA.A -> NCA.B : Return prescription
+'activate HCPB
+& NCA.B -> EHRB : Return prescription
+& EHRB -> HCPB : Return prescription
+deactivate NCA.A
+'activate NCA.B
+'deactivate NCA.B
+
+end
+
+...
+
+
+group 6. Select product for dispense
+HCPB -> EHRB : Select products matching the input 
+note right
+**Attributes**
+# Product Identification
+## Netherlands
+### G-Standaard branded product code + name
+## Belgium
+### CNK product code + name
+# Dosage
+## **Total quantity**
+
+endnote
+end
+
+
+group 7. Register dispensed product
+EHRB -> NCA.A : Submit dispensed product
+note left
+**Attributes**
+# Product Identification
+## Belgium
+### CNK product code + name
+## **EU**
+### **PhPID**
+### **Pharm Product name**
+# Dosage
+## **Total quantity**
+endnote
+
+
+'caption 
+'The following attributes are used:
+'# Product Identification
+'## NL
+'### Generic name
+'### G-Standaard code
+'## BE
+'### CNK code
+'## **EU**
+'### **PhPID** + Pharm Product name
+'### **Substance + role** (e.g. excipient)
+'# **Dosage**
+'## **Quantity**
+
+'In the case of a substitution, it is essential to  identify the differences between the prescribed product 
+'and the product(s) that can be dispensed, and capture the actual product that has been dispensed.
+
+'endcaption
+
+@enduml

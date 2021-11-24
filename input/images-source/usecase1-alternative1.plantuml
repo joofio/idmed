@@ -45,7 +45,7 @@ skinparam class<<PMP>> {
       |_ Strength: 500 mg    
       |_ Form: Tablets
       --
-        
+      MedicationRequest
     }
 
     class " **RelatedMedicationPrescription** " as PhP<<PhP>> {
@@ -54,7 +54,7 @@ skinparam class<<PMP>> {
       |_ Strength: 500 mg    
       |_ Form: Tablets
       --
-      
+      relatedMedication
     }
 
     class " **OriginalDispense ** " as MP<<MP>>{
@@ -65,7 +65,7 @@ skinparam class<<PMP>> {
       |_ Brand: Ben-u-ron
       |_ Pack size: 20 tabs
       --
-      
+      MedicationDispense
     }
 
     class " **RelatedMedicationDispense**  " as PMP<<PMP>>{
@@ -76,7 +76,7 @@ skinparam class<<PMP>> {
       |_ <color:gray>//Brand: --//
       |_ <color:gray>//Pack : -- //
       --
-     
+     relatedMedication
     }
 
 

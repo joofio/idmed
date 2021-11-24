@@ -1,0 +1,73 @@
+@startuml
+!include ./style.iuml
+!pragma teoz true
+'!pragma graphviz_dot smetana
+hide footbox
+skinparam CaptionBorderThickness 13
+skinparam DefaultTextAlignment left
+skinparam TitleFontSize 21
+
+title Use Case 4: Portuguese CNPEM-based prescription\n Scenario 1 - Dispense in Italy
+
+participant "IDMP-enabled\nProduct Master" as CMPD
+
+
+box Country B #FFF3F0
+participant "NCPeH\nCountry B" as NCA.B
+participant "National Infrastructure\n/ EHR Country B" as EHRB
+actor "Healthcare\nProfessional\nCountry B" as HCPB
+participant "Drug Database\nCountry B" as MPDB
+end box
+
+box Country A #F0FFFC
+participant "Drug Database\nCountry A" as MPDA 
+actor "Healthcare\nProfessional\nCountry A" as HCPA
+participant "National Infrastructure\nCountry A (EHR)" as EHRA
+participant "NCPeH\nCountry A" as NCA.A
+end box
+
+
+
+group #EEF Distribute Product Master Data 
+...
+NCA.A -[hidden]-> MPDA: Provide Master data
+& CMPD -[hidden]-> MPDB: Provide Master data
+end
+
+...
+
+group 6. Select product for dispense
+HCPB -> EHRB : Select products matching the input 
+note right
+** Matching Attributes**
+# Product Identification
+## EU
+### {**substance, strength, dose form**}
+### **package size**
+# dosage
+## **total quantity**
+endnote
+end
+
+
+group 6. Select product for dispense
+EHRB -> EHRB : Prescription
+note right
+** Selected product**
+# Product Identification
+## IT
+### {**substance, strength,\ndose form, package size**}
+## EU
+### {**substance, strength, dose form**}
+### **package size**
+# dosage
+## **total quantity**
+endnote
+
+end
+
+
+...
+
+
+@enduml

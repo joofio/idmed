@@ -1,0 +1,156 @@
+@startuml
+!include ./style.iuml
+!pragma teoz true
+hide footbox
+skinparam CaptionBorderThickness 13
+skinparam TitleFontSize 21
+skinparam DefaultTextAlignment left
+skinparam PackageTitleAlignment center
+
+title Use Case 3: Netherlands G-Standaard generic prescription\n
+
+participant "IDMP-enabled\nProduct Master" as CMPD
+
+box Country A #F0FFFC
+participant "Drug Database\nCountry A" as MPDA 
+actor "Healthcare\nProfessional\nCountry A" as HCPA
+participant "National Infrastructure\nCountry A (EHR)" as EHRA
+participant "NCPeH\nCountry A" as NCA.A
+end box
+
+
+box Country B #FFF3F0
+participant "NCPeH\nCountry B" as NCA.B
+participant "National Infrastructure\nCountry B (EHR)" as EHRB
+actor "Healthcare\nProfessional\nCountry B" as HCPB
+participant "Drug Database\nCountry B" as MPDB
+end box
+
+
+
+group #EEF Distribute Product Master Data 
+...
+CMPD -> MPDA
+& CMPD -> MPDB: Provide Master data (Pharmaceutical Products)
+end
+
+
+
+
+...
+
+group A1. Prescribe
+HCPA -> EHRA : Prescription
+activate EHRA
+note right
+**Attributes**
+# Product Identification
+## Generic product name
+## G-Standaard generic product code
+endnote
+end
+
+
+group A2. Make document available for XBorder
+EHRA -> NCA.A : Prescription
+deactivate EHRA
+activate NCA.A
+'NCA.A -> NCA.A : Adapt/Transcode
+note right
+**Attributes**
+# Product Identification
+## Netherlands coding
+### G-Standaard generic name
+### G-Standaard generic code
+## **EU** common identification
+### **PhPID**
+### **Pharm Product name**
+endnote
+deactivate NCA.A
+
+
+end
+
+
+
+...
+
+group A5. Request and obtain prescription
+HCPB -> EHRB: Request documents
+'activate EHRB
+& EHRB -> NCA.B: Request documents
+'deactivate EHRB
+'activate NCA.B
+& NCA.B -> NCA.A: Request documents
+'activate NCA.A
+'deactivate NCA.B
+
+NCA.A -> NCA.B : Return prescription
+'activate HCPB
+& NCA.B -> EHRB : Return prescription
+& EHRB -> HCPB : Return prescription
+deactivate NCA.A
+'activate NCA.B
+'deactivate NCA.B
+
+end
+
+...
+
+group 6. Select product for dispense
+HCPB -> EHRB : Select products matching the input 
+note right
+**Attributes**
+# Product Identification
+## Netherlands coding
+### G-Standaard generic name
+### G-Standaard generic code
+## Belgium
+### CNK product code(s) + name(s)
+# Dosage
+## **Total quantity**
+
+endnote
+end
+
+
+group 7. Register dispensed product
+EHRB -> NCA.A : Submit dispensed product
+note left
+**Attributes**
+# Product Identification
+## Belgium
+### CNK code + name
+## **EU**
+### **PhPID**
+### **Pharm Product name**
+# Dosage
+## **Total quantity**
+endnote
+
+
+end
+
+'caption 
+'The following attributes are used:
+'# Product Identification
+'## NL
+'### Generic name
+'### G-Standaard code
+'## BE
+'### CNK code
+'## **EU**
+'### **PhPID** + Pharm Product name
+'# **Dosage**
+'## **Quantity**
+
+'The use of a country-specific generic code can help in the transcoding to common codes, valid across countries. 
+'The PhPID, as defined in IDMP, is expected to be one of the common codes
+'This requires the exchange of product master data - the synchronization of PhPIDs and mapping to national codes
+'It does not provide full details of the dispensed product (e.g. dispensed brand name is not understood in the country of origin).
+
+'The total quantity dispensed can also be expressed, possibly in a "common language"
+'This may require master data synchronization (units of measurement, etc.)
+
+'endcaption
+@enduml

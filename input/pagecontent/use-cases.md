@@ -43,3 +43,7 @@ These examples show a prescription that is made for a patient in a EU country an
 * The assisting doctor needs the current medication that the patient is taking for a correct assessment and requires the cross-prescription data.
 * Since the drug level does not exist in the Belgium context (active principle + strength + pharmaceutical form + pack size), the data must be translated to a Belgium context.
 
+### Example 6 (the route affects the pharmaceutical form)
+
+* A sublingual route is only available for a certain pharmaceutical form. - expand
+* 
