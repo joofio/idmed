@@ -493,6 +493,7 @@
           "reference": "Medication/original-med-disp-1"
         },
         "name": "Use case 1 - Original Medication Dispensed",
+        "description": "Original Medication dispensed with data from the origin country. With no information regarding cross-border",
         "exampleBoolean": true
       },
       {
@@ -506,6 +507,7 @@
           "reference": "Medication/original-med-presc-1"
         },
         "name": "Use case 1 - Original Medication Prescribed",
+        "description": "Original Medication prescribed with data from the origin country. With no information regarding cross-border",
         "exampleBoolean": true
       },
       {
@@ -545,6 +547,7 @@
           "reference": "Medication/related-med-presc-1"
         },
         "name": "Use case 1 - Related Medication to prescription",
+        "description": "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
       }
     ],
