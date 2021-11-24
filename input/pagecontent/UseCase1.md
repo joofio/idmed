@@ -13,16 +13,18 @@ The alternatives are displayed below:
 
 **1**
 
-
 <div>
-{% include usecase1-alternative2.svg %}
+{% include usecase1-alternative1.svg %}
 </div>
+In the above example, the Paracetamol with Brand ben-u-ron is linked to a single product with a different level (no brand for it)
 
 **2**
 
 <div>
-{% include usecase1-alternative1.svg %}
+{% include usecase1-alternative2.svg %}
 </div>
+In the above example, the Paracetamol with Brand ben-u-ron is linked to other brands existing in the target country.
+
 
 
 The pack size may be also connected, if none similar is available for all available brands, is it important? **Discuss**

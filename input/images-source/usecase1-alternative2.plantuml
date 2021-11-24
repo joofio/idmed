@@ -1,4 +1,6 @@
 @startuml
+title Having Multiple related medication similar (different Brand)
+
 hide stereotype
 hide circle
 skinparam linetype polyline
