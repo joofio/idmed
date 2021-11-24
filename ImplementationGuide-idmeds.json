@@ -521,6 +521,11 @@
                   "nameUrl": "alternative2.html",
                   "title": "Alternative 2",
                   "generation": "markdown"
+                },
+                {
+                  "nameUrl": "generic-workflow.html",
+                  "title": "Generic Workflow",
+                  "generation": "markdown"
                 }
               ]
             },

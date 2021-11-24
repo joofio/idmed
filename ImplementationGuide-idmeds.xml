@@ -367,6 +367,11 @@
             <title value="Alternative 2"/>
             <generation value="markdown"/>
           </page>
+          <page>
+            <nameUrl value="generic-workflow.html"/>
+            <title value="Generic Workflow"/>
+            <generation value="markdown"/>
+          </page>
         </page>
         <page>
           <nameUrl value="FunctionalDiscussion.html"/>

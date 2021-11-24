@@ -518,6 +518,11 @@
              fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "alternative2.html" ];
              fhir:ImplementationGuide.definition.page.title [ fhir:value "Alternative 2" ];
              fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 2;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "generic-workflow.html" ];
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Generic Workflow" ];
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
            ]
          ], [
            fhir:index 1;
