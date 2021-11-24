@@ -482,6 +482,7 @@
          fhir:Reference.reference [ fhir:value "Medication/original-med-disp-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Original Medication Dispensed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication dispensed with data from the origin country. With no information regarding cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 14;
@@ -495,6 +496,7 @@
          fhir:Reference.reference [ fhir:value "Medication/original-med-presc-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Original Medication Prescribed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication prescribed with data from the origin country. With no information regarding cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 15;
@@ -540,6 +542,7 @@
          fhir:Reference.reference [ fhir:value "Medication/related-med-presc-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Related Medication to prescription" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
          fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>

@@ -342,6 +342,7 @@
         <reference value="Medication/original-med-disp-1"/>
       </reference>
       <name value="Use case 1 - Original Medication Dispensed"/>
+      <description value="Original Medication dispensed with data from the origin country. With no information regarding cross-border"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -352,6 +353,7 @@
         <reference value="Medication/original-med-presc-1"/>
       </reference>
       <name value="Use case 1 - Original Medication Prescribed"/>
+      <description value="Original Medication prescribed with data from the origin country. With no information regarding cross-border"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -382,6 +384,7 @@
         <reference value="Medication/related-med-presc-1"/>
       </reference>
       <name value="Use case 1 - Related Medication to prescription"/>
+      <description value="Medication prescribed with data regarding cross-border compliance - different from original, even though is connected"/>
       <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
     </resource>
     <page>

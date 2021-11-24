@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "f15b8d6a-14c9-4255-9aa0-6a6af367d555",
+  "id" : "f52b22b4-9a8a-4890-acbb-041201534919",
   "meta" : {
-    "lastUpdated" : "2021-11-24T12:31:34.888+00:00"
+    "lastUpdated" : "2021-11-24T16:54:20.835+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "RelationTypeVS",
       "title" : "Relation Type for Related Medication Value Set",
       "status" : "active",
-      "date" : "2021-11-24T12:31:34+00:00",
+      "date" : "2021-11-24T16:54:20+00:00",
       "publisher" : "My Organization",
       "contact" : [{
         "name" : "My Organization",
@@ -49,8 +49,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d64d1e5c-3e8c-475d-ad60-109ee2576403",
-        "timestamp" : "2021-11-24T12:32:04+00:00",
+        "identifier" : "urn:uuid:74c997bc-5bc4-4cbd-a415-45ed78c4a875",
+        "timestamp" : "2021-11-24T16:54:54+00:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
