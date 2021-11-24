@@ -68,7 +68,7 @@ skinparam class<<PMP>> {
       
     }
 
-    class " **RelatedMedicationDispense 1 **  " as PMP<<PMP>>{
+    class " **RelatedMedicationDispense**  " as PMP<<PMP>>{
       --
       |_ Active Principle: Paracetamol
       |_ Strength: 500 mg    
@@ -82,7 +82,7 @@ skinparam class<<PMP>> {
 
 
 
-  S <-u- PhP: " Direct"
+  S <-d- PhP: " Direct"
   
   MP <-d- PMP: " Other Level"
 
