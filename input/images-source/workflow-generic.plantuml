@@ -1,0 +1,56 @@
+@startuml
+'!include ./style.iuml
+!pragma teoz true
+hide footbox
+skinparam CaptionBorderThickness 13
+skinparam TitleFontSize 21
+
+skinparam DefaultTextAlignment left
+
+title Wokflow 1 - generic path
+
+actor "**Patient**" as P
+
+
+box Country A #F0FFFC
+participant "Drug Database\nCountry A" as MPDA 
+actor "GP \nCountry A" as GPA
+actor "Pharmacist \nCountry A" as PA
+participant "National Infrastructure\nCountry A (EHR)" as EHRA
+participant "NCPeH\nCountry A" as NCA.A
+end box
+
+box Country B #FFF3F0
+participant "NCPeH\nCountry B" as NCA.B
+participant "National Infrastructure\n/ EHR Country B" as EHRB
+actor "GP \nCountry A" as GPB
+participant "Drug Database\nCountry B" as MPDB
+end box
+
+
+
+group Medication Workflow
+P --> GPA: Appointment
+GPA -[#A92]-> EHRA : Prescription
+P --> PA: Pharmacy
+PA -[#A92]-> EHRA : Dispense
+end
+
+group Make Available for \n Cross-Border
+EHRA --> NCA.A: Prescription Data
+EHRA --> NCA.A: Dispense Data
+end
+
+group "A5. Request and obtain prescription"
+GPB --> EHRB: Request documents
+& EHRB --> NCA.B: Request documents
+& NCA.B --> NCA.A: Request documents
+NCA.A --> NCA.B : Return prescription
+& NCA.B --> EHRB : Return prescription
+& EHRB --> GPB : Return prescription
+deactivate NCA.A
+end
+
+
+
+@enduml
