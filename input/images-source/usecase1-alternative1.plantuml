@@ -1,0 +1,90 @@
+@startuml
+hide stereotype
+hide circle
+skinparam linetype polyline
+skinparam shadowing false
+
+
+'!pragma graphviz_dot smetana
+
+skinparam class<<S>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+skinparam class<<PhP>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+
+
+skinparam class<<MP>> {
+ BorderColor DarkGreen
+ BackgroundColor PHYSICAL
+ HeaderBackgroundColor LimeGreen
+}
+
+
+skinparam class<<PMP>> {
+ BorderColor DarkRed
+ BackgroundColor MistyRose
+ HeaderBackgroundColor #f09090
+}
+
+
+
+
+
+    class "**OriginalPrescription**" as S<<S>> {
+      --
+      |_ Active Principle: Paracetamol     
+      |_ Strength: 500 mg    
+      |_ Form: Tablets
+      --
+        
+    }
+
+    class " **RelatedMedicationPrescription** " as PhP<<PhP>> {
+      --
+      |_ Active Principle: Paracetamol
+      |_ Strength: 500 mg    
+      |_ Form: Tablets
+      --
+      
+    }
+
+    class " **OriginalDispense ** " as MP<<MP>>{
+      --
+      |_ Active Principle: Paracetamol
+      |_ Strength: 500 mg    
+      |_ Form: Tablets
+      |_ Brand: Ben-u-ron
+      |_ Pack size: 20 tabs
+      --
+      
+    }
+
+    class " **RelatedMedicationDispense 1 **  " as PMP<<PMP>>{
+      --
+      |_ Active Principle: Paracetamol
+      |_ Strength: 500 mg    
+      |_ Form: Tablets
+      |_ <color:gray>//Brand: --//
+      |_ <color:gray>//Pack : -- //
+      --
+     
+    }
+
+
+
+
+  S <-u- PhP: " Direct"
+  
+  MP <-d- PMP: " Other Level"
+
+
+
+@enduml

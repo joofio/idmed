@@ -15,13 +15,13 @@ The alternatives are displayed below:
 
 
 <div>
-{% include usecase1.svg %}
+{% include usecase1-alternative2.svg %}
 </div>
 
 **2**
 
 <div>
-{% include usecase2.svg %}
+{% include usecase1-alternative1.svg %}
 </div>
 
 
