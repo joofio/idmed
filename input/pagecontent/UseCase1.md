@@ -1,4 +1,4 @@
-## The brand does not exist
+<h2>The brand does not exist</h2>
 
 In this case, the specific brand that was prescribed and/or dispensed is not available in the target country.
 Since most countries have active principle based prescription for its majority of cases, it is assumed that this use case will be more frequent regarding dispensing. 
@@ -11,14 +11,14 @@ For this case, we can have two options:
 
 The alternatives are displayed below:
 
-### 1
+**1**
 
 
 <div>
 {% include usecase1.svg %}
 </div>
 
-### 2
+**2**
 
 <div>
 {% include usecase2.svg %}
