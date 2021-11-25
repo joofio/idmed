@@ -599,6 +599,11 @@
              fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "workflow.html" ];
              fhir:ImplementationGuide.definition.page.title [ fhir:value "Workflow" ];
              fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 2;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "open-questions.html" ];
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Open Questions" ];
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
            ]
          ]
        ]

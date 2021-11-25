@@ -1,9 +1,9 @@
-﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>IDMEDS\ - FHIR v4.0.1</title>
+    <title>IDMEDS\Open Questions - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +47,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"1.2.3"}
+    h3,h4,h5,h6{--heading-prefix:"1.2.3"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -120,7 +120,7 @@
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
 		<ul class="dropdown-menu">
-			<li><a name="l213">​</a><a href="downloads.html">Downloads</a></li>
+			<li><a name="l212">​</a><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -135,7 +135,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="index.html"><b>Home</b></a></li><li><a href="FunctionalDiscussion.html"><b>Functional Discussion</b></a></li><li><b>Open Questions</b></li>
           
         </ul>
       </div>    <!-- /container -->
@@ -147,9 +147,16 @@
         <div class="row">
           <div class="inner-wrapper">
 
-
-<div style="counter-reset: section 10" class="col-12">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">HL7 FHIR Implementation Guide - Local Development build (v1.0.0). See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Open Questions</h2>
   
 
 
@@ -160,64 +167,27 @@
 
 
 
-
-
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="StructureDefinition-drugCharacteristic.html">Content</a>
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<ol>
+  <li>The related med should be a new drug?or extension of the previous</li>
+  <li>What properties should be translated for cross border? We can agree on active principle, form and strength but what about?
+    <ol>
+      <li>route?</li>
+      <li>pack size?</li>
+      <li>brand?</li>
+      <li>prescription dosage?</li>
+      <li>PRN?</li>
+    </ol>
   </li>
+</ol>
 
 
 
-  <li>
-    <a href="StructureDefinition-drugCharacteristic-definitions.html">Detailed Descriptions</a>
-  </li>
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-drugCharacteristic-mappings.html">Mappings</a>
-    </li>
-  
-
-
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-drugCharacteristic.profile.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="StructureDefinition-drugCharacteristic.profile.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="StructureDefinition-drugCharacteristic.profile.ttl.html">TTL</a>
-    </li>
-  
-
-
-</ul>
-
-
-  <a name="root"> </a>
-  <h2 id="root">Extension: DrugCharacteristic - Change History</h2>
-  <p>Changes in the drugCharacteristic extension.</p>
-
-  
 
 </div>
-
         </div>    <!-- /inner-wrapper -->
       </div>    <!-- /row -->
     </div>    <!-- /container -->
@@ -225,29 +195,6 @@
 
   <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){

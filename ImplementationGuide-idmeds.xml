@@ -434,6 +434,11 @@
             <title value="Workflow"/>
             <generation value="markdown"/>
           </page>
+          <page>
+            <nameUrl value="open-questions.html"/>
+            <title value="Open Questions"/>
+            <generation value="markdown"/>
+          </page>
         </page>
       </page>
     </page>
