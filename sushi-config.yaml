@@ -147,6 +147,8 @@ pages:
             title: Use Case 1
         workflow.md:
           title: Workflow
+        open-questions.md:
+          title: Open Questions
 #    title: Examples Overview
 #    title: Examples Overview
 #    simpleExamples.xml:
