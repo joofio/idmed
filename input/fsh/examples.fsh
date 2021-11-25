@@ -61,31 +61,11 @@ Title: "Use case 1 - Related Medication to prescription"
 * ingredient.strength.numerator.unit = "mg"  
 
 
-Instance: related-med-disp-1a
+Instance: related-med-disp-1
 InstanceOf: DefinedMed
 Usage: #example
-Description: ""
-Title: "Use case 1 - First Related Medication to dispense"
-
-* identifier[0].system = "http://medication-identifiers.com"
-* identifier[0].value = "4321"
-
-* code = https://npech.eu/codings/product_code#Ab350 "Paracetamol 500 mg Tablets"
-
-* status = #active
-
-* form = http://standardterms.edqm.eu/PAC#10219000 "Tablet"
-
-* ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Paracetamol"  
-
-* ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
-
-Instance: related-med-disp-1b
-InstanceOf: DefinedMed
-Usage: #example
-Description: ""
-Title: "Use case 1 - Second Related Medication to dispense"
+Description: "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"
+Title: "Use case 1 - Related Medication to dispense"
 
 * identifier[0].system = "http://medication-identifiers.com"
 * identifier[0].value = "9876"
@@ -170,8 +150,9 @@ Title: "Use case 1 - Extended Prescription of Medication"
 * extension[relatedMedication]
   * extension[relationType].valueCoding = #SINGLE
   * extension[relatedMed]
-    * valueReference.identifier.system = "http://medication-identifiers.com"
-    * valueReference.identifier.value = "123"
+    * valueReference = Reference(related-med-presc-1)
+ //   * valueReference.identifier.system = "http://medication-identifiers.com"
+  //  * valueReference.identifier.value = "123"
 
 
 Instance: example-1-of-meddisp
@@ -209,12 +190,6 @@ Title: "Use case 1 - Extended Dispense of Medication "
 * performer[=].actor.identifier.system = "http://dispenser-identifiers.com"
 * performer[=].actor.display = "Pharmacy X"
 * performer[=].function.coding = #dispensingOrg
-
-* extension[relatedMedication]
-  * extension[relationType].valueCoding = #MULTIPLE
-  * extension[relatedMed]
-    * valueReference.identifier.system = "http://medication-identifiers.com"
-    * valueReference.identifier.value = "456"
 
 
 Instance: example-1-of-ext-meddisp
@@ -254,3 +229,11 @@ Title: "Use case 1 - Original Dispense of Medication "
 * performer[=].actor.identifier.system = "http://dispenser-identifiers.com"
 * performer[=].actor.display = "Pharmacy X"
 * performer[=].function.coding = #dispensingOrg
+
+* extension[relatedMedication]
+  * extension[relationType].valueCoding = #SINGLE
+  * extension[relatedMed]
+    * valueReference = Reference(related-med-disp-1)
+  //  * valueReference.identifier.system = "http://medication-identifiers.com"
+  //  * valueReference.identifier.value = "456"
+
