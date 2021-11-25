@@ -506,32 +506,17 @@
          fhir:Extension.valueString [ fhir:value "Medication" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/Medication/related-med-disp-1a>;
-         fhir:Reference.reference [ fhir:value "Medication/related-med-disp-1a" ]
+         fhir:link <http://example.com/fhir/example/Medication/related-med-disp-1>;
+         fhir:Reference.reference [ fhir:value "Medication/related-med-disp-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - First Related Medication to dispense" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Related Medication to dispense" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
          fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>
        ]
      ], [
        fhir:index 16;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Medication" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/Medication/related-med-disp-1b>;
-         fhir:Reference.reference [ fhir:value "Medication/related-med-disp-1b" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Second Related Medication to dispense" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
-         fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>
-       ]
-     ], [
-       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

@@ -518,22 +518,10 @@
           }
         ],
         "reference": {
-          "reference": "Medication/related-med-disp-1a"
+          "reference": "Medication/related-med-disp-1"
         },
-        "name": "Use case 1 - First Related Medication to dispense",
-        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Medication"
-          }
-        ],
-        "reference": {
-          "reference": "Medication/related-med-disp-1b"
-        },
-        "name": "Use case 1 - Second Related Medication to dispense",
+        "name": "Use case 1 - Related Medication to dispense",
+        "description": "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
       },
       {

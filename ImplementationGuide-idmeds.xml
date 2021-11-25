@@ -361,19 +361,10 @@
         <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="Medication/related-med-disp-1a"/>
+        <reference value="Medication/related-med-disp-1"/>
       </reference>
-      <name value="Use case 1 - First Related Medication to dispense"/>
-      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/related-med-disp-1b"/>
-      </reference>
-      <name value="Use case 1 - Second Related Medication to dispense"/>
+      <name value="Use case 1 - Related Medication to dispense"/>
+      <description value="Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"/>
       <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
     </resource>
     <resource>
