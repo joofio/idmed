@@ -295,7 +295,7 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/example-1-of-ext-medReq"/>
+        <reference value="MedicationRequest/example-3a-of-ext-medReq"/>
       </reference>
       <name value="Use case 1 - Extended Prescription of Medication"/>
       <description value="Extended medication Request"/>
@@ -306,7 +306,7 @@
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
-        <reference value="MedicationDispense/example-1-of-ext-meddisp"/>
+        <reference value="MedicationDispense/example-3a-of-ext-meddisp"/>
       </reference>
       <name value="Use case 1 - Original Dispense of Medication "/>
       <description value="Original Medication dispense document"/>
@@ -317,7 +317,7 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/example-1-of-medReq"/>
+        <reference value="MedicationRequest/example-3a-of-medReq"/>
       </reference>
       <name value="Use case 1 - Original Prescription of Medication"/>
       <description value="Original medication Request"/>
@@ -328,7 +328,51 @@
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
-        <reference value="MedicationDispense/example-1-of-meddisp"/>
+        <reference value="MedicationDispense/example-3a-of-meddisp"/>
+      </reference>
+      <name value="Use case 1 - Extended Dispense of Medication "/>
+      <description value="Medication dispense document with extension for cross-border"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example0-of-ext-medReq"/>
+      </reference>
+      <name value="Use case 1 - Extended Prescription of Medication"/>
+      <description value="Extended medication Request"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/ExtendedRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/example0-of-ext-meddisp"/>
+      </reference>
+      <name value="Use case 1 - Original Dispense of Medication "/>
+      <description value="Original Medication dispense document"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/ExtendedDispense"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example0-of-medReq"/>
+      </reference>
+      <name value="Use case 1 - Original Prescription of Medication"/>
+      <description value="Original medication Request"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/example0-of-meddisp"/>
       </reference>
       <name value="Use case 1 - Extended Dispense of Medication "/>
       <description value="Medication dispense document with extension for cross-border"/>
@@ -339,7 +383,7 @@
         <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="Medication/original-med-disp-1"/>
+        <reference value="Medication/example0-original-med-disp-1"/>
       </reference>
       <name value="Use case 1 - Original Medication Dispensed"/>
       <description value="Original Medication dispensed with data from the origin country. With no information regarding cross-border"/>
@@ -350,7 +394,7 @@
         <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="Medication/original-med-presc-1"/>
+        <reference value="Medication/example0-original-med-presc-1"/>
       </reference>
       <name value="Use case 1 - Original Medication Prescribed"/>
       <description value="Original Medication prescribed with data from the origin country. With no information regarding cross-border"/>
@@ -361,7 +405,7 @@
         <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="Medication/related-med-disp-1"/>
+        <reference value="Medication/example0-related-med-disp-1"/>
       </reference>
       <name value="Use case 1 - Related Medication to dispense"/>
       <description value="Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"/>
@@ -372,9 +416,174 @@
         <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="Medication/related-med-presc-1"/>
+        <reference value="Medication/example0-related-med-disp-2"/>
+      </reference>
+      <name value="Use case 1 - Related Medication to dispense"/>
+      <description value="Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/example0-related-med-presc-1"/>
       </reference>
       <name value="Use case 1 - Related Medication to prescription"/>
+      <description value="Medication prescribed with data regarding cross-border compliance - different from original, even though is connected"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example1-of-ext-medReq"/>
+      </reference>
+      <name value="Use case 1 - Step 2 - Extended Prescription of Medication"/>
+      <description value="Extended medication Request"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/ExtendedRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/example1-of-ext-meddisp"/>
+      </reference>
+      <name value="Use case 1 - Step 4 - Extended Dispense of Medication"/>
+      <description value="Medication dispense document with extension for cross-border"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/ExtendedDispense"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example1-of-medReq"/>
+      </reference>
+      <name value="Use case 1 - Step 1 - Original Prescription of Medication"/>
+      <description value="Original medication Request"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/example1-of-meddisp"/>
+      </reference>
+      <name value="Use case 1 - Step 3 - Original Dispense of Medication "/>
+      <description value="Original Medication dispense document"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/example1-original-med-disp"/>
+      </reference>
+      <name value="Use case 1 - Step 3.1 - Original Medication Dispensed"/>
+      <description value="Original Medication dispensed with data from the origin country. With no information regarding cross-border"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/example1-original-med-presc"/>
+      </reference>
+      <name value="Use case 1 - Step 1.1 - Original Medication Prescribed"/>
+      <description value="Original Medication prescribed with data from the origin country. With no information regarding cross-border"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/example1-related-med-disp-1"/>
+      </reference>
+      <name value="Use case 1 - Step 4.1a - Related Medication to dispense"/>
+      <description value="Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/example1-related-med-disp-2"/>
+      </reference>
+      <name value="Use case 1 - Step 4.1b - Related Medication to dispense"/>
+      <description value="Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/example3a-original-med-disp"/>
+      </reference>
+      <name value="Use case 1 - Original Medication Dispensed"/>
+      <description value="Original Medication dispensed with data from the origin country. With no information regarding cross-border"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/example3a-original-med-presc"/>
+      </reference>
+      <name value="Use case 1 - Original Medication Prescribed"/>
+      <description value="Original Medication prescribed with data from the origin country. With no information regarding cross-border"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/example3a-related-med-disp-1"/>
+      </reference>
+      <name value="Use case 1 - Related Medication to dispense"/>
+      <description value="Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/example3a-related-med-disp-2"/>
+      </reference>
+      <name value="Use case 1 - Related Medication to dispense"/>
+      <description value="Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/example3a-related-med-presc"/>
+      </reference>
+      <name value="Use case 1 - Related Medication to prescription"/>
+      <description value="Medication prescribed with data regarding cross-border compliance - different from original, even though is connected"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/related-med-presc-1"/>
+      </reference>
+      <name value="Use case 1 - Step 2.1 - Related Medication to prescription"/>
       <description value="Medication prescribed with data regarding cross-border compliance - different from original, even though is connected"/>
       <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
     </resource>
