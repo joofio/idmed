@@ -416,10 +416,10 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/MedicationRequest/example-3a-of-ext-medReq>;
-         fhir:Reference.reference [ fhir:value "MedicationRequest/example-3a-of-ext-medReq" ]
+         fhir:link <http://example.com/fhir/example/MedicationRequest/example0-of-ext-medReq>;
+         fhir:Reference.reference [ fhir:value "MedicationRequest/example0-of-ext-medReq" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Extended Prescription of Medication" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Extended Prescription of Medication" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extended medication Request" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/ExtendedRequest";
@@ -433,10 +433,10 @@
          fhir:Extension.valueString [ fhir:value "MedicationDispense" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/MedicationDispense/example-3a-of-ext-meddisp>;
-         fhir:Reference.reference [ fhir:value "MedicationDispense/example-3a-of-ext-meddisp" ]
+         fhir:link <http://example.com/fhir/example/MedicationDispense/example0-of-ext-meddisp>;
+         fhir:Reference.reference [ fhir:value "MedicationDispense/example0-of-ext-meddisp" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Original Dispense of Medication " ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Original Dispense of Medication " ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication dispense document" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/ExtendedDispense";
@@ -450,10 +450,10 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/MedicationRequest/example-3a-of-medReq>;
-         fhir:Reference.reference [ fhir:value "MedicationRequest/example-3a-of-medReq" ]
+         fhir:link <http://example.com/fhir/example/MedicationRequest/example0-of-medReq>;
+         fhir:Reference.reference [ fhir:value "MedicationRequest/example0-of-medReq" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Original Prescription of Medication" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Original Prescription of Medication" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original medication Request" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
@@ -464,76 +464,14 @@
          fhir:Extension.valueString [ fhir:value "MedicationDispense" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/MedicationDispense/example-3a-of-meddisp>;
-         fhir:Reference.reference [ fhir:value "MedicationDispense/example-3a-of-meddisp" ]
+         fhir:link <http://example.com/fhir/example/MedicationDispense/example0-of-meddisp>;
+         fhir:Reference.reference [ fhir:value "MedicationDispense/example0-of-meddisp" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Extended Dispense of Medication " ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Extended Dispense of Medication " ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication dispense document with extension for cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 13;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/MedicationRequest/example0-of-ext-medReq>;
-         fhir:Reference.reference [ fhir:value "MedicationRequest/example0-of-ext-medReq" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Extended Prescription of Medication" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extended medication Request" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://example.com/fhir/example/StructureDefinition/ExtendedRequest";
-         fhir:link <http://example.com/fhir/example/StructureDefinition/ExtendedRequest>
-       ]
-     ], [
-       fhir:index 14;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "MedicationDispense" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/MedicationDispense/example0-of-ext-meddisp>;
-         fhir:Reference.reference [ fhir:value "MedicationDispense/example0-of-ext-meddisp" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Original Dispense of Medication " ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication dispense document" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://example.com/fhir/example/StructureDefinition/ExtendedDispense";
-         fhir:link <http://example.com/fhir/example/StructureDefinition/ExtendedDispense>
-       ]
-     ], [
-       fhir:index 15;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/MedicationRequest/example0-of-medReq>;
-         fhir:Reference.reference [ fhir:value "MedicationRequest/example0-of-medReq" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Original Prescription of Medication" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original medication Request" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 16;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "MedicationDispense" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/MedicationDispense/example0-of-meddisp>;
-         fhir:Reference.reference [ fhir:value "MedicationDispense/example0-of-meddisp" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Extended Dispense of Medication " ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication dispense document with extension for cross-border" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -543,11 +481,11 @@
          fhir:link <http://example.com/fhir/example/Medication/example0-original-med-disp-1>;
          fhir:Reference.reference [ fhir:value "Medication/example0-original-med-disp-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Original Medication Dispensed" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Original Medication Dispensed" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication dispensed with data from the origin country. With no information regarding cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -557,11 +495,11 @@
          fhir:link <http://example.com/fhir/example/Medication/example0-original-med-presc-1>;
          fhir:Reference.reference [ fhir:value "Medication/example0-original-med-presc-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Original Medication Prescribed" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Original Medication Prescribed" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication prescribed with data from the origin country. With no information regarding cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -571,14 +509,14 @@
          fhir:link <http://example.com/fhir/example/Medication/example0-related-med-disp-1>;
          fhir:Reference.reference [ fhir:value "Medication/example0-related-med-disp-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Related Medication to dispense" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Related Medication to dispense" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
          fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>
        ]
      ], [
-       fhir:index 20;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -588,14 +526,14 @@
          fhir:link <http://example.com/fhir/example/Medication/example0-related-med-disp-2>;
          fhir:Reference.reference [ fhir:value "Medication/example0-related-med-disp-2" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Related Medication to dispense" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Related Medication to dispense" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
          fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>
        ]
      ], [
-       fhir:index 21;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -605,14 +543,14 @@
          fhir:link <http://example.com/fhir/example/Medication/example0-related-med-presc-1>;
          fhir:Reference.reference [ fhir:value "Medication/example0-related-med-presc-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Related Medication to prescription" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Related Medication to prescription" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
          fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -629,7 +567,7 @@
          fhir:link <http://example.com/fhir/example/StructureDefinition/ExtendedRequest>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -646,7 +584,7 @@
          fhir:link <http://example.com/fhir/example/StructureDefinition/ExtendedDispense>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -660,7 +598,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original medication Request" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -674,7 +612,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication dispense document" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -688,7 +626,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication dispensed with data from the origin country. With no information regarding cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -702,7 +640,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication prescribed with data from the origin country. With no information regarding cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -719,7 +657,7 @@
          fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>
        ]
      ], [
-       fhir:index 29;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -736,6 +674,68 @@
          fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>
        ]
      ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/MedicationRequest/example3a-of-ext-medReq>;
+         fhir:Reference.reference [ fhir:value "MedicationRequest/example3a-of-ext-medReq" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 3a - Step 2 - Extended Prescription of Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extended medication Request" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.com/fhir/example/StructureDefinition/ExtendedRequest";
+         fhir:link <http://example.com/fhir/example/StructureDefinition/ExtendedRequest>
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationDispense" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/MedicationDispense/example3a-of-ext-meddisp>;
+         fhir:Reference.reference [ fhir:value "MedicationDispense/example3a-of-ext-meddisp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 3a - Step 4 - Extended Dispense of Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication dispense document with extension for cross-border" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.com/fhir/example/StructureDefinition/ExtendedDispense";
+         fhir:link <http://example.com/fhir/example/StructureDefinition/ExtendedDispense>
+       ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/MedicationRequest/example3a-of-medReq>;
+         fhir:Reference.reference [ fhir:value "MedicationRequest/example3a-of-medReq" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 3a - Step 1 - Original Prescription of Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original medication Request" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationDispense" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/MedicationDispense/example3a-of-meddisp>;
+         fhir:Reference.reference [ fhir:value "MedicationDispense/example3a-of-meddisp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 3a - Step 3 - Original Dispense of Medication " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication dispense document" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
        fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
@@ -746,7 +746,7 @@
          fhir:link <http://example.com/fhir/example/Medication/example3a-original-med-disp>;
          fhir:Reference.reference [ fhir:value "Medication/example3a-original-med-disp" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Original Medication Dispensed" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 3a - Step 3.1 - Original Medication Dispensed" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication dispensed with data from the origin country. With no information regarding cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
@@ -760,7 +760,7 @@
          fhir:link <http://example.com/fhir/example/Medication/example3a-original-med-presc>;
          fhir:Reference.reference [ fhir:value "Medication/example3a-original-med-presc" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Original Medication Prescribed" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 3a - Step 1.1 - Original Medication Prescribed with CNPEM code (drug + form + strength + packsize)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication prescribed with data from the origin country. With no information regarding cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
@@ -774,7 +774,7 @@
          fhir:link <http://example.com/fhir/example/Medication/example3a-related-med-disp-1>;
          fhir:Reference.reference [ fhir:value "Medication/example3a-related-med-disp-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Related Medication to dispense" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 3a - Step 4.1a - Related Medication to dispense" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
@@ -791,7 +791,7 @@
          fhir:link <http://example.com/fhir/example/Medication/example3a-related-med-disp-2>;
          fhir:Reference.reference [ fhir:value "Medication/example3a-related-med-disp-2" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Related Medication to dispense" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 3a - Step 4.1b - Related Medication to dispense" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
@@ -808,7 +808,7 @@
          fhir:link <http://example.com/fhir/example/Medication/example3a-related-med-presc>;
          fhir:Reference.reference [ fhir:value "Medication/example3a-related-med-presc" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 1 - Related Medication to prescription" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 3a - Step 2.1 - Related Medication to prescription" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
