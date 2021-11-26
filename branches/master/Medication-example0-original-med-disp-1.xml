@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="example0-original-med-disp-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example0-original-med-disp-1" </p></div><p><b>code</b>: Ben-U-Ron 500 mg comprimidos pack de 20 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (product_code#20)</span></p><p><b>status</b>: active</p><p><b>form</b>: Comprimidos <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (form#123)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Paracetamol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (ingredient_code#4)</span></td><td>500 mg/</td></tr></table></div>
+  </text>
+  <code>
+    <coding>
+      <system value="https://infarmed.gov.pt/codings/product_code"/>
+      <code value="20"/>
+      <display value="Ben-U-Ron 500 mg comprimidos pack de 20"/>
+    </coding>
+  </code>
+  <status value="active"/>
+  <form>
+    <coding>
+      <system value="http://naming.sns.gov.pt/fhir/form"/>
+      <code value="123"/>
+      <display value="Comprimidos"/>
+    </coding>
+  </form>
+  <ingredient>
+    <itemCodeableConcept>
+      <coding>
+        <system value="https://infarmed.gov.pt/codings/ingredient_code"/>
+        <code value="4"/>
+        <display value="Paracetamol"/>
+      </coding>
+    </itemCodeableConcept>
+    <strength>
+      <numerator>
+        <value value="500"/>
+        <unit value="mg"/>
+      </numerator>
+    </strength>
+  </ingredient>
+</Medication>
