@@ -2,28 +2,10 @@ Instance: example3a-original-med-presc
 InstanceOf: Medication
 Usage: #example
 Description: "Original Medication prescribed with data from the origin country. With no information regarding cross-border"
-Title: "Use case 1 - Original Medication Prescribed"
+Title: "Use case 3a - Step 1.1 - Original Medication Prescribed with CNPEM code (drug + form + strength + packsize)"
 
 
-* code = https://infarmed.gov.pt/codings/product_code#2 "Paracetamol 500 mg comprimidos"
-
-* status = #active
-
-* form = http://naming.sns.gov.pt/fhir/form#123 "Comprimidos"
-
-* ingredient.itemCodeableConcept = https://infarmed.gov.pt/codings/ingredient_code#4 "Paracetamol"  
-
-* ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
-
-
-Instance: example3a-original-med-disp
-InstanceOf: Medication
-Usage: #example
-Description: "Original Medication dispensed with data from the origin country. With no information regarding cross-border"
-Title: "Use case 1 - Original Medication Dispensed"
-
-* code = https://infarmed.gov.pt/codings/product_code#20 "Ben-U-Ron 500 mg comprimidos pack de 20"
+* code = https://infarmed.gov.pt/codings/CNPEM#50001981 "Paracetamol 500 mg comprimidos 20 unidades"
 
 * status = #active
 
@@ -32,14 +14,15 @@ Title: "Use case 1 - Original Medication Dispensed"
 * ingredient.itemCodeableConcept = https://infarmed.gov.pt/codings/ingredient_code#4 "Paracetamol"  
 
 * ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
 
 
 Instance: example3a-related-med-presc
 InstanceOf: DefinedMed
 Usage: #example
 Description: "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected"
-Title: "Use case 1 - Related Medication to prescription"
+Title: "Use case 3a - Step 2.1 - Related Medication to prescription"
 
 
 * code = https://npech.eu/codings/phpid#Ab350 "Paracetamol 500 mg Tablets"
@@ -51,14 +34,34 @@ Title: "Use case 1 - Related Medication to prescription"
 * ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Paracetamol"  
 
 * ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
+
+
+Instance: example3a-original-med-disp
+InstanceOf: Medication
+Usage: #example
+Description: "Original Medication dispensed with data from the origin country. With no information regarding cross-border"
+Title: "Use case 3a - Step 3.1 - Original Medication Dispensed"
+
+* code = https://infarmed.gov.pt/codings/product_code#20 "Ben-U-Ron 500 mg comprimidos pack de 20"
+
+* status = #active
+
+* form = http://naming.sns.gov.pt/fhir/form#123 "Comprimidos"
+
+* ingredient.itemCodeableConcept = https://infarmed.gov.pt/codings/ingredient_code#4 "Paracetamol"  
+
+* ingredient.strength.numerator.value = 500  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
 
 
 Instance: example3a-related-med-disp-1
 InstanceOf: DefinedMed
 Usage: #example
 Description: "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"
-Title: "Use case 1 - Related Medication to dispense"
+Title: "Use case 3a - Step 4.1a - Related Medication to dispense"
 
 
 * code = https://npech.eu/codings/phpid#Ab350 "Paracetamol 500 mg Tablets"
@@ -77,7 +80,7 @@ Instance: example3a-related-med-disp-2
 InstanceOf: DefinedMed
 Usage: #example
 Description: "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"
-Title: "Use case 1 - Related Medication to dispense"
+Title: "Use case 3a - Step 4.1b - Related Medication to dispense"
 
 
 * code = https://npech.eu/codings/mpid#Ab350 "Ben-u-Ron 500 mg Tablets"
@@ -92,11 +95,11 @@ Title: "Use case 1 - Related Medication to dispense"
 * ingredient.strength.numerator.unit = "mg"  
 
 
-Instance: example-3a-of-medReq
+Instance: example3a-of-medReq
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "Original medication Request"
-Title: "Use case 1 - Original Prescription of Medication"
+Title: "Use case 3a - Step 1 - Original Prescription of Medication"
 
 * identifier[0].system = "http://prescription-identifiers.com"
 * identifier[0].value = "69eb6358-6eb6-40e4-972f-33d22c3392c5"
@@ -130,11 +133,11 @@ Title: "Use case 1 - Original Prescription of Medication"
 
 
 
-Instance: example-3a-of-ext-medReq
+Instance: example3a-of-ext-medReq
 InstanceOf: ExtendedRequest
 Usage: #example
 Description: "Extended medication Request"
-Title: "Use case 1 - Extended Prescription of Medication"
+Title: "Use case 3a - Step 2 - Extended Prescription of Medication"
 
 * identifier[0].system = "http://prescription-identifiers.com"
 * identifier[0].value = "69eb6358-6eb6-40e4-972f-33d22c3392c5"
@@ -164,11 +167,12 @@ Title: "Use case 1 - Extended Prescription of Medication"
     * valueReference = Reference(related-med-presc-1)
 
 
-Instance: example-3a-of-meddisp
+Instance: example3a-of-meddisp
 InstanceOf: MedicationDispense
 Usage: #example
-Description: "Medication dispense document with extension for cross-border"
-Title: "Use case 1 - Extended Dispense of Medication "
+
+Description: "Original Medication dispense document"
+Title: "Use case 3a - Step 3 - Original Dispense of Medication "
 
 * identifier[0].system = "http://dispense-identifiers.com"
 * identifier[0].value = "f219aa4e-5d10-4f3d-840d-a15e0dff2957"
@@ -201,12 +205,11 @@ Title: "Use case 1 - Extended Dispense of Medication "
 * performer[=].function.coding = #dispensingOrg
 
 
-Instance: example-3a-of-ext-meddisp
+Instance: example3a-of-ext-meddisp
 InstanceOf: ExtendedDispense
 Usage: #example
-Description: "Original Medication dispense document"
-Title: "Use case 1 - Original Dispense of Medication "
-
+Description: "Medication dispense document with extension for cross-border"
+Title: "Use case 3a - Step 4 - Extended Dispense of Medication"
 
 * identifier[0].system = "http://dispense-identifiers.com"
 * identifier[0].value = "f219aa4e-5d10-4f3d-840d-a15e0dff2957"

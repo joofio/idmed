@@ -2,7 +2,7 @@ Instance: example0-original-med-presc-1
 InstanceOf: Medication
 Usage: #example
 Description: "Original Medication prescribed with data from the origin country. With no information regarding cross-border"
-Title: "Use case 1 - Original Medication Prescribed"
+Title: "Use case 0 - Original Medication Prescribed"
 
 
 * code = https://infarmed.gov.pt/codings/product_code#2 "Paracetamol 500 mg comprimidos"
@@ -14,14 +14,15 @@ Title: "Use case 1 - Original Medication Prescribed"
 * ingredient.itemCodeableConcept = https://infarmed.gov.pt/codings/ingredient_code#4 "Paracetamol"  
 
 * ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
 
 
 Instance: example0-original-med-disp-1
 InstanceOf: Medication
 Usage: #example
 Description: "Original Medication dispensed with data from the origin country. With no information regarding cross-border"
-Title: "Use case 1 - Original Medication Dispensed"
+Title: "Use case 0 - Original Medication Dispensed"
 
 * code = https://infarmed.gov.pt/codings/product_code#20 "Ben-U-Ron 500 mg comprimidos pack de 20"
 
@@ -32,14 +33,15 @@ Title: "Use case 1 - Original Medication Dispensed"
 * ingredient.itemCodeableConcept = https://infarmed.gov.pt/codings/ingredient_code#4 "Paracetamol"  
 
 * ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
 
 
 Instance: example0-related-med-presc-1
 InstanceOf: DefinedMed
 Usage: #example
 Description: "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected"
-Title: "Use case 1 - Related Medication to prescription"
+Title: "Use case 0 - Related Medication to prescription"
 
 
 * code = https://npech.eu/codings/phpid#Ab350 "Paracetamol 500 mg Tablets"
@@ -51,14 +53,15 @@ Title: "Use case 1 - Related Medication to prescription"
 * ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Paracetamol"  
 
 * ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
 
 
 Instance: example0-related-med-disp-1
 InstanceOf: DefinedMed
 Usage: #example
 Description: "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"
-Title: "Use case 1 - Related Medication to dispense"
+Title: "Use case 0 - Related Medication to dispense"
 
 
 * code = https://npech.eu/codings/phpid#Ab350 "Paracetamol 500 mg Tablets"
@@ -77,7 +80,7 @@ Instance: example0-related-med-disp-2
 InstanceOf: DefinedMed
 Usage: #example
 Description: "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"
-Title: "Use case 1 - Related Medication to dispense"
+Title: "Use case 0 - Related Medication to dispense"
 
 
 * code = https://npech.eu/codings/mpid#Ab350 "Ben-u-Ron 500 mg Tablets"
@@ -89,14 +92,15 @@ Title: "Use case 1 - Related Medication to dispense"
 * ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Paracetamol"  
 
 * ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
 
 
 Instance: example0-of-medReq
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "Original medication Request"
-Title: "Use case 1 - Original Prescription of Medication"
+Title: "Use case 0 - Original Prescription of Medication"
 
 * identifier[0].system = "http://prescription-identifiers.com"
 * identifier[0].value = "69eb6358-6eb6-40e4-972f-33d22c3392c5"
@@ -134,7 +138,7 @@ Instance: example0-of-ext-medReq
 InstanceOf: ExtendedRequest
 Usage: #example
 Description: "Extended medication Request"
-Title: "Use case 1 - Extended Prescription of Medication"
+Title: "Use case 0 - Extended Prescription of Medication"
 
 * identifier[0].system = "http://prescription-identifiers.com"
 * identifier[0].value = "69eb6358-6eb6-40e4-972f-33d22c3392c5"
@@ -168,7 +172,7 @@ Instance: example0-of-meddisp
 InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication dispense document with extension for cross-border"
-Title: "Use case 1 - Extended Dispense of Medication "
+Title: "Use case 0 - Extended Dispense of Medication "
 
 * identifier[0].system = "http://dispense-identifiers.com"
 * identifier[0].value = "f219aa4e-5d10-4f3d-840d-a15e0dff2957"
@@ -205,7 +209,7 @@ Instance: example0-of-ext-meddisp
 InstanceOf: ExtendedDispense
 Usage: #example
 Description: "Original Medication dispense document"
-Title: "Use case 1 - Original Dispense of Medication "
+Title: "Use case 0 - Original Dispense of Medication "
 
 
 * identifier[0].system = "http://dispense-identifiers.com"

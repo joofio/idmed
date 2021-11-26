@@ -14,7 +14,8 @@ Title: "Use case 1 - Step 1.1 - Original Medication Prescribed"
 * ingredient.itemCodeableConcept = https://infarmed.gov.pt/codings/ingredient_code#4 "Paracetamol"  
 
 * ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
 
 
 Instance: related-med-presc-1
@@ -33,7 +34,8 @@ Title: "Use case 1 - Step 2.1 - Related Medication to prescription"
 * ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Paracetamol"  
 
 * ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
 
 
 Instance: example1-original-med-disp
@@ -51,7 +53,8 @@ Title: "Use case 1 - Step 3.1 - Original Medication Dispensed"
 * ingredient.itemCodeableConcept = https://infarmed.gov.pt/codings/ingredient_code#4 "Paracetamol"  
 
 * ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
 
 
 Instance: example1-related-med-disp-1
@@ -70,7 +73,8 @@ Title: "Use case 1 - Step 4.1a - Related Medication to dispense"
 * ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Paracetamol"  
 
 * ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
 
 
 Instance: example1-related-med-disp-2
@@ -89,7 +93,8 @@ Title: "Use case 1 - Step 4.1b - Related Medication to dispense"
 * ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Paracetamol"  
 
 * ingredient.strength.numerator.value = 500  
-* ingredient.strength.numerator.unit = "mg"  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
 
 
 Instance: example1-of-medReq
@@ -126,8 +131,6 @@ Title: "Use case 1 - Step 1 - Original Prescription of Medication"
   * extension[relatedMed]
     * valueReference.identifier.system = "http://medication-identifiers.com"
     * valueReference.identifier.value = "123"
-
-
 
 
 Instance: example1-of-ext-medReq
