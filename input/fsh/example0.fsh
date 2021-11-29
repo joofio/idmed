@@ -41,7 +41,7 @@ Instance: example0-related-med-presc-1
 InstanceOf: DefinedMed
 Usage: #example
 Description: "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected"
-Title: "Use case 0 - Related Medication to prescription"
+Title: "Use case 0 - Related Medication to prescription [Pharmaceutical Product]"
 
 
 * code = https://npech.eu/codings/phpid#Ab350 "Paracetamol 500 mg Tablets"
@@ -61,7 +61,7 @@ Instance: example0-related-med-disp-1
 InstanceOf: DefinedMed
 Usage: #example
 Description: "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"
-Title: "Use case 0 - Related Medication to dispense"
+Title: "Use case 0 - Related Medication to dispense [Pharmaceutical Product]"
 
 
 * code = https://npech.eu/codings/phpid#Ab350 "Paracetamol 500 mg Tablets"
@@ -80,7 +80,7 @@ Instance: example0-related-med-disp-2
 InstanceOf: DefinedMed
 Usage: #example
 Description: "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"
-Title: "Use case 0 - Related Medication to dispense"
+Title: "Use case 0 - Related Medication to dispense [Medicinal Product]"
 
 
 * code = https://npech.eu/codings/mpid#Ab350 "Ben-u-Ron 500 mg Tablets"
@@ -94,6 +94,30 @@ Title: "Use case 0 - Related Medication to dispense"
 * ingredient.strength.numerator.value = 500  
 * ingredient.strength.numerator.code = #mg
 * ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
+
+
+Instance: example0-related-med-disp-3
+InstanceOf: DefinedMed
+Usage: #example
+Description: "Medication dispensed with data regarding cross-border compliance - different from original, even though is connected"
+Title: "Use case 0 - Related Medication to dispense [Packaged Medicinal Product]"
+
+
+* code = https://npech.eu/codings/pmpid#Ab3502 "Ben-u-Ron 500 mg Tablets pack 20"
+
+* status = #active
+
+* form = http://standardterms.edqm.eu/PAC#10219000 "Tablet"
+
+* ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Paracetamol"  
+
+* ingredient.strength.numerator.value = 500  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
+
+* amount.numerator.value = 20  
+* ingredient.strength.numerator.code = #10219000
+* ingredient.strength.numerator.system = "http://standardterms.edqm.eu/PAC" 
 
 
 Instance: example0-of-medReq
@@ -130,8 +154,6 @@ Title: "Use case 0 - Original Prescription of Medication"
   * extension[relatedMed]
     * valueReference.identifier.system = "http://medication-identifiers.com"
     * valueReference.identifier.value = "123"
-
-
 
 
 Instance: example0-of-ext-medReq
@@ -246,11 +268,15 @@ Title: "Use case 0 - Original Dispense of Medication "
 * extension[relatedMedication]
   * extension[relationType].valueCoding = #MULTIPLE
   * extension[relatedMed]
-    * valueReference = Reference(related-med-disp-1)
+    * valueReference = Reference(example0-related-med-disp-1)
 * extension[relatedMedication][+]
   * extension[relationType].valueCoding = #MULTIPLE
   * extension[relatedMed]
-    * valueReference = Reference(related-med-disp-2)
+    * valueReference = Reference(example0-related-med-disp-2)
+* extension[relatedMedication][+]
+  * extension[relationType].valueCoding = #MULTIPLE
+  * extension[relatedMed]
+    * valueReference = Reference(example0-related-med-disp-3)
 
 
 
