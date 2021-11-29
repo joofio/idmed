@@ -874,6 +874,11 @@
              fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
              fhir:ImplementationGuide.definition.page.page [
                fhir:index 0;
+               fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "UseCase0.html" ];
+               fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Case 0" ];
+               fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+             ], [
+               fhir:index 1;
                fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "UseCase1.html" ];
                fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Case 1" ];
                fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]

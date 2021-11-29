@@ -3,8 +3,8 @@
 
 err = 39, warn = 38, info = 55
 IG Publisher Version: 1.1.89
-Generated Fri Nov 26 13:00:19 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
- Build Errors : 229 / 6 / 0
+Generated Mon Nov 29 15:13:17 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 230 / 6 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-relationtype-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 4 / 1
  /github/workspace/fsh-generated/resources/Medication-example0-original-med-disp-1 : 1 / 0 / 4
@@ -263,6 +263,7 @@ ERROR: /github/workspace/output/StructureDefinition-relatedMedication.profile.hi
 ERROR: /github/workspace/output/StructureDefinition-relatedMedication.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-relatedMedication.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-relatedMedication.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/UseCase0.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/UseCase1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-relationtype-vs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-relationtype-vs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
