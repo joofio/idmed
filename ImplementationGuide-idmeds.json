@@ -848,6 +848,11 @@
                   "generation": "markdown",
                   "page": [
                     {
+                      "nameUrl": "UseCase0.html",
+                      "title": "Use Case 0",
+                      "generation": "markdown"
+                    },
+                    {
                       "nameUrl": "UseCase1.html",
                       "title": "Use Case 1",
                       "generation": "markdown"
