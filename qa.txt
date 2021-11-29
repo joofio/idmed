@@ -1,16 +1,17 @@
 ﻿IDMeds : Validation Results
 =========================================
 
-err = 39, warn = 38, info = 55
+err = 39, warn = 39, info = 59
 IG Publisher Version: 1.1.89
-Generated Mon Nov 29 15:13:17 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
- Build Errors : 230 / 6 / 0
+Generated Mon Nov 29 15:17:00 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 233 / 6 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-relationtype-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 4 / 1
  /github/workspace/fsh-generated/resources/Medication-example0-original-med-disp-1 : 1 / 0 / 4
  /github/workspace/fsh-generated/resources/Medication-example0-original-med-presc-1 : 1 / 0 / 4
  /github/workspace/fsh-generated/resources/Medication-example0-related-med-disp-1 : 1 / 0 / 4
  /github/workspace/fsh-generated/resources/Medication-example0-related-med-disp-2 : 1 / 0 / 4
+ /github/workspace/fsh-generated/resources/Medication-example0-related-med-disp-3 : 2 / 0 / 5
  /github/workspace/fsh-generated/resources/Medication-example0-related-med-presc-1 : 1 / 0 / 4
  /github/workspace/fsh-generated/resources/Medication-example1-original-med-disp : 1 / 0 / 4
  /github/workspace/fsh-generated/resources/Medication-example1-original-med-presc : 1 / 0 / 4
@@ -22,7 +23,7 @@ Generated Mon Nov 29 15:13:17 UTC 2021. FHIR version 4.0.1 for idmeds#1.0.0 (can
  /github/workspace/fsh-generated/resources/Medication-example3a-related-med-disp-2 : 1 / 0 / 4
  /github/workspace/fsh-generated/resources/Medication-example3a-related-med-presc : 1 / 0 / 4
  /github/workspace/fsh-generated/resources/Medication-related-med-presc-1 : 1 / 0 / 4
- /github/workspace/fsh-generated/resources/MedicationDispense-example0-of-ext-meddisp : 3 / 4 / 2
+ /github/workspace/fsh-generated/resources/MedicationDispense-example0-of-ext-meddisp : 1 / 5 / 2
  /github/workspace/fsh-generated/resources/MedicationDispense-example0-of-meddisp : 1 / 2 / 2
  /github/workspace/fsh-generated/resources/MedicationDispense-example1-of-ext-meddisp : 3 / 4 / 2
  /github/workspace/fsh-generated/resources/MedicationDispense-example1-of-meddisp : 1 / 2 / 2
@@ -76,6 +77,11 @@ ERROR: /github/workspace/output/Medication-example0-related-med-disp-2.html#/htm
 ERROR: /github/workspace/output/Medication-example0-related-med-disp-2.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Medication-example0-related-med-disp-2.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Medication-example0-related-med-disp-2.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-example0-related-med-disp-3.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-example0-related-med-disp-3.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-example0-related-med-disp-3.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-example0-related-med-disp-3.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-example0-related-med-disp-3.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Medication-example0-related-med-presc-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Medication-example0-related-med-presc-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Medication-example0-related-med-presc-1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -133,9 +139,7 @@ ERROR: /github/workspace/output/Medication-related-med-presc-1.ttl.html#/html/bo
 ERROR: /github/workspace/output/Medication-related-med-presc-1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-example0-of-ext-meddisp.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-example0-of-ext-meddisp.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-example0-of-ext-meddisp.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 209, column 592: The link 'related-med-disp-1' for "related-med-disp-1" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-example0-of-ext-meddisp.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 209, column 819: The link 'related-med-disp-2' for "related-med-disp-2" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-example0-of-ext-meddisp.html#/html/body/div/div/div/div/div/div/p/a at Line 209, column 1006: The link 'original-med-disp-1' for "original-med-disp-1" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-example0-of-ext-meddisp.html#/html/body/div/div/div/div/div/div/p/a at Line 209, column 1368: The link 'original-med-disp-1' for "original-med-disp-1" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-example0-of-ext-meddisp.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-example0-of-ext-meddisp.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-example0-of-ext-meddisp.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -287,8 +291,8 @@ ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Confo
 ERROR: ImplementationGuide.url: Resource id/url mismatch: idmeds/http://example.com/fhir/example
 WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[10].name: value should not start or finish with whitespace
 WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[12].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[21].name: value should not start or finish with whitespace
-WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[29].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[22].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/idmeds: ImplementationGuide.definition.resource[30].name: value should not start or finish with whitespace
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds: URL Mismatch http://example.com/fhir/example/ImplementationGuide/idmeds vs http://example.com/fhir/example
 == fsh-generated/resources/Medication-example0-original-med-disp-1.json ==
 INFORMATION: Medication/example0-original-med-disp-1: Medication.code.coding[0]: Code System URI 'https://infarmed.gov.pt/codings/product_code' is unknown so the code cannot be validated
@@ -310,6 +314,13 @@ INFORMATION: Medication/example0-related-med-disp-2: Medication.code.coding[0]: 
 INFORMATION: Medication/example0-related-med-disp-2: Medication.form.coding[0]: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
 INFORMATION: Medication/example0-related-med-disp-2: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'https://npech.eu/codings/ingredient_code' is unknown so the code cannot be validated
 ERROR: Medication/example0-related-med-disp-2: Medication.ingredient[0].strength: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed
+== fsh-generated/resources/Medication-example0-related-med-disp-3.json ==
+INFORMATION: Medication/example0-related-med-disp-3: Medication.code.coding[0]: Code System URI 'https://npech.eu/codings/pmpid' is unknown so the code cannot be validated
+INFORMATION: Medication/example0-related-med-disp-3: Medication.form.coding[0]: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+ERROR: Medication/example0-related-med-disp-3: Medication.amount: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed
+INFORMATION: Medication/example0-related-med-disp-3: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'https://npech.eu/codings/ingredient_code' is unknown so the code cannot be validated
+ERROR: Medication/example0-related-med-disp-3: Medication.ingredient[0].strength: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed
+INFORMATION: Medication/example0-related-med-disp-3: Medication.ingredient[0].strength.numerator: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
 == fsh-generated/resources/Medication-example0-related-med-presc-1.json ==
 INFORMATION: Medication/example0-related-med-presc-1: Medication.code.coding[0]: Code System URI 'https://npech.eu/codings/phpid' is unknown so the code cannot be validated
 INFORMATION: Medication/example0-related-med-presc-1: Medication.form.coding[0]: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
@@ -367,9 +378,8 @@ INFORMATION: Medication/related-med-presc-1: Medication.ingredient[0].item.ofTyp
 ERROR: Medication/related-med-presc-1: Medication.ingredient[0].strength: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed
 == fsh-generated/resources/MedicationDispense-example0-of-ext-meddisp.json ==
 WARNING: MedicationDispense/example0-of-ext-meddisp: MedicationDispense.extension[0].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: MedicationDispense/example0-of-ext-meddisp: MedicationDispense.extension[0].extension[1].value.ofType(Reference): Unable to resolve resource 'related-med-disp-1'
 WARNING: MedicationDispense/example0-of-ext-meddisp: MedicationDispense.extension[1].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: MedicationDispense/example0-of-ext-meddisp: MedicationDispense.extension[1].extension[1].value.ofType(Reference): Unable to resolve resource 'related-med-disp-2'
+WARNING: MedicationDispense/example0-of-ext-meddisp: MedicationDispense.extension[2].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 ERROR: MedicationDispense/example0-of-ext-meddisp: MedicationDispense.medication.ofType(Reference): Unable to resolve resource 'original-med-disp-1'
 WARNING: MedicationDispense/example0-of-ext-meddisp: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: MedicationDispense/example0-of-ext-meddisp: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
