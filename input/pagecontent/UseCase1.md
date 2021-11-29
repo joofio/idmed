@@ -1,4 +1,4 @@
-<h2>The brand does not exist</h2>
+**The brand does not exist**
 
 In this case, the specific brand that was prescribed and/or dispensed is not available in the target country.
 Since most countries have active principle based prescription for its majority of cases, it is assumed that this use case will be more frequent regarding dispensing. 

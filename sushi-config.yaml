@@ -143,6 +143,8 @@ pages:
         title: Functional Discussion
         use-cases.md:
           title: Use Cases
+          UseCase0.md:
+            title: Use Case 0
           UseCase1.md:
             title: Use Case 1
         workflow.md:
