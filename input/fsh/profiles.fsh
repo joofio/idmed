@@ -20,10 +20,8 @@ Extension: RelatedMedication
 Id:        relatedMedication
 Title:     "Related Medication"
 Description: "Related Medication to be used on clinical medication workflow resources in order to portrait the information for cross-border. This extension is used on MedicationAdministration,MedicationDispense,MedicationRequest and MedicationStatement  resource."
-* insert ExtensionContext(MedicationAdministration)
-* insert ExtensionContext(MedicationDispense)
-* insert ExtensionContext(MedicationRequest)
-* insert ExtensionContext(MedicationStatement)
+* insert ExtensionContext(Medication)
+
 
 * extension contains
     relationType 1..1 MS and
@@ -42,28 +40,6 @@ RuleSet: ExtensionContext(path)
 * ^context[=].expression = "{path}"
 
 
-Profile: ExtendedRequest
-Parent: MedicationRequest
-* extension contains
-    RelatedMedication named relatedMedication 0..* MS 
-
-
-Profile: ExtendedAdministration
-Parent: MedicationAdministration
-* extension contains
-    RelatedMedication named relatedMedication 0..* MS
-
-
-Profile: ExtendedDispense
-Parent: MedicationDispense
-* extension contains
-    RelatedMedication named relatedMedication 0..* MS
-
-
-Profile: ExtendedStatement
-Parent: MedicationStatement
-* extension contains
-    RelatedMedication named relatedMedication 0..* MS
 
 
 // Define a local code system
