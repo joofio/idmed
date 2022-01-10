@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="c271c32d-b9a5-4fc8-ad58-8879ac8bc2ee"/>
+  <id value="9e65c58b-da50-4ee2-82b8-62afda79bc6b"/>
   <meta>
-    <lastUpdated value="2022-01-10T13:49:22.764+00:00"/>
+    <lastUpdated value="2022-01-10T14:20:15.899+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -107,7 +107,7 @@
         <name value="RelationTypeVS"/>
         <title value="Relation Type for Related Medication Value Set"/>
         <status value="active"/>
-        <date value="2022-01-10T13:49:22+00:00"/>
+        <date value="2022-01-10T14:20:15+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -137,8 +137,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c2de9735-7c2e-46bd-9f11-ebc1b0a2d6b6"/>
-          <timestamp value="2022-01-10T13:49:54+00:00"/>
+          <identifier value="urn:uuid:d0094f83-d5c7-4e20-a4d4-2720f0cc2264"/>
+          <timestamp value="2022-01-10T14:20:46+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>

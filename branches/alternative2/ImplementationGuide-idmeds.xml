@@ -257,7 +257,7 @@
       <reference>
         <reference value="Medication/enriched-med-presc-1"/>
       </reference>
-      <name value="Use case 0 - Medication Prescribed"/>
+      <name value="Use case 0 - Enriched Medication Prescribed"/>
       <description value="Medication prescribed enriched with information regarding cross-border"/>
       <exampleBoolean value="true"/>
     </resource>

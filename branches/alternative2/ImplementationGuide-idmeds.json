@@ -384,7 +384,7 @@
         "reference": {
           "reference": "Medication/enriched-med-presc-1"
         },
-        "name": "Use case 0 - Medication Prescribed",
+        "name": "Use case 0 - Enriched Medication Prescribed",
         "description": "Medication prescribed enriched with information regarding cross-border",
         "exampleBoolean": true
       },

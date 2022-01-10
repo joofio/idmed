@@ -367,7 +367,7 @@
          fhir:link <http://example.com/fhir/example/Medication/enriched-med-presc-1>;
          fhir:Reference.reference [ fhir:value "Medication/enriched-med-presc-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Medication Prescribed" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Enriched Medication Prescribed" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication prescribed enriched with information regarding cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
