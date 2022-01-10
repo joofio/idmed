@@ -367,7 +367,7 @@
          fhir:link <http://example.com/fhir/example/MedicationRequest/example0-of-medReq>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/example0-of-medReq" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Original Prescription of Medication" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Prescription of Medication" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original medication Request" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
@@ -381,8 +381,8 @@
          fhir:link <http://example.com/fhir/example/Medication/original-med-presc-1>;
          fhir:Reference.reference [ fhir:value "Medication/original-med-presc-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Original Medication Prescribed" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original Medication prescribed with data from the origin country. With no information regarding cross-border" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Medication Prescribed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication prescribed with data from the origin country. With no information regarding cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 7;

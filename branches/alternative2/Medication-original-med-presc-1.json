@@ -3,7 +3,7 @@
   "id": "original-med-presc-1",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"original-med-presc-1\" </p></div><blockquote><p><b>Related Medication</b></p><p><b>value</b>: SINGLE (Details: [not stated] code SINGLE = 'SINGLE', stated as 'null')</p><p><b>value</b>: <span></span></p></blockquote><p><b>code</b>: Paracetamol 500 mg Tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (product_code#2)</span></p><p><b>status</b>: active</p><p><b>form</b>: Tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (form#123)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Paracetamol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ingredient_code#4)</span></td><td>500 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"original-med-presc-1\" </p></div><blockquote><p><b>Related Medication</b></p><p><b>value</b>: SINGLE (Details: [not stated] code SINGLE = 'SINGLE', stated as 'null')</p><p><b>value</b>: <span></span></p></blockquote><p><b>code</b>: Monuril sachet 300 mg 2 units <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (product_code#2)</span></p><p><b>status</b>: active</p><p><b>form</b>: Powder for oral solution <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (form#123)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Fosfomycin <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ingredient_code#4)</span></td><td>300 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/</td></tr></table></div>"
   },
   "extension": [
     {
@@ -32,7 +32,7 @@
       {
         "system": "https://products.be/codings/product_code",
         "code": "2",
-        "display": "Paracetamol 500 mg Tablets"
+        "display": "Monuril sachet 300 mg 2 units"
       }
     ]
   },
@@ -42,7 +42,7 @@
       {
         "system": "http://naming.be/fhir/form",
         "code": "123",
-        "display": "Tablets"
+        "display": "Powder for oral solution"
       }
     ]
   },
@@ -53,13 +53,13 @@
           {
             "system": "https://ingredients.be/codings/ingredient_code",
             "code": "4",
-            "display": "Paracetamol"
+            "display": "Fosfomycin"
           }
         ]
       },
       "strength": {
         "numerator": {
-          "value": 500,
+          "value": 300,
           "system": "http://unitsofmeasure.org",
           "code": "mg"
         }
