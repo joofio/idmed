@@ -53,7 +53,7 @@ Instance: enriched-med-presc-1
 InstanceOf: Medication
 Usage: #example
 Description: "Medication prescribed enriched with information regarding cross-border"
-Title: "Use case 0 - Medication Prescribed"
+Title: "Use case 0 - Enriched Medication Prescribed"
 
 
 * code = https://products.be/codings/product_code#2 "Monuril sachet 300 mg 2 units"
