@@ -384,7 +384,7 @@
         "reference": {
           "reference": "MedicationRequest/example0-of-medReq"
         },
-        "name": "Use case 0 - Original Prescription of Medication",
+        "name": "Use case 0 - Prescription of Medication",
         "description": "Original medication Request",
         "exampleBoolean": true
       },
@@ -398,8 +398,8 @@
         "reference": {
           "reference": "Medication/original-med-presc-1"
         },
-        "name": "Use case 0 - Original Medication Prescribed",
-        "description": "Original Medication prescribed with data from the origin country. With no information regarding cross-border",
+        "name": "Use case 0 - Medication Prescribed",
+        "description": "Medication prescribed with data from the origin country. With no information regarding cross-border",
         "exampleBoolean": true
       },
       {
