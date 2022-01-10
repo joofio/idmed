@@ -1,13 +1,14 @@
 ﻿IDMeds : Validation Results
 =========================================
 
-err = 5, warn = 5, info = 7
+err = 6, warn = 5, info = 10
 IG Publisher Version: 1.1.93
-Generated Mon Jan 10 10:52:31 UTC 2022. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
- Build Errors : 60 / 2 / 0
+Generated Mon Jan 10 13:50:00 UTC 2022. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 65 / 2 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-relationtype-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/Medication-original-med-presc-1 : 1 / 1 / 4
+ /github/workspace/fsh-generated/resources/Medication-enriched-med-presc-1 : 1 / 1 / 4
+ /github/workspace/fsh-generated/resources/Medication-original-med-presc-1 : 1 / 0 / 4
  /github/workspace/fsh-generated/resources/Medication-related-med-presc-1 : 1 / 0 / 4
  /github/workspace/fsh-generated/resources/MedicationRequest-example0-of-medReq : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 0 / 1
@@ -24,6 +25,11 @@ ERROR: /github/workspace/output/CodeSystem-relationtype-cs.json.html#/html/body/
 ERROR: /github/workspace/output/CodeSystem-relationtype-cs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-relationtype-cs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/FunctionalDiscussion.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-enriched-med-presc-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-enriched-med-presc-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-enriched-med-presc-1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-enriched-med-presc-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-enriched-med-presc-1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Medication-original-med-presc-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Medication-original-med-presc-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Medication-original-med-presc-1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -84,8 +90,13 @@ WARNING: CodeSystem/relationtype-cs: CodeSystem: HL7 Defined CodeSystems SHOULD 
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/idmeds) does not match the URL (http://example.com/fhir/example)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: idmeds/http://example.com/fhir/example
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds: URL Mismatch http://example.com/fhir/example/ImplementationGuide/idmeds vs http://example.com/fhir/example
+== fsh-generated/resources/Medication-enriched-med-presc-1.json ==
+WARNING: Medication/enriched-med-presc-1: Medication.extension[0].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+INFORMATION: Medication/enriched-med-presc-1: Medication.code.coding[0]: Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated
+INFORMATION: Medication/enriched-med-presc-1: Medication.form.coding[0]: Code System URI 'http://naming.be/fhir/form' is unknown so the code cannot be validated
+INFORMATION: Medication/enriched-med-presc-1: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'https://ingredients.be/codings/ingredient_code' is unknown so the code cannot be validated
+ERROR: Medication/enriched-med-presc-1: Medication.ingredient[0].strength: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed
 == fsh-generated/resources/Medication-original-med-presc-1.json ==
-WARNING: Medication/original-med-presc-1: Medication.extension[0].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 INFORMATION: Medication/original-med-presc-1: Medication.code.coding[0]: Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated
 INFORMATION: Medication/original-med-presc-1: Medication.form.coding[0]: Code System URI 'http://naming.be/fhir/form' is unknown so the code cannot be validated
 INFORMATION: Medication/original-med-presc-1: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'https://ingredients.be/codings/ingredient_code' is unknown so the code cannot be validated
