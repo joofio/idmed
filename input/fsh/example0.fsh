@@ -29,11 +29,30 @@ Title: "Use case 0 - Prescription of Medication"
 
 
 
-
 Instance: original-med-presc-1
 InstanceOf: Medication
 Usage: #example
 Description: "Medication prescribed with data from the origin country. With no information regarding cross-border"
+Title: "Use case 0 - Medication Prescribed"
+
+
+* code = https://products.be/codings/product_code#2 "Monuril sachet 300 mg 2 units"
+
+* status = #active
+
+* form = http://naming.be/fhir/form#123 "Powder for oral solution"
+
+* ingredient.itemCodeableConcept = https://ingredients.be/codings/ingredient_code#4 "Fosfomycin"  
+
+* ingredient.strength.numerator.value = 300  
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
+
+
+Instance: enriched-med-presc-1
+InstanceOf: Medication
+Usage: #example
+Description: "Medication prescribed enriched with information regarding cross-border"
 Title: "Use case 0 - Medication Prescribed"
 
 
@@ -54,6 +73,7 @@ Title: "Use case 0 - Medication Prescribed"
   * extension[relatedMed]
     * valueReference.identifier.system = "https://npech.eu/codings/phpid"
     * valueReference.identifier.value = "Ab350"
+
 
 
 Instance: related-med-presc-1
