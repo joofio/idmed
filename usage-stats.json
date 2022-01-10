@@ -131,30 +131,6 @@
         "url": "http://example.com/fhir/example/StructureDefinition/DefinedMed",
         "title": "DefinedMed"
       }
-    ],
-    "MedicationAdministration": [
-      {
-        "url": "http://example.com/fhir/example/StructureDefinition/ExtendedAdministration",
-        "title": "ExtendedAdministration"
-      }
-    ],
-    "MedicationDispense": [
-      {
-        "url": "http://example.com/fhir/example/StructureDefinition/ExtendedDispense",
-        "title": "ExtendedDispense"
-      }
-    ],
-    "MedicationRequest": [
-      {
-        "url": "http://example.com/fhir/example/StructureDefinition/ExtendedRequest",
-        "title": "ExtendedRequest"
-      }
-    ],
-    "MedicationStatement": [
-      {
-        "url": "http://example.com/fhir/example/StructureDefinition/ExtendedStatement",
-        "title": "ExtendedStatement"
-      }
     ]
   },
   "usage": {
@@ -162,10 +138,7 @@
       "Medication"
     ],
     "http://example.com/fhir/example/StructureDefinition/relatedMedication": [
-      "MedicationAdministration",
-      "MedicationDispense",
-      "MedicationRequest",
-      "MedicationStatement"
+      "Medication"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"

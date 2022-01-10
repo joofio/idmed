@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "RelatedMedication"];
   fhir:StructureDefinition.title [ fhir:value "Related Medication"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-11-29T15:16:16+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-01-10T10:36:54+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "My Organization"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -63,19 +63,7 @@
   fhir:StructureDefinition.context [
      fhir:index 0;
      fhir:StructureDefinition.context.type [ fhir:value "element" ];
-     fhir:StructureDefinition.context.expression [ fhir:value "MedicationAdministration" ]
-  ], [
-     fhir:index 1;
-     fhir:StructureDefinition.context.type [ fhir:value "element" ];
-     fhir:StructureDefinition.context.expression [ fhir:value "MedicationDispense" ]
-  ], [
-     fhir:index 2;
-     fhir:StructureDefinition.context.type [ fhir:value "element" ];
-     fhir:StructureDefinition.context.expression [ fhir:value "MedicationRequest" ]
-  ], [
-     fhir:index 3;
-     fhir:StructureDefinition.context.type [ fhir:value "element" ];
-     fhir:StructureDefinition.context.expression [ fhir:value "MedicationStatement" ]
+     fhir:StructureDefinition.context.expression [ fhir:value "Medication" ]
   ];
   fhir:StructureDefinition.type [ fhir:value "Extension"];
   fhir:StructureDefinition.baseDefinition [

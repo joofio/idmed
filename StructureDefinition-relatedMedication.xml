@@ -22,7 +22,7 @@
   <name value="RelatedMedication"/>
   <title value="Related Medication"/>
   <status value="active"/>
-  <date value="2021-11-29T15:16:16+00:00"/>
+  <date value="2022-01-10T10:36:54+00:00"/>
   <publisher value="My Organization"/>
   <contact>
     <name value="My Organization"/>
@@ -61,19 +61,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="MedicationAdministration"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="MedicationDispense"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="MedicationRequest"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="MedicationStatement"/>
+    <expression value="Medication"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

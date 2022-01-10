@@ -14,34 +14,6 @@
     "name": "DefinedMed"
   },
   {
-    "id": "ExtendedAdministration",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/ExtendedAdministration",
-    "version": "1.0.0",
-    "name": "ExtendedAdministration"
-  },
-  {
-    "id": "ExtendedDispense",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/ExtendedDispense",
-    "version": "1.0.0",
-    "name": "ExtendedDispense"
-  },
-  {
-    "id": "ExtendedRequest",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/ExtendedRequest",
-    "version": "1.0.0",
-    "name": "ExtendedRequest"
-  },
-  {
-    "id": "ExtendedStatement",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/ExtendedStatement",
-    "version": "1.0.0",
-    "name": "ExtendedStatement"
-  },
-  {
     "id": "drugCharacteristic",
     "type": "StructureDefinition",
     "url": "http://example.com/fhir/example/StructureDefinition/drugCharacteristic",
