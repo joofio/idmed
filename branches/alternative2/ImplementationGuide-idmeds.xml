@@ -306,21 +306,11 @@
           <nameUrl value="implementation.html"/>
           <title value="Implementation"/>
           <generation value="markdown"/>
-          <page>
-            <nameUrl value="alternative1.html"/>
-            <title value="Alternative 1"/>
-            <generation value="markdown"/>
-          </page>
-          <page>
-            <nameUrl value="alternative2.html"/>
-            <title value="Alternative 2"/>
-            <generation value="markdown"/>
-          </page>
-          <page>
-            <nameUrl value="generic-workflow.html"/>
-            <title value="Generic Workflow"/>
-            <generation value="markdown"/>
-          </page>
+        </page>
+        <page>
+          <nameUrl value="generic-workflow.html"/>
+          <title value="Generic Workflow"/>
+          <generation value="markdown"/>
         </page>
         <page>
           <nameUrl value="FunctionalDiscussion.html"/>
@@ -344,11 +334,6 @@
           <page>
             <nameUrl value="workflow.html"/>
             <title value="Workflow"/>
-            <generation value="markdown"/>
-          </page>
-          <page>
-            <nameUrl value="open-questions.html"/>
-            <title value="Open Questions"/>
             <generation value="markdown"/>
           </page>
         </page>
