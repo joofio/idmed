@@ -1,16 +1,16 @@
 ﻿IDMeds : Validation Results
 =========================================
 
-err = 6, warn = 5, info = 10
+err = 4, warn = 5, info = 7
 IG Publisher Version: 1.1.93
-Generated Mon Jan 10 19:39:26 UTC 2022. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
+Generated Mon Jan 10 19:48:39 UTC 2022. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
  Build Errors : 62 / 2 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-relationtype-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/Medication-enriched-med-presc-1 : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/Medication-original-med-presc-1 : 1 / 0 / 4
+ /github/workspace/fsh-generated/resources/Medication-enriched-med-presc-1 : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Medication-original-med-presc-1 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Medication-related-med-presc-1 : 1 / 0 / 4
- /github/workspace/fsh-generated/resources/MedicationRequest-example0-of-medReq : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/MedicationRequest-example0-of-medReq : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-relatedMedication : 0 / 0 / 1
@@ -90,20 +90,15 @@ ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds: URL
 == fsh-generated/resources/Medication-enriched-med-presc-1.json ==
 WARNING: Medication/enriched-med-presc-1: Medication.extension[0].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 INFORMATION: Medication/enriched-med-presc-1: Medication.code.coding[0]: Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated
-INFORMATION: Medication/enriched-med-presc-1: Medication.form.coding[0]: Code System URI 'http://naming.be/fhir/form' is unknown so the code cannot be validated
-INFORMATION: Medication/enriched-med-presc-1: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'https://ingredients.be/codings/ingredient_code' is unknown so the code cannot be validated
-ERROR: Medication/enriched-med-presc-1: Medication.ingredient[0].strength: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed
 == fsh-generated/resources/Medication-original-med-presc-1.json ==
 INFORMATION: Medication/original-med-presc-1: Medication.code.coding[0]: Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated
-INFORMATION: Medication/original-med-presc-1: Medication.form.coding[0]: Code System URI 'http://naming.be/fhir/form' is unknown so the code cannot be validated
-INFORMATION: Medication/original-med-presc-1: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'https://ingredients.be/codings/ingredient_code' is unknown so the code cannot be validated
-ERROR: Medication/original-med-presc-1: Medication.ingredient[0].strength: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed
 == fsh-generated/resources/Medication-related-med-presc-1.json ==
 INFORMATION: Medication/related-med-presc-1: Medication.code.coding[0]: Code System URI 'https://npech.eu/codings/phpid' is unknown so the code cannot be validated
 INFORMATION: Medication/related-med-presc-1: Medication.form.coding[0]: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
 INFORMATION: Medication/related-med-presc-1: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'https://npech.eu/codings/ingredient_code' is unknown so the code cannot be validated
 ERROR: Medication/related-med-presc-1: Medication.ingredient[0].strength: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed
 == fsh-generated/resources/MedicationRequest-example0-of-medReq.json ==
+INFORMATION: MedicationRequest/example0-of-medReq: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/example0-of-medReq: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'https://codings.be/codings/route_codes' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-DefinedMed.json ==
 == fsh-generated/resources/StructureDefinition-drugCharacteristic.json ==
