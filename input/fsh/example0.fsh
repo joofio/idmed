@@ -2,7 +2,7 @@ Instance: example0-of-medReq
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "Original medication Request"
-Title: "Use case 0 - Prescription of Medication"
+Title: "1 - Prescription of Medication"
 
 * identifier[0].system = "http://prescription-identifiers.com"
 * identifier[0].value = "69eb6358-6eb6-40e4-972f-33d22c3392c5"
@@ -33,7 +33,7 @@ Instance: original-med-presc-1
 InstanceOf: Medication
 Usage: #example
 Description: "Medication prescribed with data from the origin country. With no information regarding cross-border"
-Title: "Use case 0 - Medication Prescribed"
+Title: "2 - Medication Prescribed"
 
 
 * code = https://products.be/codings/product_code#2 "Monuril sachet 300 mg 2 units"
@@ -53,7 +53,7 @@ Instance: enriched-med-presc-1
 InstanceOf: Medication
 Usage: #example
 Description: "Medication prescribed enriched with information regarding cross-border"
-Title: "Use case 0 - Enriched Medication Prescribed"
+Title: "3 - Enriched Medication Prescribed"
 
 
 * code = https://products.be/codings/product_code#2 "Monuril sachet 300 mg 2 units"
@@ -80,7 +80,7 @@ Instance: related-med-presc-1
 InstanceOf: DefinedMed
 Usage: #example
 Description: "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected"
-Title: "Use case 0 - Related Medication to prescription [Pharmaceutical Product]"
+Title: "4 - Related Medication to prescription [Pharmaceutical Product]"
 
 
 * code = https://npech.eu/codings/phpid#Ab350 "Fosfomycin sachet 300 mg"
