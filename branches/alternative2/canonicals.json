@@ -1,0 +1,44 @@
+[
+  {
+    "id": "idmeds",
+    "type": "ImplementationGuide",
+    "url": "http://example.com/fhir/example",
+    "version": "1.0.0",
+    "name": "IDMeds"
+  },
+  {
+    "id": "DefinedMed",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/DefinedMed",
+    "version": "1.0.0",
+    "name": "DefinedMed"
+  },
+  {
+    "id": "drugCharacteristic",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/drugCharacteristic",
+    "version": "1.0.0",
+    "name": "DrugCharacteristic"
+  },
+  {
+    "id": "relatedMedication",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/relatedMedication",
+    "version": "1.0.0",
+    "name": "RelatedMedication"
+  },
+  {
+    "id": "relationtype-vs",
+    "type": "ValueSet",
+    "url": "http://example.com/fhir/example/ValueSet/relationtype-vs",
+    "version": "1.0.0",
+    "name": "RelationTypeVS"
+  },
+  {
+    "id": "relationtype-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.hl7.org/CodeSystem/relationtype",
+    "version": "1.0.0",
+    "name": "RelationTypeCS"
+  }
+]

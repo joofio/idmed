@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="50443436-e65e-4143-80e8-c35cf23649c7"/>
+  <meta>
+    <lastUpdated value="2022-01-10T10:36:54.094+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/relationtype-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="relationtype-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 8 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-relationtype-cs.html">Relation Type for Related Medication Code System v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-relationtype-cs.html">
+                <code>http://terminology.hl7.org/CodeSystem/relationtype</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-relationtype-SINGLE"> </a>
+                  <a href="CodeSystem-relationtype-cs.html#relationtype-cs-SINGLE">SINGLE</a>
+                </td>
+                <td>Direct Translation</td>
+                <td>Direct Translation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-relationtype-MULTIPLE"> </a>
+                  <a href="CodeSystem-relationtype-cs.html#relationtype-cs-MULTIPLE">MULTIPLE</a>
+                </td>
+                <td>One of many possibilities</td>
+                <td>One of many possibilities</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-relationtype-DIFFERENT"> </a>
+                  <a href="CodeSystem-relationtype-cs.html#relationtype-cs-DIFFERENT">DIFFERENT</a>
+                </td>
+                <td>Different Drug</td>
+                <td>Different Drug</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-relationtype-DIF-Strength"> </a>
+                  <a href="CodeSystem-relationtype-cs.html#relationtype-cs-DIF_Strength">DIF_Strength</a>
+                </td>
+                <td>Different Strength</td>
+                <td>Different Strength</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-relationtype-DIF-BRAND"> </a>
+                  <a href="CodeSystem-relationtype-cs.html#relationtype-cs-DIF_BRAND">DIF_BRAND</a>
+                </td>
+                <td>Different Brand</td>
+                <td>Different Brand</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-relationtype-DIF-FORM"> </a>
+                  <a href="CodeSystem-relationtype-cs.html#relationtype-cs-DIF_FORM">DIF_FORM</a>
+                </td>
+                <td>Different Pharmaceutical Form</td>
+                <td>Different Pharmaceutical Form</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-relationtype-DIF-PACKSIZE"> </a>
+                  <a href="CodeSystem-relationtype-cs.html#relationtype-cs-DIF_PACKSIZE">DIF_PACKSIZE</a>
+                </td>
+                <td>Different Pack Size</td>
+                <td>Different Pack Size</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-relationtype-DIF-ROUTE"> </a>
+                  <a href="CodeSystem-relationtype-cs.html#relationtype-cs-DIF_ROUTE">DIF_ROUTE</a>
+                </td>
+                <td>Different Administration Route</td>
+                <td>Different Administration Route</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/relationtype-vs"/>
+        <version value="1.0.0"/>
+        <name value="RelationTypeVS"/>
+        <title value="Relation Type for Related Medication Value Set"/>
+        <status value="active"/>
+        <date value="2022-01-10T10:36:54+00:00"/>
+        <publisher value="My Organization"/>
+        <contact>
+          <name value="My Organization"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="my-group@example.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Indicates the relation of the related medication with the original medication"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:709ede14-f0ec-48b1-9d79-98d8274245d8"/>
+          <timestamp value="2022-01-10T10:37:29+00:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/relationtype|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/relationtype"/>
+            <code value="SINGLE"/>
+            <display value="Direct Translation"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/relationtype"/>
+            <code value="MULTIPLE"/>
+            <display value="One of many possibilities"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/relationtype"/>
+            <code value="DIFFERENT"/>
+            <display value="Different Drug"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/relationtype"/>
+            <code value="DIF_Strength"/>
+            <display value="Different Strength"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/relationtype"/>
+            <code value="DIF_BRAND"/>
+            <display value="Different Brand"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/relationtype"/>
+            <code value="DIF_FORM"/>
+            <display value="Different Pharmaceutical Form"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/relationtype"/>
+            <code value="DIF_PACKSIZE"/>
+            <display value="Different Pack Size"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/relationtype"/>
+            <code value="DIF_ROUTE"/>
+            <display value="Different Administration Route"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

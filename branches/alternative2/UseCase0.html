@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>IDMEDS\Use Case 0 - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/hl7-be.css"/>
+  <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/colors.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+  <!-- Questionnaire: -->
+    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
+
+
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1.2.1.1"}
+    h3,h4,h5,h6{--heading-prefix:"1.2.1.1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="ig-nav">
+          <a no-external="true" id="hl7-logo" href="https://hl7-be.github.io">
+            <img src="assets/images/hl7be-logo-header.png" alt="HL7 Belgium" height="65"/>
+          </a>
+        </div>
+        <div id="fhir-nav">
+          <a no-external="true" id="fhir-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="ig-search">
+          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide</span><br/>1.0.0 - STU1</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+  <!-- <li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+
+	</li> -->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="use-cases.html">Use Cases</a>
+			</li>
+		</ul>
+	</li>
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a name="l212">​</a><a href="downloads.html">Downloads</a></li>
+		</ul>
+	</li>
+</ul>      
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+    
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="index.html"><b>Home</b></a></li><li><a href="FunctionalDiscussion.html"><b>Functional Discussion</b></a></li><li><a href="use-cases.html"><b>Use Cases</b></a></li><li><b>Use Case 0</b></li>
+          
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">HL7 FHIR Implementation Guide - Local Development build (v1.0.0). See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Use Case 0</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<p><strong>Generic Path</strong></p>
+
+<p>In this use case, the drug is translated to european standard and the requesting country also can translate that information to its local drug information.</p>
+
+<p>The data in the origin country is translated to the european standard.</p>
+
+<div>
+  <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg contentStyleType="text/css" viewBox="0 0 748 743" zoomAndPan="magnify" preserveAspectRatio="none" width="748px" style="width:748px;height:743px;" contentScriptType="application/ecmascript" version="1.1" height="743px"><defs></defs><g><text lengthAdjust="spacing" x="310.75" font-size="18" textLength="114" y="16.708" font-family="sans-serif" fill="#000000">Generic path</text>  <!-- MD5=[9e445810a5c3e9166a62c924ae54cd77]
+class OP --><rect codeLine="44" width="186" x="7" y="328.4531" style="stroke:#2F4F4F;stroke-width:1.5;" id="OP" fill="#F5F5F5" height="133.6016"></rect><rect width="186" x="7" y="328.4531" style="stroke:#2F4F4F;stroke-width:1.5;" fill="#909090" height="23.9688"></rect><text font-weight="bold" lengthAdjust="spacing" x="29" font-size="12" textLength="142" y="344.5918" font-family="sans-serif" fill="#000000">OriginalPrescription</text><line y1="352.4219" x1="8" y2="352.4219" style="stroke:#2F4F4F;stroke-width:1.5;" x2="192"></line><text lengthAdjust="spacing" x="29" font-size="11" textLength="164" y="372.6323" font-family="sans-serif" fill="#000000">Active Principle: Paracetamol</text><text lengthAdjust="spacing" x="37" font-size="11" textLength="65" y="385.437" font-family="sans-serif" fill="#000000">System: PT</text><text lengthAdjust="spacing" x="29" font-size="11" textLength="100" y="398.2417" font-family="sans-serif" fill="#000000">Strength: 500 mg</text><text lengthAdjust="spacing" x="37" font-size="11" textLength="65" y="411.0464" font-family="sans-serif" fill="#000000">System: PT</text><text lengthAdjust="spacing" x="29" font-size="11" textLength="79" y="423.8511" font-family="sans-serif" fill="#000000">Form: Tablets</text><text lengthAdjust="spacing" x="37" font-size="11" textLength="65" y="436.6558" font-family="sans-serif" fill="#000000">System: PT</text><rect width="2" x="22" y="367.8242" style="stroke:#000000;stroke-width:1.0;" fill="#F5F5F5" height="2"></rect><line y1="368.8242" x1="15" y2="368.8242" style="stroke:#000000;stroke-width:1.0;" x2="23"></line><line y1="362.4219" x1="15" y2="368.8242" style="stroke:#000000;stroke-width:1.0;" x2="15"></line><rect width="2" x="30" y="380.6289" style="stroke:#000000;stroke-width:1.0;" fill="#F5F5F5" height="2"></rect><line y1="381.6289" x1="23" y2="381.6289" style="stroke:#000000;stroke-width:1.0;" x2="31"></line><line y1="368.8242" x1="23" y2="381.6289" style="stroke:#000000;stroke-width:1.0;" x2="23"></line><rect width="2" x="22" y="393.4336" style="stroke:#000000;stroke-width:1.0;" fill="#F5F5F5" height="2"></rect><line y1="394.4336" x1="15" y2="394.4336" style="stroke:#000000;stroke-width:1.0;" x2="23"></line><line y1="368.8242" x1="15" y2="394.4336" style="stroke:#000000;stroke-width:1.0;" x2="15"></line><rect width="2" x="30" y="406.2383" style="stroke:#000000;stroke-width:1.0;" fill="#F5F5F5" height="2"></rect><line y1="407.2383" x1="23" y2="407.2383" style="stroke:#000000;stroke-width:1.0;" x2="31"></line><line y1="394.4336" x1="23" y2="407.2383" style="stroke:#000000;stroke-width:1.0;" x2="23"></line><rect width="2" x="22" y="419.043" style="stroke:#000000;stroke-width:1.0;" fill="#F5F5F5" height="2"></rect><line y1="420.043" x1="15" y2="420.043" style="stroke:#000000;stroke-width:1.0;" x2="23"></line><line y1="394.4336" x1="15" y2="420.043" style="stroke:#000000;stroke-width:1.0;" x2="15"></line><rect width="2" x="30" y="431.8477" style="stroke:#000000;stroke-width:1.0;" fill="#F5F5F5" height="2"></rect><line y1="432.8477" x1="23" y2="432.8477" style="stroke:#000000;stroke-width:1.0;" x2="31"></line><line y1="420.043" x1="23" y2="432.8477" style="stroke:#000000;stroke-width:1.0;" x2="23"></line><line y1="441.25" x1="8" y2="441.25" style="stroke:#2F4F4F;stroke-width:1.0;" x2="192"></line><text lengthAdjust="spacing" x="13" font-size="11" textLength="139" y="455.4604" font-family="sans-serif" fill="#000000">MedicationRequest (PhP)</text>  <!-- MD5=[d403570e236b49771cd2b3a0d8b567fa]
+class RMP --><rect codeLine="56" width="186" x="268" y="315.9531" style="stroke:#505090;stroke-width:1.5;" id="RMP" fill="#C2F0FF" height="159.2109"></rect><rect width="186" x="268" y="315.9531" style="stroke:#505090;stroke-width:1.5;" fill="#87CEEB" height="23.9688"></rect><text lengthAdjust="spacing" x="277" font-size="12" textLength="0" y="332.0918" font-family="sans-serif" fill="#000000"></text><text font-weight="bold" lengthAdjust="spacing" x="277" font-size="12" textLength="168" y="332.0918" font-family="sans-serif" fill="#000000">Pharmaceutical Product</text><text lengthAdjust="spacing" x="449" font-size="12" textLength="0" y="332.0918" font-family="sans-serif" fill="#000000"></text><line y1="339.9219" x1="269" y2="339.9219" style="stroke:#505090;stroke-width:1.5;" x2="453"></line><text lengthAdjust="spacing" x="290" font-size="11" textLength="164" y="360.1323" font-family="sans-serif" fill="#000000">Active Principle: Paracetamol</text><text lengthAdjust="spacing" x="298" font-size="11" textLength="66" y="372.937" font-family="sans-serif" fill="#000000">System: EU</text><text lengthAdjust="spacing" x="290" font-size="11" textLength="100" y="385.7417" font-family="sans-serif" fill="#000000">Strength: 500 mg</text><text lengthAdjust="spacing" x="298" font-size="11" textLength="66" y="398.5464" font-family="sans-serif" fill="#000000">System: EU</text><text lengthAdjust="spacing" x="290" font-size="11" textLength="79" y="411.3511" font-family="sans-serif" fill="#000000">Form: Tablets</text><text lengthAdjust="spacing" x="298" font-size="11" textLength="66" y="424.1558" font-family="sans-serif" fill="#000000">System: EU</text><text lengthAdjust="spacing" x="290" font-size="11" textLength="0" y="436.9604" font-family="sans-serif" fill="#000000"></text><text lengthAdjust="spacing" x="290" font-size="11" textLength="50" y="436.9604" font-family="sans-serif" font-style="italic" fill="#808080">Brand: --</text><text lengthAdjust="spacing" x="290" font-size="11" textLength="0" y="449.7651" font-family="sans-serif" fill="#000000"></text><text lengthAdjust="spacing" x="290" font-size="11" textLength="46" y="449.7651" font-family="sans-serif" font-style="italic" fill="#808080">Pack : --</text><rect width="2" x="283" y="355.3242" style="stroke:#000000;stroke-width:1.0;" fill="#C2F0FF" height="2"></rect><line y1="356.3242" x1="276" y2="356.3242" style="stroke:#000000;stroke-width:1.0;" x2="284"></line><line y1="349.9219" x1="276" y2="356.3242" style="stroke:#000000;stroke-width:1.0;" x2="276"></line><rect width="2" x="291" y="368.1289" style="stroke:#000000;stroke-width:1.0;" fill="#C2F0FF" height="2"></rect><line y1="369.1289" x1="284" y2="369.1289" style="stroke:#000000;stroke-width:1.0;" x2="292"></line><line y1="356.3242" x1="284" y2="369.1289" style="stroke:#000000;stroke-width:1.0;" x2="284"></line><rect width="2" x="283" y="380.9336" style="stroke:#000000;stroke-width:1.0;" fill="#C2F0FF" height="2"></rect><line y1="381.9336" x1="276" y2="381.9336" style="stroke:#000000;stroke-width:1.0;" x2="284"></line><line y1="356.3242" x1="276" y2="381.9336" style="stroke:#000000;stroke-width:1.0;" x2="276"></line><rect width="2" x="291" y="393.7383" style="stroke:#000000;stroke-width:1.0;" fill="#C2F0FF" height="2"></rect><line y1="394.7383" x1="284" y2="394.7383" style="stroke:#000000;stroke-width:1.0;" x2="292"></line><line y1="381.9336" x1="284" y2="394.7383" style="stroke:#000000;stroke-width:1.0;" x2="284"></line><rect width="2" x="283" y="406.543" style="stroke:#000000;stroke-width:1.0;" fill="#C2F0FF" height="2"></rect><line y1="407.543" x1="276" y2="407.543" style="stroke:#000000;stroke-width:1.0;" x2="284"></line><line y1="381.9336" x1="276" y2="407.543" style="stroke:#000000;stroke-width:1.0;" x2="276"></line><rect width="2" x="291" y="419.3477" style="stroke:#000000;stroke-width:1.0;" fill="#C2F0FF" height="2"></rect><line y1="420.3477" x1="284" y2="420.3477" style="stroke:#000000;stroke-width:1.0;" x2="292"></line><line y1="407.543" x1="284" y2="420.3477" style="stroke:#000000;stroke-width:1.0;" x2="284"></line><rect width="2" x="283" y="432.1523" style="stroke:#000000;stroke-width:1.0;" fill="#C2F0FF" height="2"></rect><line y1="433.1523" x1="276" y2="433.1523" style="stroke:#000000;stroke-width:1.0;" x2="284"></line><line y1="407.543" x1="276" y2="433.1523" style="stroke:#000000;stroke-width:1.0;" x2="276"></line><rect width="2" x="283" y="444.957" style="stroke:#000000;stroke-width:1.0;" fill="#C2F0FF" height="2"></rect><line y1="445.957" x1="276" y2="445.957" style="stroke:#000000;stroke-width:1.0;" x2="284"></line><line y1="433.1523" x1="276" y2="445.957" style="stroke:#000000;stroke-width:1.0;" x2="276"></line><line y1="454.3594" x1="269" y2="454.3594" style="stroke:#505090;stroke-width:1.0;" x2="453"></line><text lengthAdjust="spacing" x="274" font-size="11" textLength="100" y="468.5698" font-family="sans-serif" fill="#000000">relatedMedication</text>  <!-- MD5=[3f74cf779cde8710f81c5db8f6f73c73]
+class OD --><rect codeLine="70" width="186" x="540" y="302.9531" style="stroke:#8B4513;stroke-width:1.5;" id="OD" fill="#F4A460" height="184.8203"></rect><rect width="186" x="540" y="302.9531" style="stroke:#8B4513;stroke-width:1.5;" fill="#FF7F50" height="23.9688"></rect><text lengthAdjust="spacing" x="570" font-size="12" textLength="0" y="319.0918" font-family="sans-serif" fill="#000000"></text><text font-weight="bold" lengthAdjust="spacing" x="570" font-size="12" textLength="122" y="319.0918" font-family="sans-serif" fill="#000000">OriginalDispense</text><text lengthAdjust="spacing" x="700" font-size="12" textLength="0" y="319.0918" font-family="sans-serif" fill="#000000"></text><line y1="326.9219" x1="541" y2="326.9219" style="stroke:#8B4513;stroke-width:1.5;" x2="725"></line><text lengthAdjust="spacing" x="562" font-size="11" textLength="164" y="347.1323" font-family="sans-serif" fill="#000000">Active Principle: Paracetamol</text><text lengthAdjust="spacing" x="570" font-size="11" textLength="65" y="359.937" font-family="sans-serif" fill="#000000">System: PT</text><text lengthAdjust="spacing" x="562" font-size="11" textLength="100" y="372.7417" font-family="sans-serif" fill="#000000">Strength: 500 mg</text><text lengthAdjust="spacing" x="570" font-size="11" textLength="65" y="385.5464" font-family="sans-serif" fill="#000000">System: PT</text><text lengthAdjust="spacing" x="562" font-size="11" textLength="79" y="398.3511" font-family="sans-serif" fill="#000000">Form: Tablets</text><text lengthAdjust="spacing" x="570" font-size="11" textLength="65" y="411.1558" font-family="sans-serif" fill="#000000">System: PT</text><text lengthAdjust="spacing" x="562" font-size="11" textLength="98" y="423.9604" font-family="sans-serif" fill="#000000">Brand: Ben-u-ron</text><text lengthAdjust="spacing" x="570" font-size="11" textLength="65" y="436.7651" font-family="sans-serif" fill="#000000">System: PT</text><text lengthAdjust="spacing" x="562" font-size="11" textLength="103" y="449.5698" font-family="sans-serif" fill="#000000">Pack size: 20 tabs</text><text lengthAdjust="spacing" x="570" font-size="11" textLength="65" y="462.3745" font-family="sans-serif" fill="#000000">System: PT</text><rect width="2" x="555" y="342.3242" style="stroke:#000000;stroke-width:1.0;" fill="#F4A460" height="2"></rect><line y1="343.3242" x1="548" y2="343.3242" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><line y1="336.9219" x1="548" y2="343.3242" style="stroke:#000000;stroke-width:1.0;" x2="548"></line><rect width="2" x="563" y="355.1289" style="stroke:#000000;stroke-width:1.0;" fill="#F4A460" height="2"></rect><line y1="356.1289" x1="556" y2="356.1289" style="stroke:#000000;stroke-width:1.0;" x2="564"></line><line y1="343.3242" x1="556" y2="356.1289" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><rect width="2" x="555" y="367.9336" style="stroke:#000000;stroke-width:1.0;" fill="#F4A460" height="2"></rect><line y1="368.9336" x1="548" y2="368.9336" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><line y1="343.3242" x1="548" y2="368.9336" style="stroke:#000000;stroke-width:1.0;" x2="548"></line><rect width="2" x="563" y="380.7383" style="stroke:#000000;stroke-width:1.0;" fill="#F4A460" height="2"></rect><line y1="381.7383" x1="556" y2="381.7383" style="stroke:#000000;stroke-width:1.0;" x2="564"></line><line y1="368.9336" x1="556" y2="381.7383" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><rect width="2" x="555" y="393.543" style="stroke:#000000;stroke-width:1.0;" fill="#F4A460" height="2"></rect><line y1="394.543" x1="548" y2="394.543" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><line y1="368.9336" x1="548" y2="394.543" style="stroke:#000000;stroke-width:1.0;" x2="548"></line><rect width="2" x="563" y="406.3477" style="stroke:#000000;stroke-width:1.0;" fill="#F4A460" height="2"></rect><line y1="407.3477" x1="556" y2="407.3477" style="stroke:#000000;stroke-width:1.0;" x2="564"></line><line y1="394.543" x1="556" y2="407.3477" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><rect width="2" x="555" y="419.1523" style="stroke:#000000;stroke-width:1.0;" fill="#F4A460" height="2"></rect><line y1="420.1523" x1="548" y2="420.1523" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><line y1="394.543" x1="548" y2="420.1523" style="stroke:#000000;stroke-width:1.0;" x2="548"></line><rect width="2" x="563" y="431.957" style="stroke:#000000;stroke-width:1.0;" fill="#F4A460" height="2"></rect><line y1="432.957" x1="556" y2="432.957" style="stroke:#000000;stroke-width:1.0;" x2="564"></line><line y1="420.1523" x1="556" y2="432.957" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><rect width="2" x="555" y="444.7617" style="stroke:#000000;stroke-width:1.0;" fill="#F4A460" height="2"></rect><line y1="445.7617" x1="548" y2="445.7617" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><line y1="420.1523" x1="548" y2="445.7617" style="stroke:#000000;stroke-width:1.0;" x2="548"></line><rect width="2" x="563" y="457.5664" style="stroke:#000000;stroke-width:1.0;" fill="#F4A460" height="2"></rect><line y1="458.5664" x1="556" y2="458.5664" style="stroke:#000000;stroke-width:1.0;" x2="564"></line><line y1="445.7617" x1="556" y2="458.5664" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><line y1="466.9688" x1="541" y2="466.9688" style="stroke:#8B4513;stroke-width:1.0;" x2="725"></line><text lengthAdjust="spacing" x="546" font-size="11" textLength="113" y="481.1792" font-family="sans-serif" fill="#000000">MedicationDispense</text>  <!-- MD5=[5d2327d6293839e6701cb73891e71045]
+class ROD --><rect codeLine="86" width="186" x="540" y="564.9531" style="stroke:#006400;stroke-width:1.5;" id="ROD" fill="#97FF97" height="172.0156"></rect><rect width="186" x="540" y="564.9531" style="stroke:#006400;stroke-width:1.5;" fill="#32CD32" height="23.9688"></rect><text lengthAdjust="spacing" x="568" font-size="12" textLength="0" y="581.0918" font-family="sans-serif" fill="#000000"></text><text font-weight="bold" lengthAdjust="spacing" x="568" font-size="12" textLength="126" y="581.0918" font-family="sans-serif" fill="#000000">Medicinal Product</text><text lengthAdjust="spacing" x="702" font-size="12" textLength="0" y="581.0918" font-family="sans-serif" fill="#000000"></text><line y1="588.9219" x1="541" y2="588.9219" style="stroke:#006400;stroke-width:1.5;" x2="725"></line><text lengthAdjust="spacing" x="562" font-size="11" textLength="164" y="609.1323" font-family="sans-serif" fill="#000000">Active Principle: Paracetamol</text><text lengthAdjust="spacing" x="570" font-size="11" textLength="66" y="621.937" font-family="sans-serif" fill="#000000">System: EU</text><text lengthAdjust="spacing" x="562" font-size="11" textLength="100" y="634.7417" font-family="sans-serif" fill="#000000">Strength: 500 mg</text><text lengthAdjust="spacing" x="570" font-size="11" textLength="66" y="647.5464" font-family="sans-serif" fill="#000000">System: EU</text><text lengthAdjust="spacing" x="562" font-size="11" textLength="79" y="660.3511" font-family="sans-serif" fill="#000000">Form: Tablets</text><text lengthAdjust="spacing" x="570" font-size="11" textLength="66" y="673.1558" font-family="sans-serif" fill="#000000">System: EU</text><text lengthAdjust="spacing" x="562" font-size="11" textLength="100" y="685.9604" font-family="sans-serif" fill="#000000">Brand: Ben-u-Ron</text><text lengthAdjust="spacing" x="570" font-size="11" textLength="66" y="698.7651" font-family="sans-serif" fill="#000000">System: EU</text><text lengthAdjust="spacing" x="562" font-size="11" textLength="0" y="711.5698" font-family="sans-serif" fill="#000000"></text><text lengthAdjust="spacing" x="562" font-size="11" textLength="46" y="711.5698" font-family="sans-serif" font-style="italic" fill="#808080">Pack : --</text><rect width="2" x="555" y="604.3242" style="stroke:#000000;stroke-width:1.0;" fill="#97FF97" height="2"></rect><line y1="605.3242" x1="548" y2="605.3242" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><line y1="598.9219" x1="548" y2="605.3242" style="stroke:#000000;stroke-width:1.0;" x2="548"></line><rect width="2" x="563" y="617.1289" style="stroke:#000000;stroke-width:1.0;" fill="#97FF97" height="2"></rect><line y1="618.1289" x1="556" y2="618.1289" style="stroke:#000000;stroke-width:1.0;" x2="564"></line><line y1="605.3242" x1="556" y2="618.1289" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><rect width="2" x="555" y="629.9336" style="stroke:#000000;stroke-width:1.0;" fill="#97FF97" height="2"></rect><line y1="630.9336" x1="548" y2="630.9336" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><line y1="605.3242" x1="548" y2="630.9336" style="stroke:#000000;stroke-width:1.0;" x2="548"></line><rect width="2" x="563" y="642.7383" style="stroke:#000000;stroke-width:1.0;" fill="#97FF97" height="2"></rect><line y1="643.7383" x1="556" y2="643.7383" style="stroke:#000000;stroke-width:1.0;" x2="564"></line><line y1="630.9336" x1="556" y2="643.7383" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><rect width="2" x="555" y="655.543" style="stroke:#000000;stroke-width:1.0;" fill="#97FF97" height="2"></rect><line y1="656.543" x1="548" y2="656.543" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><line y1="630.9336" x1="548" y2="656.543" style="stroke:#000000;stroke-width:1.0;" x2="548"></line><rect width="2" x="563" y="668.3477" style="stroke:#000000;stroke-width:1.0;" fill="#97FF97" height="2"></rect><line y1="669.3477" x1="556" y2="669.3477" style="stroke:#000000;stroke-width:1.0;" x2="564"></line><line y1="656.543" x1="556" y2="669.3477" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><rect width="2" x="555" y="681.1523" style="stroke:#000000;stroke-width:1.0;" fill="#97FF97" height="2"></rect><line y1="682.1523" x1="548" y2="682.1523" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><line y1="656.543" x1="548" y2="682.1523" style="stroke:#000000;stroke-width:1.0;" x2="548"></line><rect width="2" x="563" y="693.957" style="stroke:#000000;stroke-width:1.0;" fill="#97FF97" height="2"></rect><line y1="694.957" x1="556" y2="694.957" style="stroke:#000000;stroke-width:1.0;" x2="564"></line><line y1="682.1523" x1="556" y2="694.957" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><rect width="2" x="555" y="706.7617" style="stroke:#000000;stroke-width:1.0;" fill="#97FF97" height="2"></rect><line y1="707.7617" x1="548" y2="707.7617" style="stroke:#000000;stroke-width:1.0;" x2="556"></line><line y1="682.1523" x1="548" y2="707.7617" style="stroke:#000000;stroke-width:1.0;" x2="548"></line><line y1="716.1641" x1="541" y2="716.1641" style="stroke:#006400;stroke-width:1.0;" x2="725"></line><text lengthAdjust="spacing" x="546" font-size="11" textLength="100" y="730.3745" font-family="sans-serif" fill="#000000">relatedMedication</text>  <!-- MD5=[1a0411bb19e86db06722c45ae1abae79]
+class PMP --><rect codeLine="101" width="217" x="524.5" y="27.9531" style="stroke:#8B0000;stroke-width:1.5;" id="PMP" fill="#FFE4E1" height="197.625"></rect><rect width="217" x="524.5" y="27.9531" style="stroke:#8B0000;stroke-width:1.5;" fill="#F09090" height="23.9688"></rect><text lengthAdjust="spacing" x="531.5" font-size="12" textLength="0" y="44.0918" font-family="sans-serif" fill="#000000"></text><text font-weight="bold" lengthAdjust="spacing" x="531.5" font-size="12" textLength="199" y="44.0918" font-family="sans-serif" fill="#000000">Packaged Medicinal Product</text><text lengthAdjust="spacing" x="738.5" font-size="12" textLength="0" y="44.0918" font-family="sans-serif" fill="#000000"></text><line y1="51.9219" x1="525.5" y2="51.9219" style="stroke:#8B0000;stroke-width:1.5;" x2="740.5"></line><text lengthAdjust="spacing" x="546.5" font-size="11" textLength="164" y="72.1323" font-family="sans-serif" fill="#000000">Active Principle: Paracetamol</text><text lengthAdjust="spacing" x="554.5" font-size="11" textLength="66" y="84.937" font-family="sans-serif" fill="#000000">System: EU</text><text lengthAdjust="spacing" x="546.5" font-size="11" textLength="100" y="97.7417" font-family="sans-serif" fill="#000000">Strength: 500 mg</text><text lengthAdjust="spacing" x="554.5" font-size="11" textLength="66" y="110.5464" font-family="sans-serif" fill="#000000">System: EU</text><text lengthAdjust="spacing" x="546.5" font-size="11" textLength="79" y="123.3511" font-family="sans-serif" fill="#000000">Form: Tablets</text><text lengthAdjust="spacing" x="554.5" font-size="11" textLength="66" y="136.1558" font-family="sans-serif" fill="#000000">System: EU</text><text lengthAdjust="spacing" x="546.5" font-size="11" textLength="101" y="148.9604" font-family="sans-serif" fill="#000000">Brand: Ben-U-Ron</text><text lengthAdjust="spacing" x="554.5" font-size="11" textLength="66" y="161.7651" font-family="sans-serif" fill="#000000">System: EU</text><text lengthAdjust="spacing" x="546.5" font-size="11" textLength="71" y="174.5698" font-family="sans-serif" fill="#000000">PackSize: 20</text><text lengthAdjust="spacing" x="554.5" font-size="11" textLength="66" y="187.3745" font-family="sans-serif" fill="#000000">System: EU</text><rect width="2" x="539.5" y="67.3242" style="stroke:#000000;stroke-width:1.0;" fill="#FFE4E1" height="2"></rect><line y1="68.3242" x1="532.5" y2="68.3242" style="stroke:#000000;stroke-width:1.0;" x2="540.5"></line><line y1="61.9219" x1="532.5" y2="68.3242" style="stroke:#000000;stroke-width:1.0;" x2="532.5"></line><rect width="2" x="547.5" y="80.1289" style="stroke:#000000;stroke-width:1.0;" fill="#FFE4E1" height="2"></rect><line y1="81.1289" x1="540.5" y2="81.1289" style="stroke:#000000;stroke-width:1.0;" x2="548.5"></line><line y1="68.3242" x1="540.5" y2="81.1289" style="stroke:#000000;stroke-width:1.0;" x2="540.5"></line><rect width="2" x="539.5" y="92.9336" style="stroke:#000000;stroke-width:1.0;" fill="#FFE4E1" height="2"></rect><line y1="93.9336" x1="532.5" y2="93.9336" style="stroke:#000000;stroke-width:1.0;" x2="540.5"></line><line y1="68.3242" x1="532.5" y2="93.9336" style="stroke:#000000;stroke-width:1.0;" x2="532.5"></line><rect width="2" x="547.5" y="105.7383" style="stroke:#000000;stroke-width:1.0;" fill="#FFE4E1" height="2"></rect><line y1="106.7383" x1="540.5" y2="106.7383" style="stroke:#000000;stroke-width:1.0;" x2="548.5"></line><line y1="93.9336" x1="540.5" y2="106.7383" style="stroke:#000000;stroke-width:1.0;" x2="540.5"></line><rect width="2" x="539.5" y="118.543" style="stroke:#000000;stroke-width:1.0;" fill="#FFE4E1" height="2"></rect><line y1="119.543" x1="532.5" y2="119.543" style="stroke:#000000;stroke-width:1.0;" x2="540.5"></line><line y1="93.9336" x1="532.5" y2="119.543" style="stroke:#000000;stroke-width:1.0;" x2="532.5"></line><rect width="2" x="547.5" y="131.3477" style="stroke:#000000;stroke-width:1.0;" fill="#FFE4E1" height="2"></rect><line y1="132.3477" x1="540.5" y2="132.3477" style="stroke:#000000;stroke-width:1.0;" x2="548.5"></line><line y1="119.543" x1="540.5" y2="132.3477" style="stroke:#000000;stroke-width:1.0;" x2="540.5"></line><rect width="2" x="539.5" y="144.1523" style="stroke:#000000;stroke-width:1.0;" fill="#FFE4E1" height="2"></rect><line y1="145.1523" x1="532.5" y2="145.1523" style="stroke:#000000;stroke-width:1.0;" x2="540.5"></line><line y1="119.543" x1="532.5" y2="145.1523" style="stroke:#000000;stroke-width:1.0;" x2="532.5"></line><rect width="2" x="547.5" y="156.957" style="stroke:#000000;stroke-width:1.0;" fill="#FFE4E1" height="2"></rect><line y1="157.957" x1="540.5" y2="157.957" style="stroke:#000000;stroke-width:1.0;" x2="548.5"></line><line y1="145.1523" x1="540.5" y2="157.957" style="stroke:#000000;stroke-width:1.0;" x2="540.5"></line><rect width="2" x="539.5" y="169.7617" style="stroke:#000000;stroke-width:1.0;" fill="#FFE4E1" height="2"></rect><line y1="170.7617" x1="532.5" y2="170.7617" style="stroke:#000000;stroke-width:1.0;" x2="540.5"></line><line y1="145.1523" x1="532.5" y2="170.7617" style="stroke:#000000;stroke-width:1.0;" x2="532.5"></line><rect width="2" x="547.5" y="182.5664" style="stroke:#000000;stroke-width:1.0;" fill="#FFE4E1" height="2"></rect><line y1="183.5664" x1="540.5" y2="183.5664" style="stroke:#000000;stroke-width:1.0;" x2="548.5"></line><line y1="170.7617" x1="540.5" y2="183.5664" style="stroke:#000000;stroke-width:1.0;" x2="540.5"></line><text lengthAdjust="spacing" x="534.5" font-size="11" textLength="0" y="202.1792" font-family="sans-serif" fill="#000000"></text><line y1="204.7734" x1="525.5" y2="204.7734" style="stroke:#8B0000;stroke-width:1.0;" x2="740.5"></line><text lengthAdjust="spacing" x="530.5" font-size="11" textLength="100" y="218.9839" font-family="sans-serif" fill="#000000">relatedMedication</text>  <!-- MD5=[d855aa74b25796a8737bc87268cdf8db]
+link OP to RMP --><path codeLine="121" d="M193.1216,395.4531 C215.7148,395.4531 239.9405,395.4531 262.7618,395.4531 " style="stroke:#A80036;stroke-width:1.0;" id="OP-to-RMP" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="267.9143,395.4531,258.9143,391.4531,262.9143,395.4531,258.9143,399.4531,267.9143,395.4531"></polygon><text lengthAdjust="spacing" x="211.5" font-size="13" textLength="38" y="388.52" font-family="sans-serif" fill="#000000">Direct</text>  <!-- MD5=[ad82b5ade007d34740d8e4104d1a30ad]
+reverse link RMP to OD --><path codeLine="123" d="M459.4463,395.4531 C485.6868,395.4531 513.9512,395.4531 539.8954,395.4531 " style="stroke:#A80036;stroke-width:1.0;" id="RMP-backto-OD" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="454.2264,395.4531,463.2264,399.4531,459.2264,395.4531,463.2264,391.4531,454.2264,395.4531"></polygon><text lengthAdjust="spacing" x="472.5" font-size="13" textLength="49" y="388.52" font-family="sans-serif" fill="#000000">Multiple</text>  <!-- MD5=[79b349d52dca55b8ee11d69802637b81]
+link OD to ROD --><path codeLine="125" d="M633,488.0557 C633,511.2905 633,536.2074 633,559.3912 " style="stroke:#A80036;stroke-width:1.0;" id="OD-to-ROD" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="633,564.6202,637,555.6202,633,559.6202,629,555.6202,633,564.6202"></polygon><text lengthAdjust="spacing" x="634" font-size="13" textLength="49" y="531.02" font-family="sans-serif" fill="#000000">Multiple</text>  <!-- MD5=[d2004ddfc58cf4d8774f50424eb46cc2]
+reverse link PMP to OD --><path codeLine="127" d="M633,231.1916 C633,254.8238 633,279.7636 633,302.8744 " style="stroke:#A80036;stroke-width:1.0;" id="PMP-backto-OD" fill="none"></path><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="633,226.1697,629,235.1697,633,231.1697,637,235.1697,633,226.1697"></polygon><text lengthAdjust="spacing" x="634" font-size="13" textLength="49" y="269.02" font-family="sans-serif" fill="#000000">Multiple</text></g></svg>
+</div>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package idmeds#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 10, 2022 10:36+0000">2022-01-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
