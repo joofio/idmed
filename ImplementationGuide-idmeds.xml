@@ -257,7 +257,7 @@
       <reference>
         <reference value="Medication/enriched-med-presc-1"/>
       </reference>
-      <name value="Use case 0 - Enriched Medication Prescribed"/>
+      <name value="3 - Enriched Medication Prescribed"/>
       <description value="Medication prescribed enriched with information regarding cross-border"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -268,7 +268,7 @@
       <reference>
         <reference value="MedicationRequest/example0-of-medReq"/>
       </reference>
-      <name value="Use case 0 - Prescription of Medication"/>
+      <name value="1 - Prescription of Medication"/>
       <description value="Original medication Request"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -279,7 +279,7 @@
       <reference>
         <reference value="Medication/original-med-presc-1"/>
       </reference>
-      <name value="Use case 0 - Medication Prescribed"/>
+      <name value="2 - Medication Prescribed"/>
       <description value="Medication prescribed with data from the origin country. With no information regarding cross-border"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -290,7 +290,7 @@
       <reference>
         <reference value="Medication/related-med-presc-1"/>
       </reference>
-      <name value="Use case 0 - Related Medication to prescription [Pharmaceutical Product]"/>
+      <name value="4 - Related Medication to prescription [Pharmaceutical Product]"/>
       <description value="Medication prescribed with data regarding cross-border compliance - different from original, even though is connected"/>
       <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
     </resource>
