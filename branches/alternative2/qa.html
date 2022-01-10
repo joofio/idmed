@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 62, errors = 6, warn = 5, info = 10 -->
+<!-- broken links = 62, errors = 4, warn = 5, info = 7 -->
 <head>
   <title>IDMeds : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for IDMeds</h1>
- <p>Generated Mon Jan 10 19:39:25 UTC 2022, FHIR version 4.0.1 for idmeds#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Mon Jan 10 19:48:39 UTC 2022, FHIR version 4.0.1 for idmeds#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.93</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = idmeds, Canonical = http://example.com/fhir/example</td></tr>
@@ -50,8 +50,8 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: http://example.com/fhir/example/package-list.json?nocache=1641843528858)</td></tr>
- <tr><td>Summary:</td><td> broken links = 62, errors = 6, warn = 5, info = 10</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: http://example.com/fhir/example/package-list.json?nocache=1641844080647)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 62, errors = 4, warn = 5, info = 7</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -66,17 +66,17 @@
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-idmeds"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-idmeds</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_Medication-enriched-med-presc-1"><b>/github/workspace/fsh-generated/resources/Medication-enriched-med-presc-1</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>3</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Medication-enriched-med-presc-1"><b>/github/workspace/fsh-generated/resources/Medication-enriched-med-presc-1</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_Medication-original-med-presc-1"><b>/github/workspace/fsh-generated/resources/Medication-original-med-presc-1</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>3</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Medication-original-med-presc-1"><b>/github/workspace/fsh-generated/resources/Medication-original-med-presc-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_Medication-related-med-presc-1"><b>/github/workspace/fsh-generated/resources/Medication-related-med-presc-1</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_MedicationRequest-example0-of-medReq"><b>/github/workspace/fsh-generated/resources/MedicationRequest-example0-of-medReq</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationRequest-example0-of-medReq"><b>/github/workspace/fsh-generated/resources/MedicationRequest-example0-of-medReq</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DefinedMed"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -335,15 +335,6 @@
    <tr style="background-color: #ffffe6">
      <td><b>Medication.code.coding[0] (l28/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated</b></td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Medication.form.coding[0] (l38/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://naming.be/fhir/form' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Medication.ingredient[0].item.ofType(CodeableConcept).coding[0] (l49/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://ingredients.be/codings/ingredient_code' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Medication.ingredient[0].strength (l57/c23)</b></td><td><b>error</b></td><td title="rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed"><b>rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed</b></td>
-   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Medication-original-med-presc-1"> </a>
@@ -356,15 +347,6 @@
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Medication.code.coding[0] (l6/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Medication.form.coding[0] (l16/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://naming.be/fhir/form' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Medication.ingredient[0].item.ofType(CodeableConcept).coding[0] (l27/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://ingredients.be/codings/ingredient_code' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Medication.ingredient[0].strength (l35/c23)</b></td><td><b>error</b></td><td title="rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed"><b>rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed</b></td>
    </tr>
 </table>
 <hr/>
@@ -399,7 +381,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>MedicationRequest.dosageInstruction[0].route.coding[0] (l39/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://codings.be/codings/route_codes' is unknown so the code cannot be validated</b></td>
+     <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l20/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationRequest.dosageInstruction[0].route.coding[0] (l45/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://codings.be/codings/route_codes' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -492,19 +477,7 @@
      <td><a href="Medication-enriched-med-presc-1.html">fsh-generated/resources/Medication-enriched-med-presc-1.json</a></td><td><b>Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Medication-enriched-med-presc-1.html">fsh-generated/resources/Medication-enriched-med-presc-1.json</a></td><td><b>Code System URI 'http://naming.be/fhir/form' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Medication-enriched-med-presc-1.html">fsh-generated/resources/Medication-enriched-med-presc-1.json</a></td><td><b>Code System URI 'https://ingredients.be/codings/ingredient_code' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
      <td><a href="Medication-original-med-presc-1.html">fsh-generated/resources/Medication-original-med-presc-1.json</a></td><td><b>Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Medication-original-med-presc-1.html">fsh-generated/resources/Medication-original-med-presc-1.json</a></td><td><b>Code System URI 'http://naming.be/fhir/form' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Medication-original-med-presc-1.html">fsh-generated/resources/Medication-original-med-presc-1.json</a></td><td><b>Code System URI 'https://ingredients.be/codings/ingredient_code' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Medication-related-med-presc-1.html">fsh-generated/resources/Medication-related-med-presc-1.json</a></td><td><b>Code System URI 'https://npech.eu/codings/phpid' is unknown so the code cannot be validated</b></td>
@@ -514,6 +487,9 @@
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Medication-related-med-presc-1.html">fsh-generated/resources/Medication-related-med-presc-1.json</a></td><td><b>Code System URI 'https://npech.eu/codings/ingredient_code' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-example0-of-medReq.html">fsh-generated/resources/MedicationRequest-example0-of-medReq.json</a></td><td><b>Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="MedicationRequest-example0-of-medReq.html">fsh-generated/resources/MedicationRequest-example0-of-medReq.json</a></td><td><b>Code System URI 'https://codings.be/codings/route_codes' is unknown so the code cannot be validated</b></td>
