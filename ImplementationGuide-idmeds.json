@@ -444,24 +444,12 @@
             {
               "nameUrl": "implementation.html",
               "title": "Implementation",
-              "generation": "markdown",
-              "page": [
-                {
-                  "nameUrl": "alternative1.html",
-                  "title": "Alternative 1",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "alternative2.html",
-                  "title": "Alternative 2",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "generic-workflow.html",
-                  "title": "Generic Workflow",
-                  "generation": "markdown"
-                }
-              ]
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "generic-workflow.html",
+              "title": "Generic Workflow",
+              "generation": "markdown"
             },
             {
               "nameUrl": "FunctionalDiscussion.html",
@@ -488,11 +476,6 @@
                 {
                   "nameUrl": "workflow.html",
                   "title": "Workflow",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "open-questions.html",
-                  "title": "Open Questions",
                   "generation": "markdown"
                 }
               ]
