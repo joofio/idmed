@@ -13,7 +13,8 @@ Title: "1 - Prescription of Medication"
 * status = #active
 * intent = #order
 
-* medicationReference = Reference(original-med-presc-1)
+// * medicationReference = Reference(original-med-presc-1)
+* medicationCodeableConcept = https://products.be/codings/product_code#2 "Monuril sachet 300 mg 2 units"
 
 * authoredOn = "2021-07-19T09:00:00+02:00"
 
@@ -40,15 +41,6 @@ Title: "2 - Medication Prescribed"
 
 * status = #active
 
-* form = http://naming.be/fhir/form#123 "Powder for oral solution"
-
-* ingredient.itemCodeableConcept = https://ingredients.be/codings/ingredient_code#4 "Fosfomycin"  
-
-* ingredient.strength.numerator.value = 300  
-* ingredient.strength.numerator.code = #mg
-* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
-
-
 Instance: enriched-med-presc-1
 InstanceOf: Medication
 Usage: #example
@@ -60,20 +52,11 @@ Title: "3 - Enriched Medication Prescribed"
 
 * status = #active
 
-* form = http://naming.be/fhir/form#123 "Powder for oral solution"
-
-* ingredient.itemCodeableConcept = https://ingredients.be/codings/ingredient_code#4 "Fosfomycin"  
-
-* ingredient.strength.numerator.value = 300  
-* ingredient.strength.numerator.code = #mg
-* ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
-
 * extension[relatedMedication]
   * extension[relationType].valueCoding = #SINGLE
   * extension[relatedMed]
     * valueReference.identifier.system = "https://npech.eu/codings/phpid"
     * valueReference.identifier.value = "Ab350"
-
 
 
 Instance: related-med-presc-1
