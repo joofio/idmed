@@ -367,7 +367,7 @@
          fhir:link <http://example.com/fhir/example/Medication/enriched-med-presc-1>;
          fhir:Reference.reference [ fhir:value "Medication/enriched-med-presc-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Enriched Medication Prescribed" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "3 - Enriched Medication Prescribed" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication prescribed enriched with information regarding cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
@@ -381,7 +381,7 @@
          fhir:link <http://example.com/fhir/example/MedicationRequest/example0-of-medReq>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/example0-of-medReq" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Prescription of Medication" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "1 - Prescription of Medication" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Original medication Request" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
@@ -395,7 +395,7 @@
          fhir:link <http://example.com/fhir/example/Medication/original-med-presc-1>;
          fhir:Reference.reference [ fhir:value "Medication/original-med-presc-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Medication Prescribed" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "2 - Medication Prescribed" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication prescribed with data from the origin country. With no information regarding cross-border" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
@@ -409,7 +409,7 @@
          fhir:link <http://example.com/fhir/example/Medication/related-med-presc-1>;
          fhir:Reference.reference [ fhir:value "Medication/related-med-presc-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Use case 0 - Related Medication to prescription [Pharmaceutical Product]" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "4 - Related Medication to prescription [Pharmaceutical Product]" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
