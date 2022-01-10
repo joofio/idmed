@@ -2,7 +2,7 @@ Instance: example0-of-medReq
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "Original medication Request"
-Title: "Use case 0 - Original Prescription of Medication"
+Title: "Use case 0 - Prescription of Medication"
 
 * identifier[0].system = "http://prescription-identifiers.com"
 * identifier[0].value = "69eb6358-6eb6-40e4-972f-33d22c3392c5"
@@ -33,19 +33,19 @@ Title: "Use case 0 - Original Prescription of Medication"
 Instance: original-med-presc-1
 InstanceOf: Medication
 Usage: #example
-Description: "Original Medication prescribed with data from the origin country. With no information regarding cross-border"
-Title: "Use case 0 - Original Medication Prescribed"
+Description: "Medication prescribed with data from the origin country. With no information regarding cross-border"
+Title: "Use case 0 - Medication Prescribed"
 
 
-* code = https://products.be/codings/product_code#2 "Paracetamol 500 mg Tablets"
+* code = https://products.be/codings/product_code#2 "Monuril sachet 300 mg 2 units"
 
 * status = #active
 
-* form = http://naming.be/fhir/form#123 "Tablets"
+* form = http://naming.be/fhir/form#123 "Powder for oral solution"
 
-* ingredient.itemCodeableConcept = https://ingredients.be/codings/ingredient_code#4 "Paracetamol"  
+* ingredient.itemCodeableConcept = https://ingredients.be/codings/ingredient_code#4 "Fosfomycin"  
 
-* ingredient.strength.numerator.value = 500  
+* ingredient.strength.numerator.value = 300  
 * ingredient.strength.numerator.code = #mg
 * ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
 
@@ -63,14 +63,14 @@ Description: "Medication prescribed with data regarding cross-border compliance 
 Title: "Use case 0 - Related Medication to prescription [Pharmaceutical Product]"
 
 
-* code = https://npech.eu/codings/phpid#Ab350 "Paracetamol 500 mg Tablets"
+* code = https://npech.eu/codings/phpid#Ab350 "Fosfomycin sachet 300 mg"
 
 * status = #active
 
-* form = http://standardterms.edqm.eu/PAC#10219000 "Tablet"
+* form = http://standardterms.edqm.eu/PAC#10110000 "Powder for oral solution"
 
-* ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Paracetamol"  
+* ingredient.itemCodeableConcept = https://npech.eu/codings/ingredient_code#4A4b "Fosfomycin"  
 
-* ingredient.strength.numerator.value = 500  
+* ingredient.strength.numerator.value = 300  
 * ingredient.strength.numerator.code = #mg
 * ingredient.strength.numerator.system = "http://unitsofmeasure.org" 
