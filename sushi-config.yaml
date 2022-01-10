@@ -133,12 +133,8 @@ pages:
     title: Home
     implementation.md:
       title: Implementation
-      alternative1.md:
-        title: Alternative 1
-      alternative2.md:
-        title: Alternative 2
-      generic-workflow.md:
-        title: Generic Workflow
+    generic-workflow.md:
+      title: Generic Workflow
     FunctionalDiscussion.md:
         title: Functional Discussion
         use-cases.md:
@@ -149,8 +145,7 @@ pages:
             title: Use Case 1
         workflow.md:
           title: Workflow
-        open-questions.md:
-          title: Open Questions
+
 #    title: Examples Overview
 #    title: Examples Overview
 #    simpleExamples.xml:
