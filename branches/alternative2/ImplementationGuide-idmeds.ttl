@@ -413,34 +413,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Medication" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/Medication/enriched-med-presc-1>;
-         fhir:Reference.reference [ fhir:value "Medication/enriched-med-presc-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "3 - Enriched Medication Prescribed" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication prescribed enriched with information regarding cross-border" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 10;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Medication" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/Medication/original-med-presc-1>;
-         fhir:Reference.reference [ fhir:value "Medication/original-med-presc-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "2 - Medication Prescribed" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication prescribed with data from the origin country. With no information regarding cross-border" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 11;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -453,24 +425,7 @@
          fhir:link <http://example.com/fhir/example/StructureDefinition/XBMedRequest>
        ]
      ], [
-       fhir:index 12;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Medication" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/Medication/related-med-presc-1>;
-         fhir:Reference.reference [ fhir:value "Medication/related-med-presc-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "4 - Related Medication to prescription [Pharmaceutical Product]" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://example.com/fhir/example/StructureDefinition/DefinedMed";
-         fhir:link <http://example.com/fhir/example/StructureDefinition/DefinedMed>
-       ]
-     ], [
-       fhir:index 13;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -502,36 +457,9 @@
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ], [
            fhir:index 1;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "generic-workflow.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Generic Workflow" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 2;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "FunctionalDiscussion.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "Functional Discussion" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
-           fhir:ImplementationGuide.definition.page.page [
-             fhir:index 0;
-             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use-cases.html" ];
-             fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
-             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
-             fhir:ImplementationGuide.definition.page.page [
-               fhir:index 0;
-               fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "UseCase0.html" ];
-               fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Case 0" ];
-               fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-             ], [
-               fhir:index 1;
-               fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "UseCase1.html" ];
-               fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Case 1" ];
-               fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-             ]
-           ], [
-             fhir:index 1;
-             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "workflow.html" ];
-             fhir:ImplementationGuide.definition.page.title [ fhir:value "Workflow" ];
-             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-           ]
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ]
        ]
      ];

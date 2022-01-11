@@ -292,28 +292,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/enriched-med-presc-1"/>
-      </reference>
-      <name value="3 - Enriched Medication Prescribed"/>
-      <description value="Medication prescribed enriched with information regarding cross-border"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/original-med-presc-1"/>
-      </reference>
-      <name value="2 - Medication Prescribed"/>
-      <description value="Medication prescribed with data from the origin country. With no information regarding cross-border"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
@@ -321,17 +299,6 @@
       </reference>
       <name value="original-presc"/>
       <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/XBMedRequest"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/related-med-presc-1"/>
-      </reference>
-      <name value="4 - Related Medication to prescription [Pharmaceutical Product]"/>
-      <description value="Medication prescribed with data regarding cross-border compliance - different from original, even though is connected"/>
-      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -357,34 +324,9 @@
           <generation value="markdown"/>
         </page>
         <page>
-          <nameUrl value="generic-workflow.html"/>
-          <title value="Generic Workflow"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
           <nameUrl value="FunctionalDiscussion.html"/>
           <title value="Functional Discussion"/>
           <generation value="markdown"/>
-          <page>
-            <nameUrl value="use-cases.html"/>
-            <title value="Use Cases"/>
-            <generation value="markdown"/>
-            <page>
-              <nameUrl value="UseCase0.html"/>
-              <title value="Use Case 0"/>
-              <generation value="markdown"/>
-            </page>
-            <page>
-              <nameUrl value="UseCase1.html"/>
-              <title value="Use Case 1"/>
-              <generation value="markdown"/>
-            </page>
-          </page>
-          <page>
-            <nameUrl value="workflow.html"/>
-            <title value="Workflow"/>
-            <generation value="markdown"/>
-          </page>
         </page>
       </page>
     </page>
