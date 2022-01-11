@@ -1,20 +1,17 @@
 ﻿IDMeds : Validation Results
 =========================================
 
-err = 7, warn = 15, info = 10
+err = 6, warn = 15, info = 5
 IG Publisher Version: 1.1.94
-Generated Tue Jan 11 09:25:58 UTC 2022. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
- Build Errors : 93 / 8 / 0
+Generated Tue Jan 11 09:54:27 UTC 2022. FHIR version 4.0.1 for idmeds#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 146 / 8 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-relationtype-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-idmeds : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/Medication-cnpem1 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Medication-cnpem1X : 3 / 2 / 3
- /github/workspace/fsh-generated/resources/Medication-enriched-med-presc-1 : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Medication-original-med-presc-1 : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Medication-related-med-presc-1 : 1 / 0 / 4
  /github/workspace/fsh-generated/resources/MedicationRequest-original-presc : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationRequest-updated-presc : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-XBMedRequest : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-XBMedRequest1 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic : 0 / 1 / 1
@@ -30,99 +27,152 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/cnpem1X.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/original-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/updated-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/CodeSystem-relationtype-cs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-relationtype-cs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-relationtype-cs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-relationtype-cs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-relationtype-cs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-relationtype-cs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-relationtype-cs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-relationtype-cs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-relationtype-cs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-relationtype-cs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/FunctionalDiscussion.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/FunctionalDiscussion.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-cnpem1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Medication-cnpem1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-cnpem1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Medication-cnpem1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-cnpem1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Medication-cnpem1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-cnpem1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Medication-cnpem1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-cnpem1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Medication-cnpem1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-cnpem1X.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Medication-cnpem1X.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-cnpem1X.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Medication-cnpem1X.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-cnpem1X.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Medication-cnpem1X.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-cnpem1X.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Medication-cnpem1X.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Medication-cnpem1X.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Medication-cnpem1X.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-enriched-med-presc-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-enriched-med-presc-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-enriched-med-presc-1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-enriched-med-presc-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-enriched-med-presc-1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-original-med-presc-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-original-med-presc-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-original-med-presc-1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-original-med-presc-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-original-med-presc-1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-presc-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-presc-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-presc-1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-presc-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Medication-related-med-presc-1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-original-presc.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-original-presc.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-original-presc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-original-presc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-original-presc.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-original-presc.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-original-presc.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-original-presc.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-original-presc.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-original-presc.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-updated-presc.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-updated-presc.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-updated-presc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-updated-presc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-updated-presc.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-updated-presc.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-updated-presc.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-updated-presc.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-updated-presc.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-updated-presc.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DefinedMed.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-XBMedRequest1.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-drugCharacteristic.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-relatedMedication-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-relatedMedication-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-relatedMedication-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-relatedMedication-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-relatedMedication.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-relatedMedication.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-relatedMedication.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-relatedMedication.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-relatedMedication.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-relatedMedication.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-relatedMedication.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-relatedMedication.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-relatedMedication.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-relatedMedication.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/UseCase0.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/UseCase1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-relationtype-vs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-relationtype-vs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-relationtype-vs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-relationtype-vs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-relationtype-vs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-relationtype-vs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-relationtype-vs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-relationtype-vs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-relationtype-vs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-relationtype-vs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/generic-workflow.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/implementation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/implementation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 6: The link 'use-cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/workflow.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 == fsh-generated/resources/CodeSystem-relationtype-cs.json ==
 WARNING: CodeSystem/relationtype-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
 == fsh-generated/resources/ImplementationGuide-idmeds.json ==
@@ -139,22 +189,13 @@ WARNING: Medication/cnpem1X: Medication.amount.numerator: A code with no system 
 ERROR: Medication/cnpem1X: Medication.amount.numerator: qty-3: 'If a code for the unit is present, the system SHALL also be present' Rule 'If a code for the unit is present, the system SHALL also be present' Failed
 INFORMATION: Medication/cnpem1X: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'https://who-umc/blah/substance' is unknown so the code cannot be validated
 ERROR: Medication/cnpem1X: Medication.ingredient[0].strength: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed
-== fsh-generated/resources/Medication-enriched-med-presc-1.json ==
-WARNING: Medication/enriched-med-presc-1: Medication.extension[0].extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-INFORMATION: Medication/enriched-med-presc-1: Medication.code.coding[0]: Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated
-== fsh-generated/resources/Medication-original-med-presc-1.json ==
-INFORMATION: Medication/original-med-presc-1: Medication.code.coding[0]: Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated
-== fsh-generated/resources/Medication-related-med-presc-1.json ==
-INFORMATION: Medication/related-med-presc-1: Medication.code.coding[0]: Code System URI 'https://npech.eu/codings/phpid' is unknown so the code cannot be validated
-INFORMATION: Medication/related-med-presc-1: Medication.form.coding[0]: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
-INFORMATION: Medication/related-med-presc-1: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'https://npech.eu/codings/ingredient_code' is unknown so the code cannot be validated
-ERROR: Medication/related-med-presc-1: Medication.ingredient[0].strength: rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed
 == fsh-generated/resources/MedicationRequest-original-presc.json ==
 INFORMATION: MedicationRequest/original-presc: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'http://products.pt/cnpem' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-updated-presc.json ==
 WARNING: MedicationRequest/updated-presc: MedicationRequest.medication.ofType(CodeableConcept).extension[0].extension[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 INFORMATION: MedicationRequest/updated-presc: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'http://products.pt/cnpem' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-DefinedMed.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/DefinedMed'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-XBMedRequest.json ==
 == fsh-generated/resources/StructureDefinition-XBMedRequest1.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/XBMedRequest1'): The Implementation Guide contains no examples for this profile

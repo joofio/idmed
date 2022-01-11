@@ -430,34 +430,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Medication"
-          }
-        ],
-        "reference": {
-          "reference": "Medication/enriched-med-presc-1"
-        },
-        "name": "3 - Enriched Medication Prescribed",
-        "description": "Medication prescribed enriched with information regarding cross-border",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Medication"
-          }
-        ],
-        "reference": {
-          "reference": "Medication/original-med-presc-1"
-        },
-        "name": "2 - Medication Prescribed",
-        "description": "Medication prescribed with data from the origin country. With no information regarding cross-border",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationRequest"
           }
         ],
@@ -466,20 +438,6 @@
         },
         "name": "original-presc",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/XBMedRequest"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Medication"
-          }
-        ],
-        "reference": {
-          "reference": "Medication/related-med-presc-1"
-        },
-        "name": "4 - Related Medication to prescription [Pharmaceutical Product]",
-        "description": "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected",
-        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
       },
       {
         "extension": [
@@ -511,38 +469,9 @@
               "generation": "markdown"
             },
             {
-              "nameUrl": "generic-workflow.html",
-              "title": "Generic Workflow",
-              "generation": "markdown"
-            },
-            {
               "nameUrl": "FunctionalDiscussion.html",
               "title": "Functional Discussion",
-              "generation": "markdown",
-              "page": [
-                {
-                  "nameUrl": "use-cases.html",
-                  "title": "Use Cases",
-                  "generation": "markdown",
-                  "page": [
-                    {
-                      "nameUrl": "UseCase0.html",
-                      "title": "Use Case 0",
-                      "generation": "markdown"
-                    },
-                    {
-                      "nameUrl": "UseCase1.html",
-                      "title": "Use Case 1",
-                      "generation": "markdown"
-                    }
-                  ]
-                },
-                {
-                  "nameUrl": "workflow.html",
-                  "title": "Workflow",
-                  "generation": "markdown"
-                }
-              ]
+              "generation": "markdown"
             }
           ]
         }
