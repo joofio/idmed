@@ -133,8 +133,6 @@ pages:
     title: Home
     implementation.md:
       title: Implementation
-    generic-workflow.md:
-      title: Generic Workflow
     FunctionalDiscussion.md:
         title: Functional Discussion
 
