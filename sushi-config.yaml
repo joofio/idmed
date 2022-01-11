@@ -137,14 +137,7 @@ pages:
       title: Generic Workflow
     FunctionalDiscussion.md:
         title: Functional Discussion
-        use-cases.md:
-          title: Use Cases
-          UseCase0.md:
-            title: Use Case 0
-          UseCase1.md:
-            title: Use Case 1
-        workflow.md:
-          title: Workflow
+
 
 #    title: Examples Overview
 #    title: Examples Overview
