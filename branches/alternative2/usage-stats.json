@@ -131,6 +131,16 @@
         "url": "http://example.com/fhir/example/StructureDefinition/DefinedMed",
         "title": "DefinedMed"
       }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/XBMedRequest",
+        "title": "XBMedRequest"
+      },
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/XBMedRequest1",
+        "title": "XBMedRequest1"
+      }
     ]
   },
   "usage": {
@@ -138,7 +148,10 @@
       "Medication"
     ],
     "http://example.com/fhir/example/StructureDefinition/relatedMedication": [
-      "Medication"
+      "Medication",
+      "MedicationRequest",
+      "MedicationRequest.medicationCodeableConcept",
+      "MedicationRequest.medication[x]"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
