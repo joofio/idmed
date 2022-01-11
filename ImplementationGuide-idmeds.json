@@ -322,6 +322,32 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/XBMedRequest"
+        },
+        "name": "XBMedRequest",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/XBMedRequest1"
+        },
+        "name": "XBMedRequest1",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -382,24 +408,36 @@
           }
         ],
         "reference": {
-          "reference": "Medication/enriched-med-presc-1"
+          "reference": "Medication/cnpem1"
         },
-        "name": "3 - Enriched Medication Prescribed",
-        "description": "Medication prescribed enriched with information regarding cross-border",
+        "name": "cnpem1",
         "exampleBoolean": true
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
+            "valueString": "Medication"
           }
         ],
         "reference": {
-          "reference": "MedicationRequest/example0-of-medReq"
+          "reference": "Medication/cnpem1X"
         },
-        "name": "1 - Prescription of Medication",
-        "description": "Original medication Request",
+        "name": "cnpem1X",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Medication"
+          }
+        ],
+        "reference": {
+          "reference": "Medication/enriched-med-presc-1"
+        },
+        "name": "3 - Enriched Medication Prescribed",
+        "description": "Medication prescribed enriched with information regarding cross-border",
         "exampleBoolean": true
       },
       {
@@ -420,6 +458,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/original-presc"
+        },
+        "name": "original-presc",
+        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/XBMedRequest"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Medication"
           }
         ],
@@ -429,6 +480,19 @@
         "name": "4 - Related Medication to prescription [Pharmaceutical Product]",
         "description": "Medication prescribed with data regarding cross-border compliance - different from original, even though is connected",
         "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/DefinedMed"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/updated-presc"
+        },
+        "name": "updated-presc",
+        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/XBMedRequest"
       }
     ],
     "page": {

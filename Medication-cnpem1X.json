@@ -1,0 +1,65 @@
+{
+  "resourceType": "Medication",
+  "id": "cnpem1X",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"cnpem1X\" </p></div><blockquote><p><b>Related Medication</b></p><p><b>value</b>: upper (Details: [not stated] code upper = 'upper', stated as 'null')</p><p><b>value</b>: <span></span></p></blockquote><p><b>status</b>: active</p><p><b>form</b>: Granules for oral solution <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (PAC#10112000)</span></p><p><b>amount</b>: 2 sachet<span style=\"background: LightGoldenRodYellow\"> (Details: [not stated] code sachet = 'sachet')</span>/</p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Fosfomicine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (substance#3VH781SH5M)</span></td><td>3 g/</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "relationType",
+          "valueCoding": {
+            "code": "upper"
+          }
+        },
+        {
+          "url": "relatedMed",
+          "valueReference": {
+            "identifier": {
+              "system": "http://phpids",
+              "value": "0xE857DA811B4A6F3BD57810C45D2EA1ED"
+            }
+          }
+        }
+      ],
+      "url": "http://example.com/fhir/example/StructureDefinition/relatedMedication"
+    }
+  ],
+  "status": "active",
+  "form": {
+    "coding": [
+      {
+        "system": "http://standardterms.edqm.eu/PAC",
+        "code": "10112000",
+        "display": "Granules for oral solution"
+      }
+    ]
+  },
+  "amount": {
+    "numerator": {
+      "value": 2,
+      "code": "sachet"
+    }
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://who-umc/blah/substance",
+            "code": "3VH781SH5M",
+            "display": "Fosfomicine"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 3,
+          "unit": "g"
+        }
+      }
+    }
+  ]
+}

@@ -14,6 +14,20 @@
     "name": "DefinedMed"
   },
   {
+    "id": "XBMedRequest",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/XBMedRequest",
+    "version": "1.0.0",
+    "name": "XBMedRequest"
+  },
+  {
+    "id": "XBMedRequest1",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/XBMedRequest1",
+    "version": "1.0.0",
+    "name": "XBMedRequest1"
+  },
+  {
     "id": "drugCharacteristic",
     "type": "StructureDefinition",
     "url": "http://example.com/fhir/example/StructureDefinition/drugCharacteristic",

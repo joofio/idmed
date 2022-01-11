@@ -208,6 +208,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/XBMedRequest"/>
+      </reference>
+      <name value="XBMedRequest"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/XBMedRequest1"/>
+      </reference>
+      <name value="XBMedRequest1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -255,21 +275,30 @@
         <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="Medication/enriched-med-presc-1"/>
+        <reference value="Medication/cnpem1"/>
       </reference>
-      <name value="3 - Enriched Medication Prescribed"/>
-      <description value="Medication prescribed enriched with information regarding cross-border"/>
+      <name value="cnpem1"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
+        <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/example0-of-medReq"/>
+        <reference value="Medication/cnpem1X"/>
       </reference>
-      <name value="1 - Prescription of Medication"/>
-      <description value="Original medication Request"/>
+      <name value="cnpem1X"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/enriched-med-presc-1"/>
+      </reference>
+      <name value="3 - Enriched Medication Prescribed"/>
+      <description value="Medication prescribed enriched with information regarding cross-border"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -285,6 +314,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/original-presc"/>
+      </reference>
+      <name value="original-presc"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/XBMedRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Medication"/>
       </extension>
       <reference>
@@ -293,6 +332,16 @@
       <name value="4 - Related Medication to prescription [Pharmaceutical Product]"/>
       <description value="Medication prescribed with data regarding cross-border compliance - different from original, even though is connected"/>
       <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/DefinedMed"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/updated-presc"/>
+      </reference>
+      <name value="updated-presc"/>
+      <exampleCanonical value="http://example.com/fhir/example/StructureDefinition/XBMedRequest"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

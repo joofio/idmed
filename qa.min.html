@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 62, errors = 4, warn = 5, info = 7 -->
+<!-- broken links = 93, errors = 7, warn = 15, info = 10 -->
 <head>
   <title>IDMeds : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,9 +36,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for IDMeds</h1>
- <p>Generated Mon Jan 10 19:48:39 UTC 2022, FHIR version 4.0.1 for idmeds#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Tue Jan 11 09:25:58 UTC 2022, FHIR version 4.0.1 for idmeds#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.93</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.94</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = idmeds, Canonical = http://example.com/fhir/example</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Version Check:</td><td>1.0.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
@@ -50,15 +50,15 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: http://example.com/fhir/example/package-list.json?nocache=1641844080647)</td></tr>
- <tr><td>Summary:</td><td> broken links = 62, errors = 4, warn = 5, info = 7</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: http://example.com/fhir/example/package-list.json?nocache=1641893115448)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 93, errors = 7, warn = 15, info = 10</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>62</b></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>93</b></td><td><b>8</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-relationtype-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-relationtype-cs</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -66,11 +66,20 @@
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-idmeds"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-idmeds</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Medication-cnpem1X"><b>/github/workspace/fsh-generated/resources/Medication-cnpem1X</b></a></td><td><b>3</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Medication-enriched-med-presc-1"><b>/github/workspace/fsh-generated/resources/Medication-enriched-med-presc-1</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_Medication-related-med-presc-1"><b>/github/workspace/fsh-generated/resources/Medication-related-med-presc-1</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationRequest-updated-presc"><b>/github/workspace/fsh-generated/resources/MedicationRequest-updated-presc</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-XBMedRequest1"><b>/github/workspace/fsh-generated/resources/StructureDefinition-XBMedRequest1</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-drugCharacteristic"><b>/github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -86,6 +95,24 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DefinedMed.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/XBMedRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/XBMedRequest1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Medication/cnpem1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Medication/cnpem1X.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/original-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/updated-presc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="CodeSystem-relationtype-cs.change.history.html#l214">output/CodeSystem-relationtype-cs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
@@ -104,6 +131,36 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="FunctionalDiscussion.html#l212">output/FunctionalDiscussion.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-cnpem1.change.history.html#l214">output/Medication-cnpem1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-cnpem1.html#l212">output/Medication-cnpem1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-cnpem1.json.html#l212">output/Medication-cnpem1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-cnpem1.ttl.html#l212">output/Medication-cnpem1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-cnpem1.xml.html#l212">output/Medication-cnpem1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-cnpem1X.change.history.html#l214">output/Medication-cnpem1X.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-cnpem1X.html#l212">output/Medication-cnpem1X.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-cnpem1X.json.html#l212">output/Medication-cnpem1X.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-cnpem1X.ttl.html#l212">output/Medication-cnpem1X.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-cnpem1X.xml.html#l212">output/Medication-cnpem1X.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="Medication-enriched-med-presc-1.change.history.html#l214">output/Medication-enriched-med-presc-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
@@ -151,19 +208,34 @@
      <td><b><a href="Medication-related-med-presc-1.xml.html#l212">output/Medication-related-med-presc-1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationRequest-example0-of-medReq.change.history.html#l214">output/MedicationRequest-example0-of-medReq.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationRequest-original-presc.change.history.html#l214">output/MedicationRequest-original-presc.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationRequest-example0-of-medReq.html#l212">output/MedicationRequest-example0-of-medReq.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationRequest-original-presc.html#l212">output/MedicationRequest-original-presc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationRequest-example0-of-medReq.json.html#l212">output/MedicationRequest-example0-of-medReq.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationRequest-original-presc.json.html#l212">output/MedicationRequest-original-presc.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationRequest-example0-of-medReq.ttl.html#l212">output/MedicationRequest-example0-of-medReq.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationRequest-original-presc.ttl.html#l212">output/MedicationRequest-original-presc.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationRequest-example0-of-medReq.xml.html#l212">output/MedicationRequest-example0-of-medReq.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationRequest-original-presc.xml.html#l212">output/MedicationRequest-original-presc.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationRequest-updated-presc.change.history.html#l214">output/MedicationRequest-updated-presc.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationRequest-updated-presc.html#l212">output/MedicationRequest-updated-presc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationRequest-updated-presc.json.html#l212">output/MedicationRequest-updated-presc.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationRequest-updated-presc.ttl.html#l212">output/MedicationRequest-updated-presc.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationRequest-updated-presc.xml.html#l212">output/MedicationRequest-updated-presc.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-DefinedMed-definitions.html#l213">output/StructureDefinition-DefinedMed-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
@@ -188,6 +260,54 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-DefinedMed.profile.xml.html#l213">output/StructureDefinition-DefinedMed.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest-definitions.html#l213">output/StructureDefinition-XBMedRequest-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest-examples.html#l213">output/StructureDefinition-XBMedRequest-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest-mappings.html#l213">output/StructureDefinition-XBMedRequest-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest.html#l213">output/StructureDefinition-XBMedRequest.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest.profile.history.html#l213">output/StructureDefinition-XBMedRequest.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest.profile.json.html#l213">output/StructureDefinition-XBMedRequest.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest.profile.ttl.html#l213">output/StructureDefinition-XBMedRequest.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest.profile.xml.html#l213">output/StructureDefinition-XBMedRequest.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest1-definitions.html#l213">output/StructureDefinition-XBMedRequest1-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest1-examples.html#l213">output/StructureDefinition-XBMedRequest1-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest1-mappings.html#l213">output/StructureDefinition-XBMedRequest1-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest1.html#l213">output/StructureDefinition-XBMedRequest1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest1.profile.history.html#l213">output/StructureDefinition-XBMedRequest1.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest1.profile.json.html#l213">output/StructureDefinition-XBMedRequest1.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest1.profile.ttl.html#l213">output/StructureDefinition-XBMedRequest1.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-XBMedRequest1.profile.xml.html#l213">output/StructureDefinition-XBMedRequest1.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-drugCharacteristic-definitions.html#l213">output/StructureDefinition-drugCharacteristic-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 9</a></b></td><td><b>error</b></td><td><b>The link 'downloads.html' for &quot;Downloads&quot; cannot be resolved</b></td>
@@ -306,9 +426,40 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Medication-enriched-med-presc-1"> </a>
-<h2><a href="Medication-enriched-med-presc-1.html">fsh-generated/resources/Medication-enriched-med-presc-1.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Medication-cnpem1X"> </a>
+<h2><a href="Medication-cnpem1X.html">fsh-generated/resources/Medication-cnpem1X.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Medication: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medication.html">Medication</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.extension[0].extension[0].value.ofType(Coding) (l11/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Medication.form.coding[0] (l29/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.amount (l56/c19)</b></td><td><b>error</b></td><td title="rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed"><b>rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.amount.numerator (l57/c18)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.amount.numerator (l57/c18)</b></td><td><b>error</b></td><td title="qty-3: 'If a code for the unit is present, the system SHALL also be present' Rule 'If a code for the unit is present, the system SHALL also be present' Failed"><b>qty-3: 'If a code for the unit is present, the system SHALL also be present' Rule 'If a code for the unit is present, the system SHALL also be present' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Medication.ingredient[0].item.ofType(CodeableConcept).coding[0] (l40/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://who-umc/blah/substance' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.ingredient[0].strength (l48/c23)</b></td><td><b>error</b></td><td title="rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed"><b>rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Medication-enriched-med-presc-1"> </a>
+<h2><a href="Medication-enriched-med-presc-1.html">fsh-generated/resources/Medication-enriched-med-presc-1.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Medication: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medication.html">Medication</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -323,8 +474,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Medication-related-med-presc-1"> </a>
-<h2><a href="Medication-related-med-presc-1.html">fsh-generated/resources/Medication-related-med-presc-1.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Medication: Validated against <i>this.</i><a href="StructureDefinition-DefinedMed.html">DefinedMed</a></li></ul>
+<h2><a href="Medication-related-med-presc-1.html">fsh-generated/resources/Medication-related-med-presc-1.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Medication: Validated against <i>this.</i><a href="StructureDefinition-DefinedMed.html">DefinedMed</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -344,9 +495,38 @@
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationRequest-updated-presc"> </a>
+<h2><a href="MedicationRequest-updated-presc.html">fsh-generated/resources/MedicationRequest-updated-presc.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <i>this.</i><a href="StructureDefinition-XBMedRequest.html">XBMedRequest</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationRequest.medication.ofType(CodeableConcept).extension[0].extension[1].value.ofType(Coding) (l24/c14)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l31/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://products.pt/cnpem' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-XBMedRequest1"> </a>
+<h2><a href="StructureDefinition-XBMedRequest1.html">fsh-generated/resources/StructureDefinition-XBMedRequest1.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/XBMedRequest1')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-drugCharacteristic"> </a>
-<h2><a href="StructureDefinition-drugCharacteristic.html">fsh-generated/resources/StructureDefinition-drugCharacteristic.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-drugCharacteristic.html">fsh-generated/resources/StructureDefinition-drugCharacteristic.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -392,13 +572,31 @@
 <h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
+     <td><a href="Medication-cnpem1X.html">fsh-generated/resources/Medication-cnpem1X.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Medication-cnpem1X.html">fsh-generated/resources/Medication-cnpem1X.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
      <td><a href="Medication-enriched-med-presc-1.html">fsh-generated/resources/Medication-enriched-med-presc-1.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationRequest-updated-presc.html">fsh-generated/resources/MedicationRequest-updated-presc.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
 </table>
 <hr/>
 <a name="Terminology_TX_System_NotKnown"> </a>
 <h2>Terminology_TX_System_NotKnown</h2>
  <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Medication-cnpem1.html">fsh-generated/resources/Medication-cnpem1.json</a></td><td><b>Code System URI 'http://products.pt/cnpem' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Medication-cnpem1X.html">fsh-generated/resources/Medication-cnpem1X.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Medication-cnpem1X.html">fsh-generated/resources/Medication-cnpem1X.json</a></td><td><b>Code System URI 'https://who-umc/blah/substance' is unknown so the code cannot be validated</b></td>
+   </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Medication-enriched-med-presc-1.html">fsh-generated/resources/Medication-enriched-med-presc-1.json</a></td><td><b>Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated</b></td>
    </tr>
@@ -415,10 +613,10 @@
      <td><a href="Medication-related-med-presc-1.html">fsh-generated/resources/Medication-related-med-presc-1.json</a></td><td><b>Code System URI 'https://npech.eu/codings/ingredient_code' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="MedicationRequest-example0-of-medReq.html">fsh-generated/resources/MedicationRequest-example0-of-medReq.json</a></td><td><b>Code System URI 'https://products.be/codings/product_code' is unknown so the code cannot be validated</b></td>
+     <td><a href="MedicationRequest-original-presc.html">fsh-generated/resources/MedicationRequest-original-presc.json</a></td><td><b>Code System URI 'http://products.pt/cnpem' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="MedicationRequest-example0-of-medReq.html">fsh-generated/resources/MedicationRequest-example0-of-medReq.json</a></td><td><b>Code System URI 'https://codings.be/codings/route_codes' is unknown so the code cannot be validated</b></td>
+     <td><a href="MedicationRequest-updated-presc.html">fsh-generated/resources/MedicationRequest-updated-presc.json</a></td><td><b>Code System URI 'http://products.pt/cnpem' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 </body>

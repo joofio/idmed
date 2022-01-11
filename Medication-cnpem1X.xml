@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="cnpem1X"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cnpem1X" </p></div><blockquote><p><b>Related Medication</b></p><p><b>value</b>: upper (Details: [not stated] code upper = 'upper', stated as 'null')</p><p><b>value</b>: <span></span></p></blockquote><p><b>status</b>: active</p><p><b>form</b>: Granules for oral solution <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (PAC#10112000)</span></p><p><b>amount</b>: 2 sachet<span style="background: LightGoldenRodYellow"> (Details: [not stated] code sachet = 'sachet')</span>/</p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Fosfomicine <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (substance#3VH781SH5M)</span></td><td>3 g/</td></tr></table></div>
+  </text>
+  <extension url="http://example.com/fhir/example/StructureDefinition/relatedMedication">
+    <extension url="relationType">
+      <valueCoding>
+        <code value="upper"/>
+      </valueCoding>
+    </extension>
+    <extension url="relatedMed">
+      <valueReference>
+        <identifier>
+          <system value="http://phpids"/>
+          <value value="0xE857DA811B4A6F3BD57810C45D2EA1ED"/>
+        </identifier>
+      </valueReference>
+    </extension>
+  </extension>
+  <status value="active"/>
+  <form>
+    <coding>
+      <system value="http://standardterms.edqm.eu/PAC"/>
+      <code value="10112000"/>
+      <display value="Granules for oral solution"/>
+    </coding>
+  </form>
+  <amount>
+    <numerator>
+      <value value="2"/>
+      <code value="sachet"/>
+    </numerator>
+  </amount>
+  <ingredient>
+    <itemCodeableConcept>
+      <coding>
+        <system value="https://who-umc/blah/substance"/>
+        <code value="3VH781SH5M"/>
+        <display value="Fosfomicine"/>
+      </coding>
+    </itemCodeableConcept>
+    <strength>
+      <numerator>
+        <value value="3"/>
+        <unit value="g"/>
+      </numerator>
+    </strength>
+  </ingredient>
+</Medication>
