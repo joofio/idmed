@@ -1,3 +1,9 @@
+// Alternative 1: Extension on MedXXX resource
+// Alternative 11: Extension on Med[x] element - whether codeableconcept or Ref
+// Alternative 2: Extension on Medication
+
+
+
 Extension:      DrugCharacteristic
 Parent:         Extension
 Id:             drugCharacteristic
@@ -20,7 +26,6 @@ Extension: RelatedMedication
 Id:        relatedMedication
 Title:     "Related Medication"
 Description: "Related Medication to be used on clinical medication workflow resources in order to portrait the information for cross-border. This extension is used on MedicationAdministration,MedicationDispense,MedicationRequest and MedicationStatement  resource."
-* insert ExtensionContext(Medication)
 
 
 * extension contains
@@ -31,7 +36,8 @@ Description: "Related Medication to be used on clinical medication workflow reso
 * extension[relationType].value[x] only Coding
 
 * extension[relatedMed] ^short = "Related medication"
-* extension[relatedMed].value[x]  only Reference(DefinedMed)
+* extension[relatedMed].value[x]  only Reference(Medication)
+
 
 
 // This rule set limits the application of an extension to the given path
@@ -82,3 +88,30 @@ Id: relationtype-vs
 Title: "Relation Type for Related Medication Value Set"
 Description: "Indicates the relation of the related medication with the original medication"
 * include codes from system RelationTypeCS
+
+Profile: XBMedRequest
+Parent: MedicationRequest
+
+/*
+// Alternative 1:
+* extension[relatedMedication]
+  * extension[relatedMed].valueReference = Reference(cnpem1X)
+  * extension[relationType].valueCoding = #123
+*/
+
+
+* medication[x]
+
+// Alternative 1.1
+  * extension contains RelatedMedication named relatedMedication 0..1
+    
+
+Profile: XBMedRequest1
+Parent: MedicationRequest
+
+
+// Alternative 1:
+* extension contains RelatedMedication named relatedMedication 0..1
+
+
+
